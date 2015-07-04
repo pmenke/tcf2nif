@@ -34,8 +34,6 @@ module Tcf2Nif
       @form ||= @xml_element.text
     end
 
-
-
     def pos?
       not pos.nil?
     end

@@ -25,8 +25,7 @@ require "tcf2nif/tcf_document"
 require "tcf2nif/transformer"
 
 module Tcf2Nif
-  # Your code goes here...
-  
+
   def self.root
     File.expand_path('../..',__FILE__)
   end
