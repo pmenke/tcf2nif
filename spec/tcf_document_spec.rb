@@ -57,6 +57,25 @@ describe Tcf2Nif::TcfDocument do
       expect(@tcf.send(:process_tokens)).not_to be nil
     end
 
+
+    context 'mapping between xml ids and token objects' do
+
+      it 'has methods for querying the maps' do
+        expect(@tcf).to respond_to(:token_for_id)
+        expect(@tcf).to respond_to(:id_for_token)
+      end
+
+      it 'retrieves the correct token for an ID' do
+        token = @tcf.token_for_id('t_0')
+        expect(token).to eq @tcf.tokens.first
+      end
+
+      it 'retrieves the correct XML ID for a token' do
+        id = @tcf.id_for_token(@tcf.tokens.first)
+        expect(id).to eq 't_0'
+      end
+
+    end
   end
 
 end

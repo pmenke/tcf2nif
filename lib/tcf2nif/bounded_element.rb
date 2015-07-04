@@ -19,29 +19,23 @@
 
 module Tcf2Nif
 
-  class Token < BoundedElement
+  class BoundedElement
 
-    attr_accessor :pos
-    attr_accessor :lemma
+    attr_accessor :begin_index
+    attr_accessor :end_index
 
-    def initialize(tcf_document, xml_element)
-      @tcf_document = tcf_document
-      @xml_element = xml_element
-      @pos, @lemma = nil
+
+    def boundaries=(new_boundaries)
+      @begin_index=new_boundaries.first
+      @end_index=new_boundaries.last
     end
 
-    def form
-      @form ||= @xml_element.text
+    def boundaries?
+      @begin_index && @end_index
     end
 
-
-
-    def pos?
-      not pos.nil?
-    end
-
-    def lemma?
-      not lemma.nil?
+    def length
+      end_index - begin_index
     end
 
   end

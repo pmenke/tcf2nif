@@ -19,6 +19,7 @@
 
 require 'nokogiri'
 require "tcf2nif/version"
+require "tcf2nif/bounded_element"
 require "tcf2nif/token"
 require "tcf2nif/tcf_document"
 require "tcf2nif/transformer"

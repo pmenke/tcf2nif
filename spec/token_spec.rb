@@ -37,6 +37,33 @@ describe Tcf2Nif::Token do
       expect(@token.form).to be_a String
     end
 
+    context 'boundaries' do
+
+      it 'has boundaries' do
+        expect(@token).to respond_to(:begin_index)
+        expect(@token).to respond_to(:end_index)
+      end
+
+      it 'has a numeric begin index' do
+        expect(@token.begin_index).to be_a Numeric
+        expect(@token.begin_index).to be >= 0
+      end
+
+      it 'has a numeric end index' do
+        expect(@token.end_index).to be_a Numeric
+        expect(@token.end_index).to be >= 0
+      end
+
+      it 'has reasonable values for both indices' do
+        expect(@token.end_index).to be >= @token.begin_index
+      end
+
+      it 'has a positive length' do
+        expect(@token).to respond_to(:length)
+      end
+
+    end
+
     context 'lemmata' do
 
       it 'knows whether it has been assigned a lemma or not' do

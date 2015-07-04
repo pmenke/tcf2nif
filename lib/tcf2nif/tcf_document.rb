@@ -25,7 +25,33 @@ module Tcf2Nif
       @doc = Nokogiri::XML(io)
       # TODO add a method that reads the XML into Ruby structures
       # first: determine offsets
-      #
+      @tokens = Array.new
+      @id_map = Hash.new
+      @token_map = Hash.new
+
+      process_tokens
+      unless @tokens.all?{|t| t.boundaries? }
+        calculate_character_offsets
+      end
+    end
+
+    def token_map
+      @token_map
+    end
+
+    def id_map
+      @id_map
+    end
+
+    def calculate_character_offsets
+      char_index = 0
+      tokens.each do |token|
+        new_index = text.index(token.form, char_index)
+        new_offset = new_index + token.form.length
+        token.boundaries= [new_index, new_offset]
+        char_index = new_offset
+        # puts "%24s [%4i,%4i]" % [token.form, token.begin_index, token.end_index]
+      end
     end
 
     def text
@@ -33,7 +59,7 @@ module Tcf2Nif
     end
 
     def tokens
-      @tokens ||= process_tokens
+      @tokens
     end
 
     def xml_sentences
@@ -44,14 +70,43 @@ module Tcf2Nif
       @xml_tokens ||= @doc.xpath('//tc:tokens/tc:token', 'tc' => 'http://www.dspin.de/data/textcorpus')
     end
 
+    # TODO add deep support for sentences and related tokens
+
+    def new_token(doc, xml_token)
+      token_object = Tcf2Nif::Token.new(doc, xml_token)
+      # check for char offsets
+      if xml_token.has_attribute?('start') && xml_token.has_attribute?('end')
+        token_object.boundaries= [xml_token['start'].to_i, xml_token['end'].to_i]
+      end
+      token_object
+    end
+
+    def store_token(token_object, xml_token)
+      #puts @id_map
+      #puts @token_map
+      @tokens << token_object
+      @id_map[xml_token['ID']] = token_object
+      @token_map[token_object] = xml_token['ID']
+    end
+
+    def token_for_id(xml_id)
+      @id_map[xml_id]
+    end
+
+    def id_for_token(token)
+      @token_map[token]
+    end
+
+
     private
 
     def process_tokens
-      result = Array.new
+      # result = Array.new
       xml_tokens.each do |xml_token|
-        result << Tcf2Nif::Token.new(@doc, xml_token)
+        token = new_token(@doc, xml_token)
+        store_token(token, xml_token)
       end
-      result
+      # result
     end
     
   end
