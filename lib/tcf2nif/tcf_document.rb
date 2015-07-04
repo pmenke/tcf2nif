@@ -24,7 +24,6 @@ module Tcf2Nif
     def initialize(io)
       @doc = Nokogiri::XML(io)
       # TODO add a method that reads the XML into Ruby structures
-      # first: determine offsets
       @tokens = Array.new
       @id_map = Hash.new
       @token_map = Hash.new
@@ -50,7 +49,6 @@ module Tcf2Nif
         new_offset = new_index + token.form.length
         token.boundaries= [new_index, new_offset]
         char_index = new_offset
-        # puts "%24s [%4i,%4i]" % [token.form, token.begin_index, token.end_index]
       end
     end
 
@@ -74,7 +72,6 @@ module Tcf2Nif
 
     def new_token(doc, xml_token)
       token_object = Tcf2Nif::Token.new(doc, xml_token)
-      # check for char offsets
       if xml_token.has_attribute?('start') && xml_token.has_attribute?('end')
         token_object.boundaries= [xml_token['start'].to_i, xml_token['end'].to_i]
       end
@@ -82,8 +79,6 @@ module Tcf2Nif
     end
 
     def store_token(token_object, xml_token)
-      #puts @id_map
-      #puts @token_map
       @tokens << token_object
       @id_map[xml_token['ID']] = token_object
       @token_map[token_object] = xml_token['ID']
@@ -101,12 +96,10 @@ module Tcf2Nif
     private
 
     def process_tokens
-      # result = Array.new
       xml_tokens.each do |xml_token|
         token = new_token(@doc, xml_token)
         store_token(token, xml_token)
       end
-      # result
     end
     
   end
