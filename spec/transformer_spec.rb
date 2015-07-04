@@ -17,17 +17,28 @@
 # License along with tcf2nif. If not, see
 # <http://www.gnu.org/licenses/>.
 
-require 'nokogiri'
-require "tcf2nif/version"
-require "tcf2nif/token"
-require "tcf2nif/tcf_document"
-require "tcf2nif/transformer"
+require 'spec_helper'
 
-module Tcf2Nif
-  # Your code goes here...
-  
-  def self.root
-    File.expand_path('../..',__FILE__)
+describe Tcf2Nif::Transformer do
+  it 'should be a class' do
+    expect(Tcf2Nif::Transformer).not_to be nil
+    expect(Tcf2Nif::Transformer).to be_a Class
   end
+
+  context 'with a valid TCF document' do
     
+    before :each do 
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'tcftest.xml'), 'r')
+      @doc = Nokogiri::XML(@testfile)
+    end
+    
+    it 'has access to the primary text' do
+      expect(@doc).not_to be nil
+      res = @doc.xpath('//tc:sentences/tc:sentence', 'tc' => 'http://www.dspin.de/data/textcorpus')
+      puts res.size
+      expect(res.size).to be > 0 
+    end
+    
+  end
+
 end

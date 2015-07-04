@@ -1,0 +1,3016 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://de.clarin.eu/images/weblicht-tutorials/resources/tcf-04/schemas/latest/d-spin_0_4.rnc" type="application/relax-ng-compact-syntax"?><wl:D-Spin xmlns:ed="http://www.dspin.de/data/extdata" xmlns:lx="http://www.dspin.de/data/lexicon" xmlns:wl="http://www.dspin.de/data" xmlns:md="http://www.dspin.de/data/metadata" xmlns:tc="http://www.dspin.de/data/textcorpus" version="0.4">
+  <md:MetaData>
+    <md:Services>
+      <cmd:CMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cmd="http://www.clarin.eu/cmd/" CMDVersion="1.1" xsi:schemaLocation="http://www.clarin.eu/cmd/ http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1320657629623/xsd">
+        <cmd:Resources>
+          <cmd:ResourceProxyList></cmd:ResourceProxyList>
+          <cmd:JournalFileProxyList></cmd:JournalFileProxyList>
+          <cmd:ResourceRelationList></cmd:ResourceRelationList>
+        </cmd:Resources>
+        <cmd:Components>
+          <cmd:WebServiceToolChain>
+            <cmd:GeneralInfo>
+              <cmd:Descriptions>
+                <cmd:Description></cmd:Description>
+              </cmd:Descriptions>
+              <cmd:ResourceName>Custom chain</cmd:ResourceName>
+              <cmd:ResourceClass>Toolchain</cmd:ResourceClass>
+            </cmd:GeneralInfo>
+            <cmd:Toolchain>
+              <cmd:ToolInChain>
+                <cmd:PID>http://hdl.handle.net/11858/00-247C-0000-0022-D906-1</cmd:PID>
+                <cmd:Parameter name="lang" value="en"></cmd:Parameter>
+              </cmd:ToolInChain>
+              <cmd:ToolInChain>
+                <cmd:PID>http://hdl.handle.net/11022/0000-0000-1D8A-5</cmd:PID>
+              </cmd:ToolInChain>
+              <cmd:ToolInChain>
+                <cmd:PID>http://hdl.handle.net/11858/00-1778-0000-0004-BA37-D</cmd:PID>
+                <cmd:Parameter name="lang" value="en"></cmd:Parameter>
+              </cmd:ToolInChain>
+              <cmd:ToolInChain>
+                <cmd:PID>http://hdl.handle.net/11858/00-1778-0000-000D-FB5B-D</cmd:PID>
+                <cmd:Parameter name="lang" value="en"></cmd:Parameter>
+                <cmd:Parameter name="namedentities.type" value="opennlp"></cmd:Parameter>
+              </cmd:ToolInChain>
+            <cmd:ToolInChain><cmd:PID>http://hdl.handle.net/11858/00-247C-0000-0007-3738-7</cmd:PID><cmd:Parameter value="en" name="lang"></cmd:Parameter></cmd:ToolInChain></cmd:Toolchain>
+          </cmd:WebServiceToolChain>
+        </cmd:Components>
+      </cmd:CMD>
+    </md:Services>
+  </md:MetaData>
+  <tc:TextCorpus lang="en">
+    <tc:text>The Opera ghost really existed.  He was not, as was long believed, a
+creature of the imagination of the artists, the superstition of the
+managers, or a product of the absurd and impressionable brains of the
+young ladies of the ballet, their mothers, the box-keepers, the
+cloak-room attendants or the concierge.  Yes, he existed in flesh and
+blood, although he assumed the complete appearance of a real phantom;
+that is to say, of a spectral shade.
+When I began to ransack the archives of the National Academy of Music I
+was at once struck by the surprising coincidences between the phenomena
+ascribed to the "ghost" and the most extraordinary and fantastic
+tragedy that ever excited the Paris upper classes; and I soon conceived
+the idea that this tragedy might reasonably be explained by the
+phenomena in question.  The events do not date more than thirty years
+back; and it would not be difficult to find at the present day, in the
+foyer of the ballet, old men of the highest respectability, men upon
+whose word one could absolutely rely, who would remember as though they
+happened yesterday the mysterious and dramatic conditions that attended
+the kidnapping of Christine Daae, the disappearance of the Vicomte de
+Chagny and the death of his elder brother, Count Philippe, whose body
+was found on the bank of the lake that exists in the lower cellars of
+the Opera on the Rue-Scribe side.  But none of those witnesses had
+until that day thought that there was any reason for connecting the
+more or less legendary figure of the Opera ghost with that terrible
+story.
+The truth was slow to enter my mind, puzzled by an inquiry that at
+every moment was complicated by events which, at first sight, might be
+looked upon as superhuman; and more than once I was within an ace of
+abandoning a task in which I was exhausting myself in the hopeless
+pursuit of a vain image.  At last, I received the proof that my
+presentiments had not deceived me, and I was rewarded for all my
+efforts on the day when I acquired the certainty that the Opera ghost
+was more than a mere shade.</tc:text>
+    <tc:tokens charOffsets="true">
+      <tc:token start="0" ID="t_0" end="3">The</tc:token>
+      <tc:token start="4" ID="t_1" end="9">Opera</tc:token>
+      <tc:token start="10" ID="t_2" end="15">ghost</tc:token>
+      <tc:token start="16" ID="t_3" end="22">really</tc:token>
+      <tc:token start="23" ID="t_4" end="30">existed</tc:token>
+      <tc:token start="30" ID="t_5" end="31">.</tc:token>
+      <tc:token start="33" ID="t_6" end="35">He</tc:token>
+      <tc:token start="36" ID="t_7" end="39">was</tc:token>
+      <tc:token start="40" ID="t_8" end="43">not</tc:token>
+      <tc:token start="43" ID="t_9" end="44">,</tc:token>
+      <tc:token start="45" ID="t_10" end="47">as</tc:token>
+      <tc:token start="48" ID="t_11" end="51">was</tc:token>
+      <tc:token start="52" ID="t_12" end="56">long</tc:token>
+      <tc:token start="57" ID="t_13" end="65">believed</tc:token>
+      <tc:token start="65" ID="t_14" end="66">,</tc:token>
+      <tc:token start="67" ID="t_15" end="68">a</tc:token>
+      <tc:token start="69" ID="t_16" end="77">creature</tc:token>
+      <tc:token start="78" ID="t_17" end="80">of</tc:token>
+      <tc:token start="81" ID="t_18" end="84">the</tc:token>
+      <tc:token start="85" ID="t_19" end="96">imagination</tc:token>
+      <tc:token start="97" ID="t_20" end="99">of</tc:token>
+      <tc:token start="100" ID="t_21" end="103">the</tc:token>
+      <tc:token start="104" ID="t_22" end="111">artists</tc:token>
+      <tc:token start="111" ID="t_23" end="112">,</tc:token>
+      <tc:token start="113" ID="t_24" end="116">the</tc:token>
+      <tc:token start="117" ID="t_25" end="129">superstition</tc:token>
+      <tc:token start="130" ID="t_26" end="132">of</tc:token>
+      <tc:token start="133" ID="t_27" end="136">the</tc:token>
+      <tc:token start="137" ID="t_28" end="145">managers</tc:token>
+      <tc:token start="145" ID="t_29" end="146">,</tc:token>
+      <tc:token start="147" ID="t_30" end="149">or</tc:token>
+      <tc:token start="150" ID="t_31" end="151">a</tc:token>
+      <tc:token start="152" ID="t_32" end="159">product</tc:token>
+      <tc:token start="160" ID="t_33" end="162">of</tc:token>
+      <tc:token start="163" ID="t_34" end="166">the</tc:token>
+      <tc:token start="167" ID="t_35" end="173">absurd</tc:token>
+      <tc:token start="174" ID="t_36" end="177">and</tc:token>
+      <tc:token start="178" ID="t_37" end="192">impressionable</tc:token>
+      <tc:token start="193" ID="t_38" end="199">brains</tc:token>
+      <tc:token start="200" ID="t_39" end="202">of</tc:token>
+      <tc:token start="203" ID="t_40" end="206">the</tc:token>
+      <tc:token start="207" ID="t_41" end="212">young</tc:token>
+      <tc:token start="213" ID="t_42" end="219">ladies</tc:token>
+      <tc:token start="220" ID="t_43" end="222">of</tc:token>
+      <tc:token start="223" ID="t_44" end="226">the</tc:token>
+      <tc:token start="227" ID="t_45" end="233">ballet</tc:token>
+      <tc:token start="233" ID="t_46" end="234">,</tc:token>
+      <tc:token start="235" ID="t_47" end="240">their</tc:token>
+      <tc:token start="241" ID="t_48" end="248">mothers</tc:token>
+      <tc:token start="248" ID="t_49" end="249">,</tc:token>
+      <tc:token start="250" ID="t_50" end="253">the</tc:token>
+      <tc:token start="254" ID="t_51" end="265">box-keepers</tc:token>
+      <tc:token start="265" ID="t_52" end="266">,</tc:token>
+      <tc:token start="267" ID="t_53" end="270">the</tc:token>
+      <tc:token start="271" ID="t_54" end="281">cloak-room</tc:token>
+      <tc:token start="282" ID="t_55" end="292">attendants</tc:token>
+      <tc:token start="293" ID="t_56" end="295">or</tc:token>
+      <tc:token start="296" ID="t_57" end="299">the</tc:token>
+      <tc:token start="300" ID="t_58" end="309">concierge</tc:token>
+      <tc:token start="309" ID="t_59" end="310">.</tc:token>
+      <tc:token start="312" ID="t_60" end="315">Yes</tc:token>
+      <tc:token start="315" ID="t_61" end="316">,</tc:token>
+      <tc:token start="317" ID="t_62" end="319">he</tc:token>
+      <tc:token start="320" ID="t_63" end="327">existed</tc:token>
+      <tc:token start="328" ID="t_64" end="330">in</tc:token>
+      <tc:token start="331" ID="t_65" end="336">flesh</tc:token>
+      <tc:token start="337" ID="t_66" end="340">and</tc:token>
+      <tc:token start="341" ID="t_67" end="346">blood</tc:token>
+      <tc:token start="346" ID="t_68" end="347">,</tc:token>
+      <tc:token start="348" ID="t_69" end="356">although</tc:token>
+      <tc:token start="357" ID="t_70" end="359">he</tc:token>
+      <tc:token start="360" ID="t_71" end="367">assumed</tc:token>
+      <tc:token start="368" ID="t_72" end="371">the</tc:token>
+      <tc:token start="372" ID="t_73" end="380">complete</tc:token>
+      <tc:token start="381" ID="t_74" end="391">appearance</tc:token>
+      <tc:token start="392" ID="t_75" end="394">of</tc:token>
+      <tc:token start="395" ID="t_76" end="396">a</tc:token>
+      <tc:token start="397" ID="t_77" end="401">real</tc:token>
+      <tc:token start="402" ID="t_78" end="409">phantom</tc:token>
+      <tc:token start="409" ID="t_79" end="410">;</tc:token>
+      <tc:token start="411" ID="t_80" end="415">that</tc:token>
+      <tc:token start="416" ID="t_81" end="418">is</tc:token>
+      <tc:token start="419" ID="t_82" end="421">to</tc:token>
+      <tc:token start="422" ID="t_83" end="425">say</tc:token>
+      <tc:token start="425" ID="t_84" end="426">,</tc:token>
+      <tc:token start="427" ID="t_85" end="429">of</tc:token>
+      <tc:token start="430" ID="t_86" end="431">a</tc:token>
+      <tc:token start="432" ID="t_87" end="440">spectral</tc:token>
+      <tc:token start="441" ID="t_88" end="446">shade</tc:token>
+      <tc:token start="446" ID="t_89" end="447">.</tc:token>
+      <tc:token start="449" ID="t_90" end="453">When</tc:token>
+      <tc:token start="454" ID="t_91" end="455">I</tc:token>
+      <tc:token start="456" ID="t_92" end="461">began</tc:token>
+      <tc:token start="462" ID="t_93" end="464">to</tc:token>
+      <tc:token start="465" ID="t_94" end="472">ransack</tc:token>
+      <tc:token start="473" ID="t_95" end="476">the</tc:token>
+      <tc:token start="477" ID="t_96" end="485">archives</tc:token>
+      <tc:token start="486" ID="t_97" end="488">of</tc:token>
+      <tc:token start="489" ID="t_98" end="492">the</tc:token>
+      <tc:token start="493" ID="t_99" end="501">National</tc:token>
+      <tc:token start="502" ID="t_100" end="509">Academy</tc:token>
+      <tc:token start="510" ID="t_101" end="512">of</tc:token>
+      <tc:token start="513" ID="t_102" end="518">Music</tc:token>
+      <tc:token start="519" ID="t_103" end="520">I</tc:token>
+      <tc:token start="521" ID="t_104" end="524">was</tc:token>
+      <tc:token start="525" ID="t_105" end="527">at</tc:token>
+      <tc:token start="528" ID="t_106" end="532">once</tc:token>
+      <tc:token start="533" ID="t_107" end="539">struck</tc:token>
+      <tc:token start="540" ID="t_108" end="542">by</tc:token>
+      <tc:token start="543" ID="t_109" end="546">the</tc:token>
+      <tc:token start="547" ID="t_110" end="557">surprising</tc:token>
+      <tc:token start="558" ID="t_111" end="570">coincidences</tc:token>
+      <tc:token start="571" ID="t_112" end="578">between</tc:token>
+      <tc:token start="579" ID="t_113" end="582">the</tc:token>
+      <tc:token start="583" ID="t_114" end="592">phenomena</tc:token>
+      <tc:token start="593" ID="t_115" end="601">ascribed</tc:token>
+      <tc:token start="602" ID="t_116" end="604">to</tc:token>
+      <tc:token start="605" ID="t_117" end="608">the</tc:token>
+      <tc:token start="609" ID="t_118" end="615">"ghost</tc:token>
+      <tc:token start="615" ID="t_119" end="616">"</tc:token>
+      <tc:token start="617" ID="t_120" end="620">and</tc:token>
+      <tc:token start="621" ID="t_121" end="624">the</tc:token>
+      <tc:token start="625" ID="t_122" end="629">most</tc:token>
+      <tc:token start="630" ID="t_123" end="643">extraordinary</tc:token>
+      <tc:token start="644" ID="t_124" end="647">and</tc:token>
+      <tc:token start="648" ID="t_125" end="657">fantastic</tc:token>
+      <tc:token start="658" ID="t_126" end="665">tragedy</tc:token>
+      <tc:token start="666" ID="t_127" end="670">that</tc:token>
+      <tc:token start="671" ID="t_128" end="675">ever</tc:token>
+      <tc:token start="676" ID="t_129" end="683">excited</tc:token>
+      <tc:token start="684" ID="t_130" end="687">the</tc:token>
+      <tc:token start="688" ID="t_131" end="693">Paris</tc:token>
+      <tc:token start="694" ID="t_132" end="699">upper</tc:token>
+      <tc:token start="700" ID="t_133" end="707">classes</tc:token>
+      <tc:token start="707" ID="t_134" end="708">;</tc:token>
+      <tc:token start="709" ID="t_135" end="712">and</tc:token>
+      <tc:token start="713" ID="t_136" end="714">I</tc:token>
+      <tc:token start="715" ID="t_137" end="719">soon</tc:token>
+      <tc:token start="720" ID="t_138" end="729">conceived</tc:token>
+      <tc:token start="730" ID="t_139" end="733">the</tc:token>
+      <tc:token start="734" ID="t_140" end="738">idea</tc:token>
+      <tc:token start="739" ID="t_141" end="743">that</tc:token>
+      <tc:token start="744" ID="t_142" end="748">this</tc:token>
+      <tc:token start="749" ID="t_143" end="756">tragedy</tc:token>
+      <tc:token start="757" ID="t_144" end="762">might</tc:token>
+      <tc:token start="763" ID="t_145" end="773">reasonably</tc:token>
+      <tc:token start="774" ID="t_146" end="776">be</tc:token>
+      <tc:token start="777" ID="t_147" end="786">explained</tc:token>
+      <tc:token start="787" ID="t_148" end="789">by</tc:token>
+      <tc:token start="790" ID="t_149" end="793">the</tc:token>
+      <tc:token start="794" ID="t_150" end="803">phenomena</tc:token>
+      <tc:token start="804" ID="t_151" end="806">in</tc:token>
+      <tc:token start="807" ID="t_152" end="815">question</tc:token>
+      <tc:token start="815" ID="t_153" end="816">.</tc:token>
+      <tc:token start="818" ID="t_154" end="821">The</tc:token>
+      <tc:token start="822" ID="t_155" end="828">events</tc:token>
+      <tc:token start="829" ID="t_156" end="831">do</tc:token>
+      <tc:token start="832" ID="t_157" end="835">not</tc:token>
+      <tc:token start="836" ID="t_158" end="840">date</tc:token>
+      <tc:token start="841" ID="t_159" end="845">more</tc:token>
+      <tc:token start="846" ID="t_160" end="850">than</tc:token>
+      <tc:token start="851" ID="t_161" end="857">thirty</tc:token>
+      <tc:token start="858" ID="t_162" end="863">years</tc:token>
+      <tc:token start="864" ID="t_163" end="868">back</tc:token>
+      <tc:token start="868" ID="t_164" end="869">;</tc:token>
+      <tc:token start="870" ID="t_165" end="873">and</tc:token>
+      <tc:token start="874" ID="t_166" end="876">it</tc:token>
+      <tc:token start="877" ID="t_167" end="882">would</tc:token>
+      <tc:token start="883" ID="t_168" end="886">not</tc:token>
+      <tc:token start="887" ID="t_169" end="889">be</tc:token>
+      <tc:token start="890" ID="t_170" end="899">difficult</tc:token>
+      <tc:token start="900" ID="t_171" end="902">to</tc:token>
+      <tc:token start="903" ID="t_172" end="907">find</tc:token>
+      <tc:token start="908" ID="t_173" end="910">at</tc:token>
+      <tc:token start="911" ID="t_174" end="914">the</tc:token>
+      <tc:token start="915" ID="t_175" end="922">present</tc:token>
+      <tc:token start="923" ID="t_176" end="926">day</tc:token>
+      <tc:token start="926" ID="t_177" end="927">,</tc:token>
+      <tc:token start="928" ID="t_178" end="930">in</tc:token>
+      <tc:token start="931" ID="t_179" end="934">the</tc:token>
+      <tc:token start="935" ID="t_180" end="940">foyer</tc:token>
+      <tc:token start="941" ID="t_181" end="943">of</tc:token>
+      <tc:token start="944" ID="t_182" end="947">the</tc:token>
+      <tc:token start="948" ID="t_183" end="954">ballet</tc:token>
+      <tc:token start="954" ID="t_184" end="955">,</tc:token>
+      <tc:token start="956" ID="t_185" end="959">old</tc:token>
+      <tc:token start="960" ID="t_186" end="963">men</tc:token>
+      <tc:token start="964" ID="t_187" end="966">of</tc:token>
+      <tc:token start="967" ID="t_188" end="970">the</tc:token>
+      <tc:token start="971" ID="t_189" end="978">highest</tc:token>
+      <tc:token start="979" ID="t_190" end="993">respectability</tc:token>
+      <tc:token start="993" ID="t_191" end="994">,</tc:token>
+      <tc:token start="995" ID="t_192" end="998">men</tc:token>
+      <tc:token start="999" ID="t_193" end="1003">upon</tc:token>
+      <tc:token start="1004" ID="t_194" end="1009">whose</tc:token>
+      <tc:token start="1010" ID="t_195" end="1014">word</tc:token>
+      <tc:token start="1015" ID="t_196" end="1018">one</tc:token>
+      <tc:token start="1019" ID="t_197" end="1024">could</tc:token>
+      <tc:token start="1025" ID="t_198" end="1035">absolutely</tc:token>
+      <tc:token start="1036" ID="t_199" end="1040">rely</tc:token>
+      <tc:token start="1040" ID="t_200" end="1041">,</tc:token>
+      <tc:token start="1042" ID="t_201" end="1045">who</tc:token>
+      <tc:token start="1046" ID="t_202" end="1051">would</tc:token>
+      <tc:token start="1052" ID="t_203" end="1060">remember</tc:token>
+      <tc:token start="1061" ID="t_204" end="1063">as</tc:token>
+      <tc:token start="1064" ID="t_205" end="1070">though</tc:token>
+      <tc:token start="1071" ID="t_206" end="1075">they</tc:token>
+      <tc:token start="1076" ID="t_207" end="1084">happened</tc:token>
+      <tc:token start="1085" ID="t_208" end="1094">yesterday</tc:token>
+      <tc:token start="1095" ID="t_209" end="1098">the</tc:token>
+      <tc:token start="1099" ID="t_210" end="1109">mysterious</tc:token>
+      <tc:token start="1110" ID="t_211" end="1113">and</tc:token>
+      <tc:token start="1114" ID="t_212" end="1122">dramatic</tc:token>
+      <tc:token start="1123" ID="t_213" end="1133">conditions</tc:token>
+      <tc:token start="1134" ID="t_214" end="1138">that</tc:token>
+      <tc:token start="1139" ID="t_215" end="1147">attended</tc:token>
+      <tc:token start="1148" ID="t_216" end="1151">the</tc:token>
+      <tc:token start="1152" ID="t_217" end="1162">kidnapping</tc:token>
+      <tc:token start="1163" ID="t_218" end="1165">of</tc:token>
+      <tc:token start="1166" ID="t_219" end="1175">Christine</tc:token>
+      <tc:token start="1176" ID="t_220" end="1180">Daae</tc:token>
+      <tc:token start="1180" ID="t_221" end="1181">,</tc:token>
+      <tc:token start="1182" ID="t_222" end="1185">the</tc:token>
+      <tc:token start="1186" ID="t_223" end="1199">disappearance</tc:token>
+      <tc:token start="1200" ID="t_224" end="1202">of</tc:token>
+      <tc:token start="1203" ID="t_225" end="1206">the</tc:token>
+      <tc:token start="1207" ID="t_226" end="1214">Vicomte</tc:token>
+      <tc:token start="1215" ID="t_227" end="1217">de</tc:token>
+      <tc:token start="1218" ID="t_228" end="1224">Chagny</tc:token>
+      <tc:token start="1225" ID="t_229" end="1228">and</tc:token>
+      <tc:token start="1229" ID="t_230" end="1232">the</tc:token>
+      <tc:token start="1233" ID="t_231" end="1238">death</tc:token>
+      <tc:token start="1239" ID="t_232" end="1241">of</tc:token>
+      <tc:token start="1242" ID="t_233" end="1245">his</tc:token>
+      <tc:token start="1246" ID="t_234" end="1251">elder</tc:token>
+      <tc:token start="1252" ID="t_235" end="1259">brother</tc:token>
+      <tc:token start="1259" ID="t_236" end="1260">,</tc:token>
+      <tc:token start="1261" ID="t_237" end="1266">Count</tc:token>
+      <tc:token start="1267" ID="t_238" end="1275">Philippe</tc:token>
+      <tc:token start="1275" ID="t_239" end="1276">,</tc:token>
+      <tc:token start="1277" ID="t_240" end="1282">whose</tc:token>
+      <tc:token start="1283" ID="t_241" end="1287">body</tc:token>
+      <tc:token start="1288" ID="t_242" end="1291">was</tc:token>
+      <tc:token start="1292" ID="t_243" end="1297">found</tc:token>
+      <tc:token start="1298" ID="t_244" end="1300">on</tc:token>
+      <tc:token start="1301" ID="t_245" end="1304">the</tc:token>
+      <tc:token start="1305" ID="t_246" end="1309">bank</tc:token>
+      <tc:token start="1310" ID="t_247" end="1312">of</tc:token>
+      <tc:token start="1313" ID="t_248" end="1316">the</tc:token>
+      <tc:token start="1317" ID="t_249" end="1321">lake</tc:token>
+      <tc:token start="1322" ID="t_250" end="1326">that</tc:token>
+      <tc:token start="1327" ID="t_251" end="1333">exists</tc:token>
+      <tc:token start="1334" ID="t_252" end="1336">in</tc:token>
+      <tc:token start="1337" ID="t_253" end="1340">the</tc:token>
+      <tc:token start="1341" ID="t_254" end="1346">lower</tc:token>
+      <tc:token start="1347" ID="t_255" end="1354">cellars</tc:token>
+      <tc:token start="1355" ID="t_256" end="1357">of</tc:token>
+      <tc:token start="1358" ID="t_257" end="1361">the</tc:token>
+      <tc:token start="1362" ID="t_258" end="1367">Opera</tc:token>
+      <tc:token start="1368" ID="t_259" end="1370">on</tc:token>
+      <tc:token start="1371" ID="t_260" end="1374">the</tc:token>
+      <tc:token start="1375" ID="t_261" end="1385">Rue-Scribe</tc:token>
+      <tc:token start="1386" ID="t_262" end="1390">side</tc:token>
+      <tc:token start="1390" ID="t_263" end="1391">.</tc:token>
+      <tc:token start="1393" ID="t_264" end="1396">But</tc:token>
+      <tc:token start="1397" ID="t_265" end="1401">none</tc:token>
+      <tc:token start="1402" ID="t_266" end="1404">of</tc:token>
+      <tc:token start="1405" ID="t_267" end="1410">those</tc:token>
+      <tc:token start="1411" ID="t_268" end="1420">witnesses</tc:token>
+      <tc:token start="1421" ID="t_269" end="1424">had</tc:token>
+      <tc:token start="1425" ID="t_270" end="1430">until</tc:token>
+      <tc:token start="1431" ID="t_271" end="1435">that</tc:token>
+      <tc:token start="1436" ID="t_272" end="1439">day</tc:token>
+      <tc:token start="1440" ID="t_273" end="1447">thought</tc:token>
+      <tc:token start="1448" ID="t_274" end="1452">that</tc:token>
+      <tc:token start="1453" ID="t_275" end="1458">there</tc:token>
+      <tc:token start="1459" ID="t_276" end="1462">was</tc:token>
+      <tc:token start="1463" ID="t_277" end="1466">any</tc:token>
+      <tc:token start="1467" ID="t_278" end="1473">reason</tc:token>
+      <tc:token start="1474" ID="t_279" end="1477">for</tc:token>
+      <tc:token start="1478" ID="t_280" end="1488">connecting</tc:token>
+      <tc:token start="1489" ID="t_281" end="1492">the</tc:token>
+      <tc:token start="1493" ID="t_282" end="1497">more</tc:token>
+      <tc:token start="1498" ID="t_283" end="1500">or</tc:token>
+      <tc:token start="1501" ID="t_284" end="1505">less</tc:token>
+      <tc:token start="1506" ID="t_285" end="1515">legendary</tc:token>
+      <tc:token start="1516" ID="t_286" end="1522">figure</tc:token>
+      <tc:token start="1523" ID="t_287" end="1525">of</tc:token>
+      <tc:token start="1526" ID="t_288" end="1529">the</tc:token>
+      <tc:token start="1530" ID="t_289" end="1535">Opera</tc:token>
+      <tc:token start="1536" ID="t_290" end="1541">ghost</tc:token>
+      <tc:token start="1542" ID="t_291" end="1546">with</tc:token>
+      <tc:token start="1547" ID="t_292" end="1551">that</tc:token>
+      <tc:token start="1552" ID="t_293" end="1560">terrible</tc:token>
+      <tc:token start="1561" ID="t_294" end="1566">story</tc:token>
+      <tc:token start="1566" ID="t_295" end="1567">.</tc:token>
+      <tc:token start="1569" ID="t_296" end="1572">The</tc:token>
+      <tc:token start="1573" ID="t_297" end="1578">truth</tc:token>
+      <tc:token start="1579" ID="t_298" end="1582">was</tc:token>
+      <tc:token start="1583" ID="t_299" end="1587">slow</tc:token>
+      <tc:token start="1588" ID="t_300" end="1590">to</tc:token>
+      <tc:token start="1591" ID="t_301" end="1596">enter</tc:token>
+      <tc:token start="1597" ID="t_302" end="1599">my</tc:token>
+      <tc:token start="1600" ID="t_303" end="1604">mind</tc:token>
+      <tc:token start="1604" ID="t_304" end="1605">,</tc:token>
+      <tc:token start="1606" ID="t_305" end="1613">puzzled</tc:token>
+      <tc:token start="1614" ID="t_306" end="1616">by</tc:token>
+      <tc:token start="1617" ID="t_307" end="1619">an</tc:token>
+      <tc:token start="1620" ID="t_308" end="1627">inquiry</tc:token>
+      <tc:token start="1628" ID="t_309" end="1632">that</tc:token>
+      <tc:token start="1633" ID="t_310" end="1635">at</tc:token>
+      <tc:token start="1636" ID="t_311" end="1641">every</tc:token>
+      <tc:token start="1642" ID="t_312" end="1648">moment</tc:token>
+      <tc:token start="1649" ID="t_313" end="1652">was</tc:token>
+      <tc:token start="1653" ID="t_314" end="1664">complicated</tc:token>
+      <tc:token start="1665" ID="t_315" end="1667">by</tc:token>
+      <tc:token start="1668" ID="t_316" end="1674">events</tc:token>
+      <tc:token start="1675" ID="t_317" end="1680">which</tc:token>
+      <tc:token start="1680" ID="t_318" end="1681">,</tc:token>
+      <tc:token start="1682" ID="t_319" end="1684">at</tc:token>
+      <tc:token start="1685" ID="t_320" end="1690">first</tc:token>
+      <tc:token start="1691" ID="t_321" end="1696">sight</tc:token>
+      <tc:token start="1696" ID="t_322" end="1697">,</tc:token>
+      <tc:token start="1698" ID="t_323" end="1703">might</tc:token>
+      <tc:token start="1704" ID="t_324" end="1706">be</tc:token>
+      <tc:token start="1707" ID="t_325" end="1713">looked</tc:token>
+      <tc:token start="1714" ID="t_326" end="1718">upon</tc:token>
+      <tc:token start="1719" ID="t_327" end="1721">as</tc:token>
+      <tc:token start="1722" ID="t_328" end="1732">superhuman</tc:token>
+      <tc:token start="1732" ID="t_329" end="1733">;</tc:token>
+      <tc:token start="1734" ID="t_330" end="1737">and</tc:token>
+      <tc:token start="1738" ID="t_331" end="1742">more</tc:token>
+      <tc:token start="1743" ID="t_332" end="1747">than</tc:token>
+      <tc:token start="1748" ID="t_333" end="1752">once</tc:token>
+      <tc:token start="1753" ID="t_334" end="1754">I</tc:token>
+      <tc:token start="1755" ID="t_335" end="1758">was</tc:token>
+      <tc:token start="1759" ID="t_336" end="1765">within</tc:token>
+      <tc:token start="1766" ID="t_337" end="1768">an</tc:token>
+      <tc:token start="1769" ID="t_338" end="1772">ace</tc:token>
+      <tc:token start="1773" ID="t_339" end="1775">of</tc:token>
+      <tc:token start="1776" ID="t_340" end="1786">abandoning</tc:token>
+      <tc:token start="1787" ID="t_341" end="1788">a</tc:token>
+      <tc:token start="1789" ID="t_342" end="1793">task</tc:token>
+      <tc:token start="1794" ID="t_343" end="1796">in</tc:token>
+      <tc:token start="1797" ID="t_344" end="1802">which</tc:token>
+      <tc:token start="1803" ID="t_345" end="1804">I</tc:token>
+      <tc:token start="1805" ID="t_346" end="1808">was</tc:token>
+      <tc:token start="1809" ID="t_347" end="1819">exhausting</tc:token>
+      <tc:token start="1820" ID="t_348" end="1826">myself</tc:token>
+      <tc:token start="1827" ID="t_349" end="1829">in</tc:token>
+      <tc:token start="1830" ID="t_350" end="1833">the</tc:token>
+      <tc:token start="1834" ID="t_351" end="1842">hopeless</tc:token>
+      <tc:token start="1843" ID="t_352" end="1850">pursuit</tc:token>
+      <tc:token start="1851" ID="t_353" end="1853">of</tc:token>
+      <tc:token start="1854" ID="t_354" end="1855">a</tc:token>
+      <tc:token start="1856" ID="t_355" end="1860">vain</tc:token>
+      <tc:token start="1861" ID="t_356" end="1866">image</tc:token>
+      <tc:token start="1866" ID="t_357" end="1867">.</tc:token>
+      <tc:token start="1869" ID="t_358" end="1871">At</tc:token>
+      <tc:token start="1872" ID="t_359" end="1876">last</tc:token>
+      <tc:token start="1876" ID="t_360" end="1877">,</tc:token>
+      <tc:token start="1878" ID="t_361" end="1879">I</tc:token>
+      <tc:token start="1880" ID="t_362" end="1888">received</tc:token>
+      <tc:token start="1889" ID="t_363" end="1892">the</tc:token>
+      <tc:token start="1893" ID="t_364" end="1898">proof</tc:token>
+      <tc:token start="1899" ID="t_365" end="1903">that</tc:token>
+      <tc:token start="1904" ID="t_366" end="1906">my</tc:token>
+      <tc:token start="1907" ID="t_367" end="1920">presentiments</tc:token>
+      <tc:token start="1921" ID="t_368" end="1924">had</tc:token>
+      <tc:token start="1925" ID="t_369" end="1928">not</tc:token>
+      <tc:token start="1929" ID="t_370" end="1937">deceived</tc:token>
+      <tc:token start="1938" ID="t_371" end="1940">me</tc:token>
+      <tc:token start="1940" ID="t_372" end="1941">,</tc:token>
+      <tc:token start="1942" ID="t_373" end="1945">and</tc:token>
+      <tc:token start="1946" ID="t_374" end="1947">I</tc:token>
+      <tc:token start="1948" ID="t_375" end="1951">was</tc:token>
+      <tc:token start="1952" ID="t_376" end="1960">rewarded</tc:token>
+      <tc:token start="1961" ID="t_377" end="1964">for</tc:token>
+      <tc:token start="1965" ID="t_378" end="1968">all</tc:token>
+      <tc:token start="1969" ID="t_379" end="1971">my</tc:token>
+      <tc:token start="1972" ID="t_380" end="1979">efforts</tc:token>
+      <tc:token start="1980" ID="t_381" end="1982">on</tc:token>
+      <tc:token start="1983" ID="t_382" end="1986">the</tc:token>
+      <tc:token start="1987" ID="t_383" end="1990">day</tc:token>
+      <tc:token start="1991" ID="t_384" end="1995">when</tc:token>
+      <tc:token start="1996" ID="t_385" end="1997">I</tc:token>
+      <tc:token start="1998" ID="t_386" end="2006">acquired</tc:token>
+      <tc:token start="2007" ID="t_387" end="2010">the</tc:token>
+      <tc:token start="2011" ID="t_388" end="2020">certainty</tc:token>
+      <tc:token start="2021" ID="t_389" end="2025">that</tc:token>
+      <tc:token start="2026" ID="t_390" end="2029">the</tc:token>
+      <tc:token start="2030" ID="t_391" end="2035">Opera</tc:token>
+      <tc:token start="2036" ID="t_392" end="2041">ghost</tc:token>
+      <tc:token start="2042" ID="t_393" end="2045">was</tc:token>
+      <tc:token start="2046" ID="t_394" end="2050">more</tc:token>
+      <tc:token start="2051" ID="t_395" end="2055">than</tc:token>
+      <tc:token start="2056" ID="t_396" end="2057">a</tc:token>
+      <tc:token start="2058" ID="t_397" end="2062">mere</tc:token>
+      <tc:token start="2063" ID="t_398" end="2068">shade</tc:token>
+      <tc:token start="2068" ID="t_399" end="2069">.</tc:token>
+    </tc:tokens>
+    <tc:sentences>
+      <tc:sentence tokenIDs="t_0 t_1 t_2 t_3 t_4 t_5"></tc:sentence>
+      <tc:sentence tokenIDs="t_6 t_7 t_8 t_9 t_10 t_11 t_12 t_13 t_14 t_15 t_16 t_17 t_18 t_19 t_20 t_21 t_22 t_23 t_24 t_25 t_26 t_27 t_28 t_29 t_30 t_31 t_32 t_33 t_34 t_35 t_36 t_37 t_38 t_39 t_40 t_41 t_42 t_43 t_44 t_45 t_46 t_47 t_48 t_49 t_50 t_51 t_52 t_53 t_54 t_55 t_56 t_57 t_58 t_59"></tc:sentence>
+      <tc:sentence tokenIDs="t_60 t_61 t_62 t_63 t_64 t_65 t_66 t_67 t_68 t_69 t_70 t_71 t_72 t_73 t_74 t_75 t_76 t_77 t_78 t_79 t_80 t_81 t_82 t_83 t_84 t_85 t_86 t_87 t_88 t_89"></tc:sentence>
+      <tc:sentence tokenIDs="t_90 t_91 t_92 t_93 t_94 t_95 t_96 t_97 t_98 t_99 t_100 t_101 t_102 t_103 t_104 t_105 t_106 t_107 t_108 t_109 t_110 t_111 t_112 t_113 t_114 t_115 t_116 t_117 t_118 t_119 t_120 t_121 t_122 t_123 t_124 t_125 t_126 t_127 t_128 t_129 t_130 t_131 t_132 t_133 t_134 t_135 t_136 t_137 t_138 t_139 t_140 t_141 t_142 t_143 t_144 t_145 t_146 t_147 t_148 t_149 t_150 t_151 t_152 t_153"></tc:sentence>
+      <tc:sentence tokenIDs="t_154 t_155 t_156 t_157 t_158 t_159 t_160 t_161 t_162 t_163 t_164 t_165 t_166 t_167 t_168 t_169 t_170 t_171 t_172 t_173 t_174 t_175 t_176 t_177 t_178 t_179 t_180 t_181 t_182 t_183 t_184 t_185 t_186 t_187 t_188 t_189 t_190 t_191 t_192 t_193 t_194 t_195 t_196 t_197 t_198 t_199 t_200 t_201 t_202 t_203 t_204 t_205 t_206 t_207 t_208 t_209 t_210 t_211 t_212 t_213 t_214 t_215 t_216 t_217 t_218 t_219 t_220 t_221 t_222 t_223 t_224 t_225 t_226 t_227 t_228 t_229 t_230 t_231 t_232 t_233 t_234 t_235 t_236 t_237 t_238 t_239 t_240 t_241 t_242 t_243 t_244 t_245 t_246 t_247 t_248 t_249 t_250 t_251 t_252 t_253 t_254 t_255 t_256 t_257 t_258 t_259 t_260 t_261 t_262 t_263"></tc:sentence>
+      <tc:sentence tokenIDs="t_264 t_265 t_266 t_267 t_268 t_269 t_270 t_271 t_272 t_273 t_274 t_275 t_276 t_277 t_278 t_279 t_280 t_281 t_282 t_283 t_284 t_285 t_286 t_287 t_288 t_289 t_290 t_291 t_292 t_293 t_294 t_295"></tc:sentence>
+      <tc:sentence tokenIDs="t_296 t_297 t_298 t_299 t_300 t_301 t_302 t_303 t_304 t_305 t_306 t_307 t_308 t_309 t_310 t_311 t_312 t_313 t_314 t_315 t_316 t_317 t_318 t_319 t_320 t_321 t_322 t_323 t_324 t_325 t_326 t_327 t_328 t_329 t_330 t_331 t_332 t_333 t_334 t_335 t_336 t_337 t_338 t_339 t_340 t_341 t_342 t_343 t_344 t_345 t_346 t_347 t_348 t_349 t_350 t_351 t_352 t_353 t_354 t_355 t_356 t_357"></tc:sentence>
+      <tc:sentence tokenIDs="t_358 t_359 t_360 t_361 t_362 t_363 t_364 t_365 t_366 t_367 t_368 t_369 t_370 t_371 t_372 t_373 t_374 t_375 t_376 t_377 t_378 t_379 t_380 t_381 t_382 t_383 t_384 t_385 t_386 t_387 t_388 t_389 t_390 t_391 t_392 t_393 t_394 t_395 t_396 t_397 t_398 t_399"></tc:sentence>
+    </tc:sentences>
+    <tc:lemmas>
+      <tc:lemma ID="l_0" tokenIDs="t_0">the</tc:lemma>
+      <tc:lemma ID="l_1" tokenIDs="t_1">Opera</tc:lemma>
+      <tc:lemma ID="l_2" tokenIDs="t_2">ghost</tc:lemma>
+      <tc:lemma ID="l_3" tokenIDs="t_3">really</tc:lemma>
+      <tc:lemma ID="l_4" tokenIDs="t_4">exist</tc:lemma>
+      <tc:lemma ID="l_5" tokenIDs="t_5">.</tc:lemma>
+      <tc:lemma ID="l_6" tokenIDs="t_6">he</tc:lemma>
+      <tc:lemma ID="l_7" tokenIDs="t_7">be</tc:lemma>
+      <tc:lemma ID="l_8" tokenIDs="t_8">not</tc:lemma>
+      <tc:lemma ID="l_9" tokenIDs="t_9">,</tc:lemma>
+      <tc:lemma ID="l_10" tokenIDs="t_10">as</tc:lemma>
+      <tc:lemma ID="l_11" tokenIDs="t_11">be</tc:lemma>
+      <tc:lemma ID="l_12" tokenIDs="t_12">long</tc:lemma>
+      <tc:lemma ID="l_13" tokenIDs="t_13">believe</tc:lemma>
+      <tc:lemma ID="l_14" tokenIDs="t_14">,</tc:lemma>
+      <tc:lemma ID="l_15" tokenIDs="t_15">a</tc:lemma>
+      <tc:lemma ID="l_16" tokenIDs="t_16">creature</tc:lemma>
+      <tc:lemma ID="l_17" tokenIDs="t_17">of</tc:lemma>
+      <tc:lemma ID="l_18" tokenIDs="t_18">the</tc:lemma>
+      <tc:lemma ID="l_19" tokenIDs="t_19">imagination</tc:lemma>
+      <tc:lemma ID="l_20" tokenIDs="t_20">of</tc:lemma>
+      <tc:lemma ID="l_21" tokenIDs="t_21">the</tc:lemma>
+      <tc:lemma ID="l_22" tokenIDs="t_22">artist</tc:lemma>
+      <tc:lemma ID="l_23" tokenIDs="t_23">,</tc:lemma>
+      <tc:lemma ID="l_24" tokenIDs="t_24">the</tc:lemma>
+      <tc:lemma ID="l_25" tokenIDs="t_25">superstition</tc:lemma>
+      <tc:lemma ID="l_26" tokenIDs="t_26">of</tc:lemma>
+      <tc:lemma ID="l_27" tokenIDs="t_27">the</tc:lemma>
+      <tc:lemma ID="l_28" tokenIDs="t_28">manager</tc:lemma>
+      <tc:lemma ID="l_29" tokenIDs="t_29">,</tc:lemma>
+      <tc:lemma ID="l_30" tokenIDs="t_30">or</tc:lemma>
+      <tc:lemma ID="l_31" tokenIDs="t_31">a</tc:lemma>
+      <tc:lemma ID="l_32" tokenIDs="t_32">product</tc:lemma>
+      <tc:lemma ID="l_33" tokenIDs="t_33">of</tc:lemma>
+      <tc:lemma ID="l_34" tokenIDs="t_34">the</tc:lemma>
+      <tc:lemma ID="l_35" tokenIDs="t_35">absurd</tc:lemma>
+      <tc:lemma ID="l_36" tokenIDs="t_36">and</tc:lemma>
+      <tc:lemma ID="l_37" tokenIDs="t_37">impressionable</tc:lemma>
+      <tc:lemma ID="l_38" tokenIDs="t_38">brain</tc:lemma>
+      <tc:lemma ID="l_39" tokenIDs="t_39">of</tc:lemma>
+      <tc:lemma ID="l_40" tokenIDs="t_40">the</tc:lemma>
+      <tc:lemma ID="l_41" tokenIDs="t_41">young</tc:lemma>
+      <tc:lemma ID="l_42" tokenIDs="t_42">lady</tc:lemma>
+      <tc:lemma ID="l_43" tokenIDs="t_43">of</tc:lemma>
+      <tc:lemma ID="l_44" tokenIDs="t_44">the</tc:lemma>
+      <tc:lemma ID="l_45" tokenIDs="t_45">ballet</tc:lemma>
+      <tc:lemma ID="l_46" tokenIDs="t_46">,</tc:lemma>
+      <tc:lemma ID="l_47" tokenIDs="t_47">their</tc:lemma>
+      <tc:lemma ID="l_48" tokenIDs="t_48">mother</tc:lemma>
+      <tc:lemma ID="l_49" tokenIDs="t_49">,</tc:lemma>
+      <tc:lemma ID="l_50" tokenIDs="t_50">the</tc:lemma>
+      <tc:lemma ID="l_51" tokenIDs="t_51">&lt;unknown&gt;</tc:lemma>
+      <tc:lemma ID="l_52" tokenIDs="t_52">,</tc:lemma>
+      <tc:lemma ID="l_53" tokenIDs="t_53">the</tc:lemma>
+      <tc:lemma ID="l_54" tokenIDs="t_54">&lt;unknown&gt;</tc:lemma>
+      <tc:lemma ID="l_55" tokenIDs="t_55">attendant</tc:lemma>
+      <tc:lemma ID="l_56" tokenIDs="t_56">or</tc:lemma>
+      <tc:lemma ID="l_57" tokenIDs="t_57">the</tc:lemma>
+      <tc:lemma ID="l_58" tokenIDs="t_58">concierge</tc:lemma>
+      <tc:lemma ID="l_59" tokenIDs="t_59">.</tc:lemma>
+      <tc:lemma ID="l_60" tokenIDs="t_60">yes</tc:lemma>
+      <tc:lemma ID="l_61" tokenIDs="t_61">,</tc:lemma>
+      <tc:lemma ID="l_62" tokenIDs="t_62">he</tc:lemma>
+      <tc:lemma ID="l_63" tokenIDs="t_63">exist</tc:lemma>
+      <tc:lemma ID="l_64" tokenIDs="t_64">in</tc:lemma>
+      <tc:lemma ID="l_65" tokenIDs="t_65">flesh</tc:lemma>
+      <tc:lemma ID="l_66" tokenIDs="t_66">and</tc:lemma>
+      <tc:lemma ID="l_67" tokenIDs="t_67">blood</tc:lemma>
+      <tc:lemma ID="l_68" tokenIDs="t_68">,</tc:lemma>
+      <tc:lemma ID="l_69" tokenIDs="t_69">although</tc:lemma>
+      <tc:lemma ID="l_70" tokenIDs="t_70">he</tc:lemma>
+      <tc:lemma ID="l_71" tokenIDs="t_71">assume</tc:lemma>
+      <tc:lemma ID="l_72" tokenIDs="t_72">the</tc:lemma>
+      <tc:lemma ID="l_73" tokenIDs="t_73">complete</tc:lemma>
+      <tc:lemma ID="l_74" tokenIDs="t_74">appearance</tc:lemma>
+      <tc:lemma ID="l_75" tokenIDs="t_75">of</tc:lemma>
+      <tc:lemma ID="l_76" tokenIDs="t_76">a</tc:lemma>
+      <tc:lemma ID="l_77" tokenIDs="t_77">real</tc:lemma>
+      <tc:lemma ID="l_78" tokenIDs="t_78">phantom</tc:lemma>
+      <tc:lemma ID="l_79" tokenIDs="t_79">;</tc:lemma>
+      <tc:lemma ID="l_80" tokenIDs="t_80">that</tc:lemma>
+      <tc:lemma ID="l_81" tokenIDs="t_81">be</tc:lemma>
+      <tc:lemma ID="l_82" tokenIDs="t_82">to</tc:lemma>
+      <tc:lemma ID="l_83" tokenIDs="t_83">say</tc:lemma>
+      <tc:lemma ID="l_84" tokenIDs="t_84">,</tc:lemma>
+      <tc:lemma ID="l_85" tokenIDs="t_85">of</tc:lemma>
+      <tc:lemma ID="l_86" tokenIDs="t_86">a</tc:lemma>
+      <tc:lemma ID="l_87" tokenIDs="t_87">spectral</tc:lemma>
+      <tc:lemma ID="l_88" tokenIDs="t_88">shade</tc:lemma>
+      <tc:lemma ID="l_89" tokenIDs="t_89">.</tc:lemma>
+      <tc:lemma ID="l_90" tokenIDs="t_90">when</tc:lemma>
+      <tc:lemma ID="l_91" tokenIDs="t_91">I</tc:lemma>
+      <tc:lemma ID="l_92" tokenIDs="t_92">begin</tc:lemma>
+      <tc:lemma ID="l_93" tokenIDs="t_93">to</tc:lemma>
+      <tc:lemma ID="l_94" tokenIDs="t_94">ransack</tc:lemma>
+      <tc:lemma ID="l_95" tokenIDs="t_95">the</tc:lemma>
+      <tc:lemma ID="l_96" tokenIDs="t_96">archives</tc:lemma>
+      <tc:lemma ID="l_97" tokenIDs="t_97">of</tc:lemma>
+      <tc:lemma ID="l_98" tokenIDs="t_98">the</tc:lemma>
+      <tc:lemma ID="l_99" tokenIDs="t_99">National</tc:lemma>
+      <tc:lemma ID="l_100" tokenIDs="t_100">Academy</tc:lemma>
+      <tc:lemma ID="l_101" tokenIDs="t_101">of</tc:lemma>
+      <tc:lemma ID="l_102" tokenIDs="t_102">Music</tc:lemma>
+      <tc:lemma ID="l_103" tokenIDs="t_103">I</tc:lemma>
+      <tc:lemma ID="l_104" tokenIDs="t_104">be</tc:lemma>
+      <tc:lemma ID="l_105" tokenIDs="t_105">at</tc:lemma>
+      <tc:lemma ID="l_106" tokenIDs="t_106">once</tc:lemma>
+      <tc:lemma ID="l_107" tokenIDs="t_107">strike</tc:lemma>
+      <tc:lemma ID="l_108" tokenIDs="t_108">by</tc:lemma>
+      <tc:lemma ID="l_109" tokenIDs="t_109">the</tc:lemma>
+      <tc:lemma ID="l_110" tokenIDs="t_110">surprising</tc:lemma>
+      <tc:lemma ID="l_111" tokenIDs="t_111">coincidence</tc:lemma>
+      <tc:lemma ID="l_112" tokenIDs="t_112">between</tc:lemma>
+      <tc:lemma ID="l_113" tokenIDs="t_113">the</tc:lemma>
+      <tc:lemma ID="l_114" tokenIDs="t_114">phenomenon</tc:lemma>
+      <tc:lemma ID="l_115" tokenIDs="t_115">ascribe</tc:lemma>
+      <tc:lemma ID="l_116" tokenIDs="t_116">to</tc:lemma>
+      <tc:lemma ID="l_117" tokenIDs="t_117">the</tc:lemma>
+      <tc:lemma ID="l_118" tokenIDs="t_118">&lt;unknown&gt;</tc:lemma>
+      <tc:lemma ID="l_119" tokenIDs="t_119">"</tc:lemma>
+      <tc:lemma ID="l_120" tokenIDs="t_120">and</tc:lemma>
+      <tc:lemma ID="l_121" tokenIDs="t_121">the</tc:lemma>
+      <tc:lemma ID="l_122" tokenIDs="t_122">most</tc:lemma>
+      <tc:lemma ID="l_123" tokenIDs="t_123">extraordinary</tc:lemma>
+      <tc:lemma ID="l_124" tokenIDs="t_124">and</tc:lemma>
+      <tc:lemma ID="l_125" tokenIDs="t_125">fantastic</tc:lemma>
+      <tc:lemma ID="l_126" tokenIDs="t_126">tragedy</tc:lemma>
+      <tc:lemma ID="l_127" tokenIDs="t_127">that</tc:lemma>
+      <tc:lemma ID="l_128" tokenIDs="t_128">ever</tc:lemma>
+      <tc:lemma ID="l_129" tokenIDs="t_129">excite</tc:lemma>
+      <tc:lemma ID="l_130" tokenIDs="t_130">the</tc:lemma>
+      <tc:lemma ID="l_131" tokenIDs="t_131">Paris</tc:lemma>
+      <tc:lemma ID="l_132" tokenIDs="t_132">upper</tc:lemma>
+      <tc:lemma ID="l_133" tokenIDs="t_133">class</tc:lemma>
+      <tc:lemma ID="l_134" tokenIDs="t_134">;</tc:lemma>
+      <tc:lemma ID="l_135" tokenIDs="t_135">and</tc:lemma>
+      <tc:lemma ID="l_136" tokenIDs="t_136">I</tc:lemma>
+      <tc:lemma ID="l_137" tokenIDs="t_137">soon</tc:lemma>
+      <tc:lemma ID="l_138" tokenIDs="t_138">conceive</tc:lemma>
+      <tc:lemma ID="l_139" tokenIDs="t_139">the</tc:lemma>
+      <tc:lemma ID="l_140" tokenIDs="t_140">idea</tc:lemma>
+      <tc:lemma ID="l_141" tokenIDs="t_141">that</tc:lemma>
+      <tc:lemma ID="l_142" tokenIDs="t_142">this</tc:lemma>
+      <tc:lemma ID="l_143" tokenIDs="t_143">tragedy</tc:lemma>
+      <tc:lemma ID="l_144" tokenIDs="t_144">might</tc:lemma>
+      <tc:lemma ID="l_145" tokenIDs="t_145">reasonably</tc:lemma>
+      <tc:lemma ID="l_146" tokenIDs="t_146">be</tc:lemma>
+      <tc:lemma ID="l_147" tokenIDs="t_147">explain</tc:lemma>
+      <tc:lemma ID="l_148" tokenIDs="t_148">by</tc:lemma>
+      <tc:lemma ID="l_149" tokenIDs="t_149">the</tc:lemma>
+      <tc:lemma ID="l_150" tokenIDs="t_150">phenomenon</tc:lemma>
+      <tc:lemma ID="l_151" tokenIDs="t_151">in</tc:lemma>
+      <tc:lemma ID="l_152" tokenIDs="t_152">question</tc:lemma>
+      <tc:lemma ID="l_153" tokenIDs="t_153">.</tc:lemma>
+      <tc:lemma ID="l_154" tokenIDs="t_154">the</tc:lemma>
+      <tc:lemma ID="l_155" tokenIDs="t_155">event</tc:lemma>
+      <tc:lemma ID="l_156" tokenIDs="t_156">do</tc:lemma>
+      <tc:lemma ID="l_157" tokenIDs="t_157">not</tc:lemma>
+      <tc:lemma ID="l_158" tokenIDs="t_158">date</tc:lemma>
+      <tc:lemma ID="l_159" tokenIDs="t_159">more</tc:lemma>
+      <tc:lemma ID="l_160" tokenIDs="t_160">than</tc:lemma>
+      <tc:lemma ID="l_161" tokenIDs="t_161">thirty</tc:lemma>
+      <tc:lemma ID="l_162" tokenIDs="t_162">year</tc:lemma>
+      <tc:lemma ID="l_163" tokenIDs="t_163">back</tc:lemma>
+      <tc:lemma ID="l_164" tokenIDs="t_164">;</tc:lemma>
+      <tc:lemma ID="l_165" tokenIDs="t_165">and</tc:lemma>
+      <tc:lemma ID="l_166" tokenIDs="t_166">it</tc:lemma>
+      <tc:lemma ID="l_167" tokenIDs="t_167">would</tc:lemma>
+      <tc:lemma ID="l_168" tokenIDs="t_168">not</tc:lemma>
+      <tc:lemma ID="l_169" tokenIDs="t_169">be</tc:lemma>
+      <tc:lemma ID="l_170" tokenIDs="t_170">difficult</tc:lemma>
+      <tc:lemma ID="l_171" tokenIDs="t_171">to</tc:lemma>
+      <tc:lemma ID="l_172" tokenIDs="t_172">find</tc:lemma>
+      <tc:lemma ID="l_173" tokenIDs="t_173">at</tc:lemma>
+      <tc:lemma ID="l_174" tokenIDs="t_174">the</tc:lemma>
+      <tc:lemma ID="l_175" tokenIDs="t_175">present</tc:lemma>
+      <tc:lemma ID="l_176" tokenIDs="t_176">day</tc:lemma>
+      <tc:lemma ID="l_177" tokenIDs="t_177">,</tc:lemma>
+      <tc:lemma ID="l_178" tokenIDs="t_178">in</tc:lemma>
+      <tc:lemma ID="l_179" tokenIDs="t_179">the</tc:lemma>
+      <tc:lemma ID="l_180" tokenIDs="t_180">foyer</tc:lemma>
+      <tc:lemma ID="l_181" tokenIDs="t_181">of</tc:lemma>
+      <tc:lemma ID="l_182" tokenIDs="t_182">the</tc:lemma>
+      <tc:lemma ID="l_183" tokenIDs="t_183">ballet</tc:lemma>
+      <tc:lemma ID="l_184" tokenIDs="t_184">,</tc:lemma>
+      <tc:lemma ID="l_185" tokenIDs="t_185">old</tc:lemma>
+      <tc:lemma ID="l_186" tokenIDs="t_186">man</tc:lemma>
+      <tc:lemma ID="l_187" tokenIDs="t_187">of</tc:lemma>
+      <tc:lemma ID="l_188" tokenIDs="t_188">the</tc:lemma>
+      <tc:lemma ID="l_189" tokenIDs="t_189">high</tc:lemma>
+      <tc:lemma ID="l_190" tokenIDs="t_190">respectability</tc:lemma>
+      <tc:lemma ID="l_191" tokenIDs="t_191">,</tc:lemma>
+      <tc:lemma ID="l_192" tokenIDs="t_192">man</tc:lemma>
+      <tc:lemma ID="l_193" tokenIDs="t_193">upon</tc:lemma>
+      <tc:lemma ID="l_194" tokenIDs="t_194">whose</tc:lemma>
+      <tc:lemma ID="l_195" tokenIDs="t_195">word</tc:lemma>
+      <tc:lemma ID="l_196" tokenIDs="t_196">one</tc:lemma>
+      <tc:lemma ID="l_197" tokenIDs="t_197">could</tc:lemma>
+      <tc:lemma ID="l_198" tokenIDs="t_198">absolutely</tc:lemma>
+      <tc:lemma ID="l_199" tokenIDs="t_199">rely</tc:lemma>
+      <tc:lemma ID="l_200" tokenIDs="t_200">,</tc:lemma>
+      <tc:lemma ID="l_201" tokenIDs="t_201">who</tc:lemma>
+      <tc:lemma ID="l_202" tokenIDs="t_202">would</tc:lemma>
+      <tc:lemma ID="l_203" tokenIDs="t_203">remember</tc:lemma>
+      <tc:lemma ID="l_204" tokenIDs="t_204">as</tc:lemma>
+      <tc:lemma ID="l_205" tokenIDs="t_205">though</tc:lemma>
+      <tc:lemma ID="l_206" tokenIDs="t_206">they</tc:lemma>
+      <tc:lemma ID="l_207" tokenIDs="t_207">happen</tc:lemma>
+      <tc:lemma ID="l_208" tokenIDs="t_208">yesterday</tc:lemma>
+      <tc:lemma ID="l_209" tokenIDs="t_209">the</tc:lemma>
+      <tc:lemma ID="l_210" tokenIDs="t_210">mysterious</tc:lemma>
+      <tc:lemma ID="l_211" tokenIDs="t_211">and</tc:lemma>
+      <tc:lemma ID="l_212" tokenIDs="t_212">dramatic</tc:lemma>
+      <tc:lemma ID="l_213" tokenIDs="t_213">condition</tc:lemma>
+      <tc:lemma ID="l_214" tokenIDs="t_214">that</tc:lemma>
+      <tc:lemma ID="l_215" tokenIDs="t_215">attend</tc:lemma>
+      <tc:lemma ID="l_216" tokenIDs="t_216">the</tc:lemma>
+      <tc:lemma ID="l_217" tokenIDs="t_217">kidnapping</tc:lemma>
+      <tc:lemma ID="l_218" tokenIDs="t_218">of</tc:lemma>
+      <tc:lemma ID="l_219" tokenIDs="t_219">Christine</tc:lemma>
+      <tc:lemma ID="l_220" tokenIDs="t_220">&lt;unknown&gt;</tc:lemma>
+      <tc:lemma ID="l_221" tokenIDs="t_221">,</tc:lemma>
+      <tc:lemma ID="l_222" tokenIDs="t_222">the</tc:lemma>
+      <tc:lemma ID="l_223" tokenIDs="t_223">disappearance</tc:lemma>
+      <tc:lemma ID="l_224" tokenIDs="t_224">of</tc:lemma>
+      <tc:lemma ID="l_225" tokenIDs="t_225">the</tc:lemma>
+      <tc:lemma ID="l_226" tokenIDs="t_226">&lt;unknown&gt;</tc:lemma>
+      <tc:lemma ID="l_227" tokenIDs="t_227">de</tc:lemma>
+      <tc:lemma ID="l_228" tokenIDs="t_228">&lt;unknown&gt;</tc:lemma>
+      <tc:lemma ID="l_229" tokenIDs="t_229">and</tc:lemma>
+      <tc:lemma ID="l_230" tokenIDs="t_230">the</tc:lemma>
+      <tc:lemma ID="l_231" tokenIDs="t_231">death</tc:lemma>
+      <tc:lemma ID="l_232" tokenIDs="t_232">of</tc:lemma>
+      <tc:lemma ID="l_233" tokenIDs="t_233">his</tc:lemma>
+      <tc:lemma ID="l_234" tokenIDs="t_234">elder</tc:lemma>
+      <tc:lemma ID="l_235" tokenIDs="t_235">brother</tc:lemma>
+      <tc:lemma ID="l_236" tokenIDs="t_236">,</tc:lemma>
+      <tc:lemma ID="l_237" tokenIDs="t_237">Count</tc:lemma>
+      <tc:lemma ID="l_238" tokenIDs="t_238">Philippe</tc:lemma>
+      <tc:lemma ID="l_239" tokenIDs="t_239">,</tc:lemma>
+      <tc:lemma ID="l_240" tokenIDs="t_240">whose</tc:lemma>
+      <tc:lemma ID="l_241" tokenIDs="t_241">body</tc:lemma>
+      <tc:lemma ID="l_242" tokenIDs="t_242">be</tc:lemma>
+      <tc:lemma ID="l_243" tokenIDs="t_243">find</tc:lemma>
+      <tc:lemma ID="l_244" tokenIDs="t_244">on</tc:lemma>
+      <tc:lemma ID="l_245" tokenIDs="t_245">the</tc:lemma>
+      <tc:lemma ID="l_246" tokenIDs="t_246">bank</tc:lemma>
+      <tc:lemma ID="l_247" tokenIDs="t_247">of</tc:lemma>
+      <tc:lemma ID="l_248" tokenIDs="t_248">the</tc:lemma>
+      <tc:lemma ID="l_249" tokenIDs="t_249">lake</tc:lemma>
+      <tc:lemma ID="l_250" tokenIDs="t_250">that</tc:lemma>
+      <tc:lemma ID="l_251" tokenIDs="t_251">exist</tc:lemma>
+      <tc:lemma ID="l_252" tokenIDs="t_252">in</tc:lemma>
+      <tc:lemma ID="l_253" tokenIDs="t_253">the</tc:lemma>
+      <tc:lemma ID="l_254" tokenIDs="t_254">low</tc:lemma>
+      <tc:lemma ID="l_255" tokenIDs="t_255">cellar</tc:lemma>
+      <tc:lemma ID="l_256" tokenIDs="t_256">of</tc:lemma>
+      <tc:lemma ID="l_257" tokenIDs="t_257">the</tc:lemma>
+      <tc:lemma ID="l_258" tokenIDs="t_258">Opera</tc:lemma>
+      <tc:lemma ID="l_259" tokenIDs="t_259">on</tc:lemma>
+      <tc:lemma ID="l_260" tokenIDs="t_260">the</tc:lemma>
+      <tc:lemma ID="l_261" tokenIDs="t_261">&lt;unknown&gt;</tc:lemma>
+      <tc:lemma ID="l_262" tokenIDs="t_262">side</tc:lemma>
+      <tc:lemma ID="l_263" tokenIDs="t_263">.</tc:lemma>
+      <tc:lemma ID="l_264" tokenIDs="t_264">but</tc:lemma>
+      <tc:lemma ID="l_265" tokenIDs="t_265">none</tc:lemma>
+      <tc:lemma ID="l_266" tokenIDs="t_266">of</tc:lemma>
+      <tc:lemma ID="l_267" tokenIDs="t_267">those</tc:lemma>
+      <tc:lemma ID="l_268" tokenIDs="t_268">witness</tc:lemma>
+      <tc:lemma ID="l_269" tokenIDs="t_269">have</tc:lemma>
+      <tc:lemma ID="l_270" tokenIDs="t_270">until</tc:lemma>
+      <tc:lemma ID="l_271" tokenIDs="t_271">that</tc:lemma>
+      <tc:lemma ID="l_272" tokenIDs="t_272">day</tc:lemma>
+      <tc:lemma ID="l_273" tokenIDs="t_273">think</tc:lemma>
+      <tc:lemma ID="l_274" tokenIDs="t_274">that</tc:lemma>
+      <tc:lemma ID="l_275" tokenIDs="t_275">there</tc:lemma>
+      <tc:lemma ID="l_276" tokenIDs="t_276">be</tc:lemma>
+      <tc:lemma ID="l_277" tokenIDs="t_277">any</tc:lemma>
+      <tc:lemma ID="l_278" tokenIDs="t_278">reason</tc:lemma>
+      <tc:lemma ID="l_279" tokenIDs="t_279">for</tc:lemma>
+      <tc:lemma ID="l_280" tokenIDs="t_280">connect</tc:lemma>
+      <tc:lemma ID="l_281" tokenIDs="t_281">the</tc:lemma>
+      <tc:lemma ID="l_282" tokenIDs="t_282">more</tc:lemma>
+      <tc:lemma ID="l_283" tokenIDs="t_283">or</tc:lemma>
+      <tc:lemma ID="l_284" tokenIDs="t_284">less</tc:lemma>
+      <tc:lemma ID="l_285" tokenIDs="t_285">legendary</tc:lemma>
+      <tc:lemma ID="l_286" tokenIDs="t_286">figure</tc:lemma>
+      <tc:lemma ID="l_287" tokenIDs="t_287">of</tc:lemma>
+      <tc:lemma ID="l_288" tokenIDs="t_288">the</tc:lemma>
+      <tc:lemma ID="l_289" tokenIDs="t_289">Opera</tc:lemma>
+      <tc:lemma ID="l_290" tokenIDs="t_290">ghost</tc:lemma>
+      <tc:lemma ID="l_291" tokenIDs="t_291">with</tc:lemma>
+      <tc:lemma ID="l_292" tokenIDs="t_292">that</tc:lemma>
+      <tc:lemma ID="l_293" tokenIDs="t_293">terrible</tc:lemma>
+      <tc:lemma ID="l_294" tokenIDs="t_294">story</tc:lemma>
+      <tc:lemma ID="l_295" tokenIDs="t_295">.</tc:lemma>
+      <tc:lemma ID="l_296" tokenIDs="t_296">the</tc:lemma>
+      <tc:lemma ID="l_297" tokenIDs="t_297">truth</tc:lemma>
+      <tc:lemma ID="l_298" tokenIDs="t_298">be</tc:lemma>
+      <tc:lemma ID="l_299" tokenIDs="t_299">slow</tc:lemma>
+      <tc:lemma ID="l_300" tokenIDs="t_300">to</tc:lemma>
+      <tc:lemma ID="l_301" tokenIDs="t_301">enter</tc:lemma>
+      <tc:lemma ID="l_302" tokenIDs="t_302">my</tc:lemma>
+      <tc:lemma ID="l_303" tokenIDs="t_303">mind</tc:lemma>
+      <tc:lemma ID="l_304" tokenIDs="t_304">,</tc:lemma>
+      <tc:lemma ID="l_305" tokenIDs="t_305">puzzle</tc:lemma>
+      <tc:lemma ID="l_306" tokenIDs="t_306">by</tc:lemma>
+      <tc:lemma ID="l_307" tokenIDs="t_307">an</tc:lemma>
+      <tc:lemma ID="l_308" tokenIDs="t_308">inquiry</tc:lemma>
+      <tc:lemma ID="l_309" tokenIDs="t_309">that</tc:lemma>
+      <tc:lemma ID="l_310" tokenIDs="t_310">at</tc:lemma>
+      <tc:lemma ID="l_311" tokenIDs="t_311">every</tc:lemma>
+      <tc:lemma ID="l_312" tokenIDs="t_312">moment</tc:lemma>
+      <tc:lemma ID="l_313" tokenIDs="t_313">be</tc:lemma>
+      <tc:lemma ID="l_314" tokenIDs="t_314">complicate</tc:lemma>
+      <tc:lemma ID="l_315" tokenIDs="t_315">by</tc:lemma>
+      <tc:lemma ID="l_316" tokenIDs="t_316">event</tc:lemma>
+      <tc:lemma ID="l_317" tokenIDs="t_317">which</tc:lemma>
+      <tc:lemma ID="l_318" tokenIDs="t_318">,</tc:lemma>
+      <tc:lemma ID="l_319" tokenIDs="t_319">at</tc:lemma>
+      <tc:lemma ID="l_320" tokenIDs="t_320">first</tc:lemma>
+      <tc:lemma ID="l_321" tokenIDs="t_321">sight</tc:lemma>
+      <tc:lemma ID="l_322" tokenIDs="t_322">,</tc:lemma>
+      <tc:lemma ID="l_323" tokenIDs="t_323">might</tc:lemma>
+      <tc:lemma ID="l_324" tokenIDs="t_324">be</tc:lemma>
+      <tc:lemma ID="l_325" tokenIDs="t_325">look</tc:lemma>
+      <tc:lemma ID="l_326" tokenIDs="t_326">upon</tc:lemma>
+      <tc:lemma ID="l_327" tokenIDs="t_327">as</tc:lemma>
+      <tc:lemma ID="l_328" tokenIDs="t_328">superhuman</tc:lemma>
+      <tc:lemma ID="l_329" tokenIDs="t_329">;</tc:lemma>
+      <tc:lemma ID="l_330" tokenIDs="t_330">and</tc:lemma>
+      <tc:lemma ID="l_331" tokenIDs="t_331">more</tc:lemma>
+      <tc:lemma ID="l_332" tokenIDs="t_332">than</tc:lemma>
+      <tc:lemma ID="l_333" tokenIDs="t_333">once</tc:lemma>
+      <tc:lemma ID="l_334" tokenIDs="t_334">I</tc:lemma>
+      <tc:lemma ID="l_335" tokenIDs="t_335">be</tc:lemma>
+      <tc:lemma ID="l_336" tokenIDs="t_336">within</tc:lemma>
+      <tc:lemma ID="l_337" tokenIDs="t_337">an</tc:lemma>
+      <tc:lemma ID="l_338" tokenIDs="t_338">ace</tc:lemma>
+      <tc:lemma ID="l_339" tokenIDs="t_339">of</tc:lemma>
+      <tc:lemma ID="l_340" tokenIDs="t_340">abandon</tc:lemma>
+      <tc:lemma ID="l_341" tokenIDs="t_341">a</tc:lemma>
+      <tc:lemma ID="l_342" tokenIDs="t_342">task</tc:lemma>
+      <tc:lemma ID="l_343" tokenIDs="t_343">in</tc:lemma>
+      <tc:lemma ID="l_344" tokenIDs="t_344">which</tc:lemma>
+      <tc:lemma ID="l_345" tokenIDs="t_345">I</tc:lemma>
+      <tc:lemma ID="l_346" tokenIDs="t_346">be</tc:lemma>
+      <tc:lemma ID="l_347" tokenIDs="t_347">exhaust</tc:lemma>
+      <tc:lemma ID="l_348" tokenIDs="t_348">myself</tc:lemma>
+      <tc:lemma ID="l_349" tokenIDs="t_349">in</tc:lemma>
+      <tc:lemma ID="l_350" tokenIDs="t_350">the</tc:lemma>
+      <tc:lemma ID="l_351" tokenIDs="t_351">hopeless</tc:lemma>
+      <tc:lemma ID="l_352" tokenIDs="t_352">pursuit</tc:lemma>
+      <tc:lemma ID="l_353" tokenIDs="t_353">of</tc:lemma>
+      <tc:lemma ID="l_354" tokenIDs="t_354">a</tc:lemma>
+      <tc:lemma ID="l_355" tokenIDs="t_355">vain</tc:lemma>
+      <tc:lemma ID="l_356" tokenIDs="t_356">image</tc:lemma>
+      <tc:lemma ID="l_357" tokenIDs="t_357">.</tc:lemma>
+      <tc:lemma ID="l_358" tokenIDs="t_358">at</tc:lemma>
+      <tc:lemma ID="l_359" tokenIDs="t_359">last</tc:lemma>
+      <tc:lemma ID="l_360" tokenIDs="t_360">,</tc:lemma>
+      <tc:lemma ID="l_361" tokenIDs="t_361">I</tc:lemma>
+      <tc:lemma ID="l_362" tokenIDs="t_362">receive</tc:lemma>
+      <tc:lemma ID="l_363" tokenIDs="t_363">the</tc:lemma>
+      <tc:lemma ID="l_364" tokenIDs="t_364">proof</tc:lemma>
+      <tc:lemma ID="l_365" tokenIDs="t_365">that</tc:lemma>
+      <tc:lemma ID="l_366" tokenIDs="t_366">my</tc:lemma>
+      <tc:lemma ID="l_367" tokenIDs="t_367">presentiment</tc:lemma>
+      <tc:lemma ID="l_368" tokenIDs="t_368">have</tc:lemma>
+      <tc:lemma ID="l_369" tokenIDs="t_369">not</tc:lemma>
+      <tc:lemma ID="l_370" tokenIDs="t_370">deceive</tc:lemma>
+      <tc:lemma ID="l_371" tokenIDs="t_371">me</tc:lemma>
+      <tc:lemma ID="l_372" tokenIDs="t_372">,</tc:lemma>
+      <tc:lemma ID="l_373" tokenIDs="t_373">and</tc:lemma>
+      <tc:lemma ID="l_374" tokenIDs="t_374">I</tc:lemma>
+      <tc:lemma ID="l_375" tokenIDs="t_375">be</tc:lemma>
+      <tc:lemma ID="l_376" tokenIDs="t_376">reward</tc:lemma>
+      <tc:lemma ID="l_377" tokenIDs="t_377">for</tc:lemma>
+      <tc:lemma ID="l_378" tokenIDs="t_378">all</tc:lemma>
+      <tc:lemma ID="l_379" tokenIDs="t_379">my</tc:lemma>
+      <tc:lemma ID="l_380" tokenIDs="t_380">effort</tc:lemma>
+      <tc:lemma ID="l_381" tokenIDs="t_381">on</tc:lemma>
+      <tc:lemma ID="l_382" tokenIDs="t_382">the</tc:lemma>
+      <tc:lemma ID="l_383" tokenIDs="t_383">day</tc:lemma>
+      <tc:lemma ID="l_384" tokenIDs="t_384">when</tc:lemma>
+      <tc:lemma ID="l_385" tokenIDs="t_385">I</tc:lemma>
+      <tc:lemma ID="l_386" tokenIDs="t_386">acquire</tc:lemma>
+      <tc:lemma ID="l_387" tokenIDs="t_387">the</tc:lemma>
+      <tc:lemma ID="l_388" tokenIDs="t_388">certainty</tc:lemma>
+      <tc:lemma ID="l_389" tokenIDs="t_389">that</tc:lemma>
+      <tc:lemma ID="l_390" tokenIDs="t_390">the</tc:lemma>
+      <tc:lemma ID="l_391" tokenIDs="t_391">Opera</tc:lemma>
+      <tc:lemma ID="l_392" tokenIDs="t_392">ghost</tc:lemma>
+      <tc:lemma ID="l_393" tokenIDs="t_393">be</tc:lemma>
+      <tc:lemma ID="l_394" tokenIDs="t_394">more</tc:lemma>
+      <tc:lemma ID="l_395" tokenIDs="t_395">than</tc:lemma>
+      <tc:lemma ID="l_396" tokenIDs="t_396">a</tc:lemma>
+      <tc:lemma ID="l_397" tokenIDs="t_397">mere</tc:lemma>
+      <tc:lemma ID="l_398" tokenIDs="t_398">shade</tc:lemma>
+      <tc:lemma ID="l_399" tokenIDs="t_399">.</tc:lemma>
+    </tc:lemmas>
+    <tc:POStags tagset="PennTB">
+      <tc:tag tokenIDs="t_0">DT</tc:tag>
+      <tc:tag tokenIDs="t_1">NP</tc:tag>
+      <tc:tag tokenIDs="t_2">NN</tc:tag>
+      <tc:tag tokenIDs="t_3">RB</tc:tag>
+      <tc:tag tokenIDs="t_4">VVD</tc:tag>
+      <tc:tag tokenIDs="t_5">SENT</tc:tag>
+      <tc:tag tokenIDs="t_6">PP</tc:tag>
+      <tc:tag tokenIDs="t_7">VBD</tc:tag>
+      <tc:tag tokenIDs="t_8">RB</tc:tag>
+      <tc:tag tokenIDs="t_9">,</tc:tag>
+      <tc:tag tokenIDs="t_10">RB</tc:tag>
+      <tc:tag tokenIDs="t_11">VBD</tc:tag>
+      <tc:tag tokenIDs="t_12">RB</tc:tag>
+      <tc:tag tokenIDs="t_13">VVN</tc:tag>
+      <tc:tag tokenIDs="t_14">,</tc:tag>
+      <tc:tag tokenIDs="t_15">DT</tc:tag>
+      <tc:tag tokenIDs="t_16">NN</tc:tag>
+      <tc:tag tokenIDs="t_17">IN</tc:tag>
+      <tc:tag tokenIDs="t_18">DT</tc:tag>
+      <tc:tag tokenIDs="t_19">NN</tc:tag>
+      <tc:tag tokenIDs="t_20">IN</tc:tag>
+      <tc:tag tokenIDs="t_21">DT</tc:tag>
+      <tc:tag tokenIDs="t_22">NNS</tc:tag>
+      <tc:tag tokenIDs="t_23">,</tc:tag>
+      <tc:tag tokenIDs="t_24">DT</tc:tag>
+      <tc:tag tokenIDs="t_25">NN</tc:tag>
+      <tc:tag tokenIDs="t_26">IN</tc:tag>
+      <tc:tag tokenIDs="t_27">DT</tc:tag>
+      <tc:tag tokenIDs="t_28">NNS</tc:tag>
+      <tc:tag tokenIDs="t_29">,</tc:tag>
+      <tc:tag tokenIDs="t_30">CC</tc:tag>
+      <tc:tag tokenIDs="t_31">DT</tc:tag>
+      <tc:tag tokenIDs="t_32">NN</tc:tag>
+      <tc:tag tokenIDs="t_33">IN</tc:tag>
+      <tc:tag tokenIDs="t_34">DT</tc:tag>
+      <tc:tag tokenIDs="t_35">JJ</tc:tag>
+      <tc:tag tokenIDs="t_36">CC</tc:tag>
+      <tc:tag tokenIDs="t_37">JJ</tc:tag>
+      <tc:tag tokenIDs="t_38">NNS</tc:tag>
+      <tc:tag tokenIDs="t_39">IN</tc:tag>
+      <tc:tag tokenIDs="t_40">DT</tc:tag>
+      <tc:tag tokenIDs="t_41">JJ</tc:tag>
+      <tc:tag tokenIDs="t_42">NNS</tc:tag>
+      <tc:tag tokenIDs="t_43">IN</tc:tag>
+      <tc:tag tokenIDs="t_44">DT</tc:tag>
+      <tc:tag tokenIDs="t_45">NN</tc:tag>
+      <tc:tag tokenIDs="t_46">,</tc:tag>
+      <tc:tag tokenIDs="t_47">PP$</tc:tag>
+      <tc:tag tokenIDs="t_48">NNS</tc:tag>
+      <tc:tag tokenIDs="t_49">,</tc:tag>
+      <tc:tag tokenIDs="t_50">DT</tc:tag>
+      <tc:tag tokenIDs="t_51">NNS</tc:tag>
+      <tc:tag tokenIDs="t_52">,</tc:tag>
+      <tc:tag tokenIDs="t_53">DT</tc:tag>
+      <tc:tag tokenIDs="t_54">NN</tc:tag>
+      <tc:tag tokenIDs="t_55">NNS</tc:tag>
+      <tc:tag tokenIDs="t_56">CC</tc:tag>
+      <tc:tag tokenIDs="t_57">DT</tc:tag>
+      <tc:tag tokenIDs="t_58">NN</tc:tag>
+      <tc:tag tokenIDs="t_59">SENT</tc:tag>
+      <tc:tag tokenIDs="t_60">UH</tc:tag>
+      <tc:tag tokenIDs="t_61">,</tc:tag>
+      <tc:tag tokenIDs="t_62">PP</tc:tag>
+      <tc:tag tokenIDs="t_63">VVD</tc:tag>
+      <tc:tag tokenIDs="t_64">IN</tc:tag>
+      <tc:tag tokenIDs="t_65">NN</tc:tag>
+      <tc:tag tokenIDs="t_66">CC</tc:tag>
+      <tc:tag tokenIDs="t_67">NN</tc:tag>
+      <tc:tag tokenIDs="t_68">,</tc:tag>
+      <tc:tag tokenIDs="t_69">IN</tc:tag>
+      <tc:tag tokenIDs="t_70">PP</tc:tag>
+      <tc:tag tokenIDs="t_71">VVD</tc:tag>
+      <tc:tag tokenIDs="t_72">DT</tc:tag>
+      <tc:tag tokenIDs="t_73">JJ</tc:tag>
+      <tc:tag tokenIDs="t_74">NN</tc:tag>
+      <tc:tag tokenIDs="t_75">IN</tc:tag>
+      <tc:tag tokenIDs="t_76">DT</tc:tag>
+      <tc:tag tokenIDs="t_77">JJ</tc:tag>
+      <tc:tag tokenIDs="t_78">JJ</tc:tag>
+      <tc:tag tokenIDs="t_79">:</tc:tag>
+      <tc:tag tokenIDs="t_80">WDT</tc:tag>
+      <tc:tag tokenIDs="t_81">VBZ</tc:tag>
+      <tc:tag tokenIDs="t_82">TO</tc:tag>
+      <tc:tag tokenIDs="t_83">VV</tc:tag>
+      <tc:tag tokenIDs="t_84">,</tc:tag>
+      <tc:tag tokenIDs="t_85">IN</tc:tag>
+      <tc:tag tokenIDs="t_86">DT</tc:tag>
+      <tc:tag tokenIDs="t_87">JJ</tc:tag>
+      <tc:tag tokenIDs="t_88">NN</tc:tag>
+      <tc:tag tokenIDs="t_89">SENT</tc:tag>
+      <tc:tag tokenIDs="t_90">WRB</tc:tag>
+      <tc:tag tokenIDs="t_91">PP</tc:tag>
+      <tc:tag tokenIDs="t_92">VVD</tc:tag>
+      <tc:tag tokenIDs="t_93">TO</tc:tag>
+      <tc:tag tokenIDs="t_94">VV</tc:tag>
+      <tc:tag tokenIDs="t_95">DT</tc:tag>
+      <tc:tag tokenIDs="t_96">NN</tc:tag>
+      <tc:tag tokenIDs="t_97">IN</tc:tag>
+      <tc:tag tokenIDs="t_98">DT</tc:tag>
+      <tc:tag tokenIDs="t_99">NP</tc:tag>
+      <tc:tag tokenIDs="t_100">NP</tc:tag>
+      <tc:tag tokenIDs="t_101">IN</tc:tag>
+      <tc:tag tokenIDs="t_102">NP</tc:tag>
+      <tc:tag tokenIDs="t_103">PP</tc:tag>
+      <tc:tag tokenIDs="t_104">VBD</tc:tag>
+      <tc:tag tokenIDs="t_105">IN</tc:tag>
+      <tc:tag tokenIDs="t_106">RB</tc:tag>
+      <tc:tag tokenIDs="t_107">VVN</tc:tag>
+      <tc:tag tokenIDs="t_108">IN</tc:tag>
+      <tc:tag tokenIDs="t_109">DT</tc:tag>
+      <tc:tag tokenIDs="t_110">JJ</tc:tag>
+      <tc:tag tokenIDs="t_111">NNS</tc:tag>
+      <tc:tag tokenIDs="t_112">IN</tc:tag>
+      <tc:tag tokenIDs="t_113">DT</tc:tag>
+      <tc:tag tokenIDs="t_114">NNS</tc:tag>
+      <tc:tag tokenIDs="t_115">VVN</tc:tag>
+      <tc:tag tokenIDs="t_116">TO</tc:tag>
+      <tc:tag tokenIDs="t_117">DT</tc:tag>
+      <tc:tag tokenIDs="t_118">NN</tc:tag>
+      <tc:tag tokenIDs="t_119">''</tc:tag>
+      <tc:tag tokenIDs="t_120">CC</tc:tag>
+      <tc:tag tokenIDs="t_121">DT</tc:tag>
+      <tc:tag tokenIDs="t_122">RBS</tc:tag>
+      <tc:tag tokenIDs="t_123">JJ</tc:tag>
+      <tc:tag tokenIDs="t_124">CC</tc:tag>
+      <tc:tag tokenIDs="t_125">JJ</tc:tag>
+      <tc:tag tokenIDs="t_126">NN</tc:tag>
+      <tc:tag tokenIDs="t_127">WDT</tc:tag>
+      <tc:tag tokenIDs="t_128">RB</tc:tag>
+      <tc:tag tokenIDs="t_129">VVN</tc:tag>
+      <tc:tag tokenIDs="t_130">DT</tc:tag>
+      <tc:tag tokenIDs="t_131">NP</tc:tag>
+      <tc:tag tokenIDs="t_132">JJ</tc:tag>
+      <tc:tag tokenIDs="t_133">NNS</tc:tag>
+      <tc:tag tokenIDs="t_134">:</tc:tag>
+      <tc:tag tokenIDs="t_135">CC</tc:tag>
+      <tc:tag tokenIDs="t_136">PP</tc:tag>
+      <tc:tag tokenIDs="t_137">RB</tc:tag>
+      <tc:tag tokenIDs="t_138">VVD</tc:tag>
+      <tc:tag tokenIDs="t_139">DT</tc:tag>
+      <tc:tag tokenIDs="t_140">NN</tc:tag>
+      <tc:tag tokenIDs="t_141">IN/that</tc:tag>
+      <tc:tag tokenIDs="t_142">DT</tc:tag>
+      <tc:tag tokenIDs="t_143">NN</tc:tag>
+      <tc:tag tokenIDs="t_144">MD</tc:tag>
+      <tc:tag tokenIDs="t_145">RB</tc:tag>
+      <tc:tag tokenIDs="t_146">VB</tc:tag>
+      <tc:tag tokenIDs="t_147">VVN</tc:tag>
+      <tc:tag tokenIDs="t_148">IN</tc:tag>
+      <tc:tag tokenIDs="t_149">DT</tc:tag>
+      <tc:tag tokenIDs="t_150">NNS</tc:tag>
+      <tc:tag tokenIDs="t_151">IN</tc:tag>
+      <tc:tag tokenIDs="t_152">NN</tc:tag>
+      <tc:tag tokenIDs="t_153">SENT</tc:tag>
+      <tc:tag tokenIDs="t_154">DT</tc:tag>
+      <tc:tag tokenIDs="t_155">NNS</tc:tag>
+      <tc:tag tokenIDs="t_156">VVP</tc:tag>
+      <tc:tag tokenIDs="t_157">RB</tc:tag>
+      <tc:tag tokenIDs="t_158">VV</tc:tag>
+      <tc:tag tokenIDs="t_159">JJR</tc:tag>
+      <tc:tag tokenIDs="t_160">IN</tc:tag>
+      <tc:tag tokenIDs="t_161">CD</tc:tag>
+      <tc:tag tokenIDs="t_162">NNS</tc:tag>
+      <tc:tag tokenIDs="t_163">RB</tc:tag>
+      <tc:tag tokenIDs="t_164">:</tc:tag>
+      <tc:tag tokenIDs="t_165">CC</tc:tag>
+      <tc:tag tokenIDs="t_166">PP</tc:tag>
+      <tc:tag tokenIDs="t_167">MD</tc:tag>
+      <tc:tag tokenIDs="t_168">RB</tc:tag>
+      <tc:tag tokenIDs="t_169">VB</tc:tag>
+      <tc:tag tokenIDs="t_170">JJ</tc:tag>
+      <tc:tag tokenIDs="t_171">TO</tc:tag>
+      <tc:tag tokenIDs="t_172">VV</tc:tag>
+      <tc:tag tokenIDs="t_173">IN</tc:tag>
+      <tc:tag tokenIDs="t_174">DT</tc:tag>
+      <tc:tag tokenIDs="t_175">JJ</tc:tag>
+      <tc:tag tokenIDs="t_176">NN</tc:tag>
+      <tc:tag tokenIDs="t_177">,</tc:tag>
+      <tc:tag tokenIDs="t_178">IN</tc:tag>
+      <tc:tag tokenIDs="t_179">DT</tc:tag>
+      <tc:tag tokenIDs="t_180">NN</tc:tag>
+      <tc:tag tokenIDs="t_181">IN</tc:tag>
+      <tc:tag tokenIDs="t_182">DT</tc:tag>
+      <tc:tag tokenIDs="t_183">NN</tc:tag>
+      <tc:tag tokenIDs="t_184">,</tc:tag>
+      <tc:tag tokenIDs="t_185">JJ</tc:tag>
+      <tc:tag tokenIDs="t_186">NNS</tc:tag>
+      <tc:tag tokenIDs="t_187">IN</tc:tag>
+      <tc:tag tokenIDs="t_188">DT</tc:tag>
+      <tc:tag tokenIDs="t_189">JJS</tc:tag>
+      <tc:tag tokenIDs="t_190">NN</tc:tag>
+      <tc:tag tokenIDs="t_191">,</tc:tag>
+      <tc:tag tokenIDs="t_192">NNS</tc:tag>
+      <tc:tag tokenIDs="t_193">IN</tc:tag>
+      <tc:tag tokenIDs="t_194">WP$</tc:tag>
+      <tc:tag tokenIDs="t_195">NN</tc:tag>
+      <tc:tag tokenIDs="t_196">PP</tc:tag>
+      <tc:tag tokenIDs="t_197">MD</tc:tag>
+      <tc:tag tokenIDs="t_198">RB</tc:tag>
+      <tc:tag tokenIDs="t_199">VV</tc:tag>
+      <tc:tag tokenIDs="t_200">,</tc:tag>
+      <tc:tag tokenIDs="t_201">WP</tc:tag>
+      <tc:tag tokenIDs="t_202">MD</tc:tag>
+      <tc:tag tokenIDs="t_203">VV</tc:tag>
+      <tc:tag tokenIDs="t_204">RB</tc:tag>
+      <tc:tag tokenIDs="t_205">IN</tc:tag>
+      <tc:tag tokenIDs="t_206">PP</tc:tag>
+      <tc:tag tokenIDs="t_207">VVD</tc:tag>
+      <tc:tag tokenIDs="t_208">NN</tc:tag>
+      <tc:tag tokenIDs="t_209">DT</tc:tag>
+      <tc:tag tokenIDs="t_210">JJ</tc:tag>
+      <tc:tag tokenIDs="t_211">CC</tc:tag>
+      <tc:tag tokenIDs="t_212">JJ</tc:tag>
+      <tc:tag tokenIDs="t_213">NNS</tc:tag>
+      <tc:tag tokenIDs="t_214">WDT</tc:tag>
+      <tc:tag tokenIDs="t_215">VVD</tc:tag>
+      <tc:tag tokenIDs="t_216">DT</tc:tag>
+      <tc:tag tokenIDs="t_217">NN</tc:tag>
+      <tc:tag tokenIDs="t_218">IN</tc:tag>
+      <tc:tag tokenIDs="t_219">NP</tc:tag>
+      <tc:tag tokenIDs="t_220">NP</tc:tag>
+      <tc:tag tokenIDs="t_221">,</tc:tag>
+      <tc:tag tokenIDs="t_222">DT</tc:tag>
+      <tc:tag tokenIDs="t_223">NN</tc:tag>
+      <tc:tag tokenIDs="t_224">IN</tc:tag>
+      <tc:tag tokenIDs="t_225">DT</tc:tag>
+      <tc:tag tokenIDs="t_226">NP</tc:tag>
+      <tc:tag tokenIDs="t_227">NP</tc:tag>
+      <tc:tag tokenIDs="t_228">NP</tc:tag>
+      <tc:tag tokenIDs="t_229">CC</tc:tag>
+      <tc:tag tokenIDs="t_230">DT</tc:tag>
+      <tc:tag tokenIDs="t_231">NN</tc:tag>
+      <tc:tag tokenIDs="t_232">IN</tc:tag>
+      <tc:tag tokenIDs="t_233">PP$</tc:tag>
+      <tc:tag tokenIDs="t_234">JJR</tc:tag>
+      <tc:tag tokenIDs="t_235">NN</tc:tag>
+      <tc:tag tokenIDs="t_236">,</tc:tag>
+      <tc:tag tokenIDs="t_237">NP</tc:tag>
+      <tc:tag tokenIDs="t_238">NP</tc:tag>
+      <tc:tag tokenIDs="t_239">,</tc:tag>
+      <tc:tag tokenIDs="t_240">WP$</tc:tag>
+      <tc:tag tokenIDs="t_241">NN</tc:tag>
+      <tc:tag tokenIDs="t_242">VBD</tc:tag>
+      <tc:tag tokenIDs="t_243">VVN</tc:tag>
+      <tc:tag tokenIDs="t_244">IN</tc:tag>
+      <tc:tag tokenIDs="t_245">DT</tc:tag>
+      <tc:tag tokenIDs="t_246">NN</tc:tag>
+      <tc:tag tokenIDs="t_247">IN</tc:tag>
+      <tc:tag tokenIDs="t_248">DT</tc:tag>
+      <tc:tag tokenIDs="t_249">NN</tc:tag>
+      <tc:tag tokenIDs="t_250">WDT</tc:tag>
+      <tc:tag tokenIDs="t_251">VVZ</tc:tag>
+      <tc:tag tokenIDs="t_252">IN</tc:tag>
+      <tc:tag tokenIDs="t_253">DT</tc:tag>
+      <tc:tag tokenIDs="t_254">JJR</tc:tag>
+      <tc:tag tokenIDs="t_255">NNS</tc:tag>
+      <tc:tag tokenIDs="t_256">IN</tc:tag>
+      <tc:tag tokenIDs="t_257">DT</tc:tag>
+      <tc:tag tokenIDs="t_258">NP</tc:tag>
+      <tc:tag tokenIDs="t_259">IN</tc:tag>
+      <tc:tag tokenIDs="t_260">DT</tc:tag>
+      <tc:tag tokenIDs="t_261">NP</tc:tag>
+      <tc:tag tokenIDs="t_262">NN</tc:tag>
+      <tc:tag tokenIDs="t_263">SENT</tc:tag>
+      <tc:tag tokenIDs="t_264">CC</tc:tag>
+      <tc:tag tokenIDs="t_265">NN</tc:tag>
+      <tc:tag tokenIDs="t_266">IN</tc:tag>
+      <tc:tag tokenIDs="t_267">DT</tc:tag>
+      <tc:tag tokenIDs="t_268">NNS</tc:tag>
+      <tc:tag tokenIDs="t_269">VHD</tc:tag>
+      <tc:tag tokenIDs="t_270">IN</tc:tag>
+      <tc:tag tokenIDs="t_271">DT</tc:tag>
+      <tc:tag tokenIDs="t_272">NN</tc:tag>
+      <tc:tag tokenIDs="t_273">VVD</tc:tag>
+      <tc:tag tokenIDs="t_274">IN/that</tc:tag>
+      <tc:tag tokenIDs="t_275">EX</tc:tag>
+      <tc:tag tokenIDs="t_276">VBD</tc:tag>
+      <tc:tag tokenIDs="t_277">DT</tc:tag>
+      <tc:tag tokenIDs="t_278">NN</tc:tag>
+      <tc:tag tokenIDs="t_279">IN</tc:tag>
+      <tc:tag tokenIDs="t_280">VVG</tc:tag>
+      <tc:tag tokenIDs="t_281">DT</tc:tag>
+      <tc:tag tokenIDs="t_282">RBR</tc:tag>
+      <tc:tag tokenIDs="t_283">CC</tc:tag>
+      <tc:tag tokenIDs="t_284">RBR</tc:tag>
+      <tc:tag tokenIDs="t_285">JJ</tc:tag>
+      <tc:tag tokenIDs="t_286">NN</tc:tag>
+      <tc:tag tokenIDs="t_287">IN</tc:tag>
+      <tc:tag tokenIDs="t_288">DT</tc:tag>
+      <tc:tag tokenIDs="t_289">NP</tc:tag>
+      <tc:tag tokenIDs="t_290">NN</tc:tag>
+      <tc:tag tokenIDs="t_291">IN</tc:tag>
+      <tc:tag tokenIDs="t_292">DT</tc:tag>
+      <tc:tag tokenIDs="t_293">JJ</tc:tag>
+      <tc:tag tokenIDs="t_294">NN</tc:tag>
+      <tc:tag tokenIDs="t_295">SENT</tc:tag>
+      <tc:tag tokenIDs="t_296">DT</tc:tag>
+      <tc:tag tokenIDs="t_297">NN</tc:tag>
+      <tc:tag tokenIDs="t_298">VBD</tc:tag>
+      <tc:tag tokenIDs="t_299">JJ</tc:tag>
+      <tc:tag tokenIDs="t_300">TO</tc:tag>
+      <tc:tag tokenIDs="t_301">VV</tc:tag>
+      <tc:tag tokenIDs="t_302">PP$</tc:tag>
+      <tc:tag tokenIDs="t_303">NN</tc:tag>
+      <tc:tag tokenIDs="t_304">,</tc:tag>
+      <tc:tag tokenIDs="t_305">VVN</tc:tag>
+      <tc:tag tokenIDs="t_306">IN</tc:tag>
+      <tc:tag tokenIDs="t_307">DT</tc:tag>
+      <tc:tag tokenIDs="t_308">NN</tc:tag>
+      <tc:tag tokenIDs="t_309">IN/that</tc:tag>
+      <tc:tag tokenIDs="t_310">IN</tc:tag>
+      <tc:tag tokenIDs="t_311">DT</tc:tag>
+      <tc:tag tokenIDs="t_312">NN</tc:tag>
+      <tc:tag tokenIDs="t_313">VBD</tc:tag>
+      <tc:tag tokenIDs="t_314">VVN</tc:tag>
+      <tc:tag tokenIDs="t_315">IN</tc:tag>
+      <tc:tag tokenIDs="t_316">NNS</tc:tag>
+      <tc:tag tokenIDs="t_317">WDT</tc:tag>
+      <tc:tag tokenIDs="t_318">,</tc:tag>
+      <tc:tag tokenIDs="t_319">IN</tc:tag>
+      <tc:tag tokenIDs="t_320">JJ</tc:tag>
+      <tc:tag tokenIDs="t_321">NN</tc:tag>
+      <tc:tag tokenIDs="t_322">,</tc:tag>
+      <tc:tag tokenIDs="t_323">MD</tc:tag>
+      <tc:tag tokenIDs="t_324">VB</tc:tag>
+      <tc:tag tokenIDs="t_325">VVN</tc:tag>
+      <tc:tag tokenIDs="t_326">IN</tc:tag>
+      <tc:tag tokenIDs="t_327">RB</tc:tag>
+      <tc:tag tokenIDs="t_328">JJ</tc:tag>
+      <tc:tag tokenIDs="t_329">:</tc:tag>
+      <tc:tag tokenIDs="t_330">CC</tc:tag>
+      <tc:tag tokenIDs="t_331">JJR</tc:tag>
+      <tc:tag tokenIDs="t_332">IN</tc:tag>
+      <tc:tag tokenIDs="t_333">RB</tc:tag>
+      <tc:tag tokenIDs="t_334">PP</tc:tag>
+      <tc:tag tokenIDs="t_335">VBD</tc:tag>
+      <tc:tag tokenIDs="t_336">IN</tc:tag>
+      <tc:tag tokenIDs="t_337">DT</tc:tag>
+      <tc:tag tokenIDs="t_338">NN</tc:tag>
+      <tc:tag tokenIDs="t_339">IN</tc:tag>
+      <tc:tag tokenIDs="t_340">VVG</tc:tag>
+      <tc:tag tokenIDs="t_341">DT</tc:tag>
+      <tc:tag tokenIDs="t_342">NN</tc:tag>
+      <tc:tag tokenIDs="t_343">IN</tc:tag>
+      <tc:tag tokenIDs="t_344">WDT</tc:tag>
+      <tc:tag tokenIDs="t_345">PP</tc:tag>
+      <tc:tag tokenIDs="t_346">VBD</tc:tag>
+      <tc:tag tokenIDs="t_347">VVG</tc:tag>
+      <tc:tag tokenIDs="t_348">PP</tc:tag>
+      <tc:tag tokenIDs="t_349">IN</tc:tag>
+      <tc:tag tokenIDs="t_350">DT</tc:tag>
+      <tc:tag tokenIDs="t_351">JJ</tc:tag>
+      <tc:tag tokenIDs="t_352">NN</tc:tag>
+      <tc:tag tokenIDs="t_353">IN</tc:tag>
+      <tc:tag tokenIDs="t_354">DT</tc:tag>
+      <tc:tag tokenIDs="t_355">JJ</tc:tag>
+      <tc:tag tokenIDs="t_356">NN</tc:tag>
+      <tc:tag tokenIDs="t_357">SENT</tc:tag>
+      <tc:tag tokenIDs="t_358">IN</tc:tag>
+      <tc:tag tokenIDs="t_359">JJ</tc:tag>
+      <tc:tag tokenIDs="t_360">,</tc:tag>
+      <tc:tag tokenIDs="t_361">PP</tc:tag>
+      <tc:tag tokenIDs="t_362">VVD</tc:tag>
+      <tc:tag tokenIDs="t_363">DT</tc:tag>
+      <tc:tag tokenIDs="t_364">NN</tc:tag>
+      <tc:tag tokenIDs="t_365">IN/that</tc:tag>
+      <tc:tag tokenIDs="t_366">PP$</tc:tag>
+      <tc:tag tokenIDs="t_367">NNS</tc:tag>
+      <tc:tag tokenIDs="t_368">VHD</tc:tag>
+      <tc:tag tokenIDs="t_369">RB</tc:tag>
+      <tc:tag tokenIDs="t_370">VVD</tc:tag>
+      <tc:tag tokenIDs="t_371">PP</tc:tag>
+      <tc:tag tokenIDs="t_372">,</tc:tag>
+      <tc:tag tokenIDs="t_373">CC</tc:tag>
+      <tc:tag tokenIDs="t_374">PP</tc:tag>
+      <tc:tag tokenIDs="t_375">VBD</tc:tag>
+      <tc:tag tokenIDs="t_376">VVN</tc:tag>
+      <tc:tag tokenIDs="t_377">IN</tc:tag>
+      <tc:tag tokenIDs="t_378">PDT</tc:tag>
+      <tc:tag tokenIDs="t_379">PP$</tc:tag>
+      <tc:tag tokenIDs="t_380">NNS</tc:tag>
+      <tc:tag tokenIDs="t_381">IN</tc:tag>
+      <tc:tag tokenIDs="t_382">DT</tc:tag>
+      <tc:tag tokenIDs="t_383">NN</tc:tag>
+      <tc:tag tokenIDs="t_384">WRB</tc:tag>
+      <tc:tag tokenIDs="t_385">PP</tc:tag>
+      <tc:tag tokenIDs="t_386">VVD</tc:tag>
+      <tc:tag tokenIDs="t_387">DT</tc:tag>
+      <tc:tag tokenIDs="t_388">NN</tc:tag>
+      <tc:tag tokenIDs="t_389">IN/that</tc:tag>
+      <tc:tag tokenIDs="t_390">DT</tc:tag>
+      <tc:tag tokenIDs="t_391">NP</tc:tag>
+      <tc:tag tokenIDs="t_392">NN</tc:tag>
+      <tc:tag tokenIDs="t_393">VBD</tc:tag>
+      <tc:tag tokenIDs="t_394">JJR</tc:tag>
+      <tc:tag tokenIDs="t_395">IN</tc:tag>
+      <tc:tag tokenIDs="t_396">DT</tc:tag>
+      <tc:tag tokenIDs="t_397">JJ</tc:tag>
+      <tc:tag tokenIDs="t_398">NN</tc:tag>
+      <tc:tag tokenIDs="t_399">SENT</tc:tag>
+    </tc:POStags>
+    <tc:depparsing tagset="penntb" emptytoks="false" multigovs="true">
+      <tc:parse>
+        <tc:dependency depIDs="t_4" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_4" depIDs="t_0" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_4" depIDs="t_3" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_4" depIDs="t_5" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_4" depIDs="t_2" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_4" depIDs="t_1" func="dep"></tc:dependency>
+      </tc:parse>
+      <tc:parse>
+        <tc:dependency govIDs="t_13" depIDs="t_11" func="cop"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_49" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_48" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_28" depIDs="t_27" func="det"></tc:dependency>
+        <tc:dependency depIDs="t_13" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_55" depIDs="t_53" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_17" depIDs="t_19" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_38" depIDs="t_34" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_32" depIDs="t_33" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_55" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_23" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_14" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_12" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_42" depIDs="t_40" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_42" depIDs="t_41" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_58" depIDs="t_57" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_55" depIDs="t_54" func="nn"></tc:dependency>
+        <tc:dependency govIDs="t_42" depIDs="t_43" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_45" depIDs="t_44" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_38" depIDs="t_35" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_20" depIDs="t_22" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_19" depIDs="t_20" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_51" depIDs="t_50" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_26" depIDs="t_28" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_47" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_33" depIDs="t_38" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_8" func="neg"></tc:dependency>
+        <tc:dependency govIDs="t_19" depIDs="t_18" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_58" depIDs="t_59" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_9" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_25" depIDs="t_24" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_32" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_15" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_58" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_6" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_35" depIDs="t_37" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_29" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_10" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_51" func="appos"></tc:dependency>
+        <tc:dependency govIDs="t_39" depIDs="t_42" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_52" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_43" depIDs="t_45" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_46" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_35" depIDs="t_36" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_32" depIDs="t_31" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_56" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_17" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_22" depIDs="t_21" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_30" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_38" depIDs="t_39" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_16" depIDs="t_25" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_48" depIDs="t_16" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_25" depIDs="t_26" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_13" depIDs="t_7" func="cop"></tc:dependency>
+      </tc:parse>
+      <tc:parse>
+        <tc:dependency govIDs="t_78" depIDs="t_76" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_88" depIDs="t_87" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_74" depIDs="t_75" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_75" depIDs="t_78" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_70" depIDs="t_71" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_81" depIDs="t_82" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_60" depIDs="t_70" func="null"></tc:dependency>
+        <tc:dependency govIDs="t_70" depIDs="t_68" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_63" depIDs="t_64" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_70" depIDs="t_62" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_81" depIDs="t_80" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_81" depIDs="t_89" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_70" depIDs="t_61" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_74" depIDs="t_72" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_65" depIDs="t_66" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_62" depIDs="t_63" func="dep"></tc:dependency>
+        <tc:dependency depIDs="t_60" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_70" depIDs="t_69" func="mark"></tc:dependency>
+        <tc:dependency govIDs="t_78" depIDs="t_77" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_85" depIDs="t_88" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_65" depIDs="t_67" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_88" depIDs="t_86" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_74" depIDs="t_73" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_83" depIDs="t_84" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_82" depIDs="t_83" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_64" depIDs="t_65" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_74" depIDs="t_81" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_71" depIDs="t_74" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_83" depIDs="t_85" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_74" depIDs="t_79" func="punct"></tc:dependency>
+      </tc:parse>
+      <tc:parse>
+        <tc:dependency govIDs="t_136" depIDs="t_138" func="null"></tc:dependency>
+        <tc:dependency govIDs="t_105" depIDs="t_108" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_92" depIDs="t_93" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_133" depIDs="t_130" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_108" depIDs="t_115" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_123" depIDs="t_124" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_138" depIDs="t_137" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_129" depIDs="t_127" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_118" depIDs="t_117" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_111" depIDs="t_112" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_103" depIDs="t_104" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_143" depIDs="t_144" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_129" depIDs="t_133" func="dobj"></tc:dependency>
+        <tc:dependency govIDs="t_147" depIDs="t_153" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_141" depIDs="t_143" func="dobj"></tc:dependency>
+        <tc:dependency govIDs="t_150" depIDs="t_151" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_140" depIDs="t_141" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_96" depIDs="t_97" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_146" depIDs="t_147" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_114" depIDs="t_113" func="det"></tc:dependency>
+        <tc:dependency depIDs="t_92" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_126" depIDs="t_121" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_96" depIDs="t_95" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_92" depIDs="t_90" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_108" depIDs="t_111" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_99" depIDs="t_100" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_101" depIDs="t_102" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_111" depIDs="t_110" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_133" depIDs="t_131" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_115" depIDs="t_126" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_116" depIDs="t_118" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_105" depIDs="t_107" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_123" depIDs="t_125" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_140" depIDs="t_139" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_143" depIDs="t_142" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_92" depIDs="t_136" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_147" depIDs="t_148" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_100" depIDs="t_103" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_144" depIDs="t_146" func="ccomp"></tc:dependency>
+        <tc:dependency govIDs="t_104" depIDs="t_105" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_150" depIDs="t_149" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_111" depIDs="t_109" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_151" depIDs="t_152" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_129" depIDs="t_128" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_146" depIDs="t_145" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_115" depIDs="t_120" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_123" depIDs="t_122" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_93" depIDs="t_94" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_133" depIDs="t_132" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_126" depIDs="t_123" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_97" depIDs="t_99" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_112" depIDs="t_114" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_107" depIDs="t_106" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_126" depIDs="t_129" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_99" depIDs="t_98" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_115" depIDs="t_119" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_92" depIDs="t_91" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_92" depIDs="t_134" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_100" depIDs="t_101" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_92" depIDs="t_135" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_94" depIDs="t_96" func="dobj"></tc:dependency>
+        <tc:dependency govIDs="t_148" depIDs="t_150" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_115" depIDs="t_116" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_138" depIDs="t_140" func="dobj"></tc:dependency>
+      </tc:parse>
+      <tc:parse>
+        <tc:dependency govIDs="t_193" depIDs="t_195" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_155" depIDs="t_186" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_195" depIDs="t_203" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_243" depIDs="t_244" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_220" depIDs="t_223" func="null"></tc:dependency>
+        <tc:dependency govIDs="t_186" depIDs="t_177" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_246" depIDs="t_245" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_238" depIDs="t_242" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_259" depIDs="t_262" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_180" depIDs="t_181" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_181" depIDs="t_183" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_158" depIDs="t_157" func="neg"></tc:dependency>
+        <tc:dependency govIDs="t_199" depIDs="t_197" func="aux"></tc:dependency>
+        <tc:dependency govIDs="t_195" depIDs="t_194" func="poss"></tc:dependency>
+        <tc:dependency govIDs="t_204" depIDs="t_205" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_210" depIDs="t_212" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_242" depIDs="t_243" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_219" depIDs="t_220" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_176" depIDs="t_174" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_223" depIDs="t_221" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_256" depIDs="t_258" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_173" depIDs="t_176" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_255" depIDs="t_256" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_244" depIDs="t_246" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_237" depIDs="t_238" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_208" depIDs="t_213" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_218" depIDs="t_219" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_161" depIDs="t_160" func="quantmod"></tc:dependency>
+        <tc:dependency govIDs="t_170" depIDs="t_173" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_155" depIDs="t_170" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_213" depIDs="t_209" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_217" depIDs="t_216" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_155" depIDs="t_165" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_247" depIDs="t_249" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_223" depIDs="t_224" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_162" depIDs="t_161" func="num"></tc:dependency>
+        <tc:dependency govIDs="t_203" depIDs="t_201" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_262" depIDs="t_260" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_232" depIDs="t_233" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_233" depIDs="t_235" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_217" depIDs="t_218" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_225" depIDs="t_228" func="null"></tc:dependency>
+        <tc:dependency govIDs="t_203" depIDs="t_202" func="aux"></tc:dependency>
+        <tc:dependency govIDs="t_243" depIDs="t_263" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_178" depIDs="t_180" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_170" depIDs="t_166" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_262" depIDs="t_261" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_251" depIDs="t_250" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_215" depIDs="t_217" func="dobj"></tc:dependency>
+        <tc:dependency govIDs="t_255" depIDs="t_254" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_235" depIDs="t_234" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_176" depIDs="t_175" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_199" depIDs="t_196" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_258" depIDs="t_257" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_215" depIDs="t_214" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_155" depIDs="t_156" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_241" depIDs="t_240" func="poss"></tc:dependency>
+        <tc:dependency govIDs="t_203" depIDs="t_204" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_170" depIDs="t_167" func="aux"></tc:dependency>
+        <tc:dependency govIDs="t_249" depIDs="t_248" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_238" depIDs="t_239" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_231" depIDs="t_232" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_223" depIDs="t_222" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_195" depIDs="t_199" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_224" depIDs="t_225" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_190" depIDs="t_188" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_190" depIDs="t_189" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_192" depIDs="t_191" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_255" depIDs="t_253" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_206" depIDs="t_208" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_160" depIDs="t_159" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_242" depIDs="t_241" func="nsubj"></tc:dependency>
+        <tc:dependency depIDs="t_155" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_186" depIDs="t_178" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_155" depIDs="t_154" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_155" depIDs="t_164" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_171" depIDs="t_172" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_231" depIDs="t_230" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_228" depIDs="t_229" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_156" depIDs="t_158" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_251" depIDs="t_259" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_158" depIDs="t_163" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_235" depIDs="t_236" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_249" depIDs="t_251" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_199" depIDs="t_198" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_228" depIDs="t_226" func="preconj"></tc:dependency>
+        <tc:dependency govIDs="t_192" depIDs="t_193" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_186" depIDs="t_184" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_187" depIDs="t_190" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_186" depIDs="t_192" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_183" depIDs="t_182" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_251" depIDs="t_252" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_228" depIDs="t_231" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_163" depIDs="t_162" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_210" depIDs="t_211" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_235" depIDs="t_237" func="appos"></tc:dependency>
+        <tc:dependency govIDs="t_195" depIDs="t_200" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_208" depIDs="t_207" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_180" depIDs="t_179" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_186" depIDs="t_185" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_186" depIDs="t_187" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_213" depIDs="t_210" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_170" depIDs="t_168" func="neg"></tc:dependency>
+        <tc:dependency govIDs="t_228" depIDs="t_227" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_170" depIDs="t_169" func="cop"></tc:dependency>
+        <tc:dependency govIDs="t_170" depIDs="t_171" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_252" depIDs="t_255" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_205" depIDs="t_206" func="pcomp"></tc:dependency>
+        <tc:dependency govIDs="t_213" depIDs="t_215" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_246" depIDs="t_247" func="prep"></tc:dependency>
+      </tc:parse>
+      <tc:parse>
+        <tc:dependency govIDs="t_286" depIDs="t_285" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_272" depIDs="t_273" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_276" depIDs="t_274" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_270" depIDs="t_272" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_272" depIDs="t_271" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_278" depIDs="t_279" func="prep"></tc:dependency>
+        <tc:dependency depIDs="t_269" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_269" depIDs="t_295" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_285" depIDs="t_282" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_290" depIDs="t_288" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_276" depIDs="t_275" func="expl"></tc:dependency>
+        <tc:dependency govIDs="t_290" depIDs="t_289" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_279" depIDs="t_280" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_282" depIDs="t_284" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_287" depIDs="t_290" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_269" depIDs="t_265" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_286" depIDs="t_281" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_280" depIDs="t_286" func="dobj"></tc:dependency>
+        <tc:dependency govIDs="t_286" depIDs="t_287" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_280" depIDs="t_291" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_269" depIDs="t_270" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_266" depIDs="t_268" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_269" depIDs="t_264" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_273" depIDs="t_276" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_265" depIDs="t_266" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_278" depIDs="t_277" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_294" depIDs="t_292" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_294" depIDs="t_293" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_276" depIDs="t_278" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_291" depIDs="t_294" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_268" depIDs="t_267" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_282" depIDs="t_283" func="cc"></tc:dependency>
+      </tc:parse>
+      <tc:parse>
+        <tc:dependency govIDs="t_325" depIDs="t_323" func="aux"></tc:dependency>
+        <tc:dependency govIDs="t_347" depIDs="t_345" func="nsubj"></tc:dependency>
+        <tc:dependency depIDs="t_299" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_352" depIDs="t_350" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_305" depIDs="t_306" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_339" depIDs="t_340" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_325" depIDs="t_319" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_342" depIDs="t_347" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_305" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_300" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_334" depIDs="t_335" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_356" depIDs="t_355" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_342" depIDs="t_341" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_308" depIDs="t_314" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_314" depIDs="t_315" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_303" depIDs="t_301" func="poss"></tc:dependency>
+        <tc:dependency govIDs="t_325" depIDs="t_324" func="cop"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_304" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_308" depIDs="t_307" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_349" depIDs="t_352" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_310" depIDs="t_312" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_338" depIDs="t_337" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_338" depIDs="t_339" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_309" depIDs="t_310" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_300" depIDs="t_303" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_325" depIDs="t_318" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_347" depIDs="t_343" func="rel"></tc:dependency>
+        <tc:dependency govIDs="t_319" depIDs="t_321" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_334" depIDs="t_332" func="num"></tc:dependency>
+        <tc:dependency govIDs="t_297" depIDs="t_296" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_348" depIDs="t_349" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_332" depIDs="t_331" func="quantmod"></tc:dependency>
+        <tc:dependency govIDs="t_325" depIDs="t_326" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_316" depIDs="t_325" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_326" depIDs="t_328" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_329" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_314" depIDs="t_309" func="nsubjpass"></tc:dependency>
+        <tc:dependency govIDs="t_321" depIDs="t_320" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_334" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_330" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_298" func="cop"></tc:dependency>
+        <tc:dependency govIDs="t_325" depIDs="t_322" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_336" depIDs="t_338" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_306" depIDs="t_308" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_340" depIDs="t_342" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_347" depIDs="t_346" func="cop"></tc:dependency>
+        <tc:dependency govIDs="t_303" depIDs="t_302" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_299" depIDs="t_297" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_342" depIDs="t_357" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_347" depIDs="t_348" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_352" depIDs="t_353" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_335" depIDs="t_336" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_356" depIDs="t_354" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_325" depIDs="t_317" func="rel"></tc:dependency>
+        <tc:dependency govIDs="t_328" depIDs="t_327" func="advmod"></tc:dependency>
+        <tc:dependency govIDs="t_352" depIDs="t_351" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_312" depIDs="t_311" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_343" depIDs="t_344" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_353" depIDs="t_356" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_314" depIDs="t_313" func="auxpass"></tc:dependency>
+        <tc:dependency govIDs="t_332" depIDs="t_333" func="quantmod"></tc:dependency>
+        <tc:dependency govIDs="t_315" depIDs="t_316" func="pobj"></tc:dependency>
+      </tc:parse>
+      <tc:parse>
+        <tc:dependency govIDs="t_392" depIDs="t_391" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_392" depIDs="t_390" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_371" depIDs="t_376" func="conj"></tc:dependency>
+        <tc:dependency govIDs="t_398" depIDs="t_397" func="amod"></tc:dependency>
+        <tc:dependency govIDs="t_365" depIDs="t_366" func="null"></tc:dependency>
+        <tc:dependency govIDs="t_399" depIDs="t_386" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_376" depIDs="t_375" func="cop"></tc:dependency>
+        <tc:dependency govIDs="t_388" depIDs="t_389" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_385" depIDs="t_399" func="null"></tc:dependency>
+        <tc:dependency govIDs="t_380" depIDs="t_379" func="nn"></tc:dependency>
+        <tc:dependency govIDs="t_395" depIDs="t_398" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_394" depIDs="t_392" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_383" depIDs="t_382" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_394" depIDs="t_393" func="cop"></tc:dependency>
+        <tc:dependency govIDs="t_399" depIDs="t_388" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_388" depIDs="t_387" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_358" depIDs="t_359" func="pobj"></tc:dependency>
+        <tc:dependency depIDs="t_358" func="ROOT"></tc:dependency>
+        <tc:dependency govIDs="t_370" depIDs="t_368" func="aux"></tc:dependency>
+        <tc:dependency govIDs="t_376" depIDs="t_377" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_380" depIDs="t_381" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_398" depIDs="t_396" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_370" depIDs="t_367" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_394" depIDs="t_395" func="prep"></tc:dependency>
+        <tc:dependency govIDs="t_364" depIDs="t_363" func="det"></tc:dependency>
+        <tc:dependency govIDs="t_384" depIDs="t_385" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_371" depIDs="t_373" func="cc"></tc:dependency>
+        <tc:dependency govIDs="t_376" depIDs="t_374" func="nsubj"></tc:dependency>
+        <tc:dependency govIDs="t_377" depIDs="t_380" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_366" depIDs="t_370" func="rcmod"></tc:dependency>
+        <tc:dependency govIDs="t_362" depIDs="t_364" func="dobj"></tc:dependency>
+        <tc:dependency govIDs="t_361" depIDs="t_362" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_364" depIDs="t_365" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_361" depIDs="t_360" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_380" depIDs="t_384" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_380" depIDs="t_378" func="predet"></tc:dependency>
+        <tc:dependency govIDs="t_381" depIDs="t_383" func="pobj"></tc:dependency>
+        <tc:dependency govIDs="t_358" depIDs="t_361" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_370" depIDs="t_371" func="dep"></tc:dependency>
+        <tc:dependency govIDs="t_370" depIDs="t_369" func="neg"></tc:dependency>
+        <tc:dependency govIDs="t_371" depIDs="t_372" func="punct"></tc:dependency>
+        <tc:dependency govIDs="t_389" depIDs="t_394" func="rcmod"></tc:dependency>
+      </tc:parse>
+    </tc:depparsing>
+    <tc:namedEntities type="openNLP">
+      <tc:entity class="organization" tokenIDs="t_1"></tc:entity>
+      <tc:entity class="location" tokenIDs="t_131"></tc:entity>
+      <tc:entity class="organization" tokenIDs="t_99 t_100"></tc:entity>
+      <tc:entity class="person" tokenIDs="t_102"></tc:entity>
+      <tc:entity class="date" tokenIDs="t_208"></tc:entity>
+      <tc:entity class="location" tokenIDs="t_219"></tc:entity>
+      <tc:entity class="organization" tokenIDs="t_258"></tc:entity>
+      <tc:entity class="person" tokenIDs="t_219 t_220"></tc:entity>
+      <tc:entity class="person" tokenIDs="t_237 t_238"></tc:entity>
+      <tc:entity class="organization" tokenIDs="t_289"></tc:entity>
+      <tc:entity class="organization" tokenIDs="t_391"></tc:entity>
+    </tc:namedEntities>
+    <tc:geo coordFormat="DegDec" continentFormat="name" capitalFormat="name" countryFormat="ISO3166_A2">
+      <tc:src>http://www.geonames.org/</tc:src>
+      <tc:gpoint lon="-80.38333" alt="255.0" continent="America" capital="Toronto" tokenIDs="t_131" lat="43.2" country="CA"></tc:gpoint>
+    </tc:geo>
+    <tc:parsing tagset="penntb">
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="NP-SBJ">
+              <tc:constituent cat="DT" tokenIDs="t_0"></tc:constituent>
+              <tc:constituent cat="NNP" tokenIDs="t_1"></tc:constituent>
+              <tc:constituent cat="NN" tokenIDs="t_2"></tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="ADVP">
+              <tc:constituent cat="RB" tokenIDs="t_3"></tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="VP">
+              <tc:constituent cat="VVD" tokenIDs="t_4"></tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_5"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="NP-SBJ">
+              <tc:constituent cat="PRP" tokenIDs="t_6"></tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="VP">
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VBD" tokenIDs="t_7"></tc:constituent>
+                <tc:constituent cat="RB" tokenIDs="t_8"></tc:constituent>
+                <tc:constituent cat="SBAR-PRD">
+                  <tc:constituent cat="-NONE-">
+                    <tc:constituent cat="*?*"></tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="," tokenIDs="t_9"></tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="-NONE-">
+                  <tc:constituent cat="*?*"></tc:constituent>
+                </tc:constituent>
+                <tc:constituent cat="SBAR-ADV">
+                  <tc:constituent cat="IN" tokenIDs="t_10"></tc:constituent>
+                  <tc:constituent cat="S">
+                    <tc:constituent cat="NP-SBJ">
+                      <tc:constituent cat="-NONE-">
+                        <tc:constituent cat="*"></tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="VP">
+                      <tc:constituent cat="VBD" tokenIDs="t_11"></tc:constituent>
+                      <tc:constituent cat="ADVP">
+                        <tc:constituent cat="RB" tokenIDs="t_12"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="VVN" tokenIDs="t_13"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="-NONE-">
+                            <tc:constituent cat="*-1"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="," tokenIDs="t_14"></tc:constituent>
+              <tc:constituent cat="NP">
+                <tc:constituent cat="NP">
+                  <tc:constituent cat="DT" tokenIDs="t_15"></tc:constituent>
+                  <tc:constituent cat="NN" tokenIDs="t_16"></tc:constituent>
+                </tc:constituent>
+                <tc:constituent cat="PP">
+                  <tc:constituent cat="IN" tokenIDs="t_17"></tc:constituent>
+                  <tc:constituent cat="NP">
+                    <tc:constituent cat="NP">
+                      <tc:constituent cat="NP">
+                        <tc:constituent cat="DT" tokenIDs="t_18"></tc:constituent>
+                        <tc:constituent cat="NN" tokenIDs="t_19"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="PP">
+                        <tc:constituent cat="IN" tokenIDs="t_20"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="DT" tokenIDs="t_21"></tc:constituent>
+                          <tc:constituent cat="NNS" tokenIDs="t_22"></tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="," tokenIDs="t_23"></tc:constituent>
+                    <tc:constituent cat="NP">
+                      <tc:constituent cat="NP">
+                        <tc:constituent cat="DT" tokenIDs="t_24"></tc:constituent>
+                        <tc:constituent cat="NN" tokenIDs="t_25"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="PP">
+                        <tc:constituent cat="IN" tokenIDs="t_26"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="DT" tokenIDs="t_27"></tc:constituent>
+                          <tc:constituent cat="NNS" tokenIDs="t_28"></tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="," tokenIDs="t_29"></tc:constituent>
+                    <tc:constituent cat="CC" tokenIDs="t_30"></tc:constituent>
+                    <tc:constituent cat="NP">
+                      <tc:constituent cat="NP">
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_31"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_32"></tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="PP">
+                            <tc:constituent cat="IN" tokenIDs="t_33"></tc:constituent>
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="DT" tokenIDs="t_34"></tc:constituent>
+                              <tc:constituent cat="JJ" tokenIDs="t_35"></tc:constituent>
+                              <tc:constituent cat="NX">
+                                <tc:constituent cat="-NONE-">
+                                  <tc:constituent cat="*RNR*-2"></tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                        <tc:constituent cat="CC" tokenIDs="t_36"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="JJ" tokenIDs="t_37"></tc:constituent>
+                            <tc:constituent cat="NNS" tokenIDs="t_38"></tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="PP">
+                            <tc:constituent cat="IN" tokenIDs="t_39"></tc:constituent>
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="DT" tokenIDs="t_40"></tc:constituent>
+                              <tc:constituent cat="JJ" tokenIDs="t_41"></tc:constituent>
+                              <tc:constituent cat="NX">
+                                <tc:constituent cat="-NONE-">
+                                  <tc:constituent cat="*RNR*-3"></tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                        <tc:constituent cat="NX-3-2">
+                          <tc:constituent cat="NNS" tokenIDs="t_42"></tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="PP">
+                        <tc:constituent cat="IN" tokenIDs="t_43"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_44"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_45"></tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="," tokenIDs="t_46"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="PRP\$" tokenIDs="t_47"></tc:constituent>
+                            <tc:constituent cat="NNS" tokenIDs="t_48"></tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="," tokenIDs="t_49"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_50"></tc:constituent>
+                            <tc:constituent cat="NNS" tokenIDs="t_51"></tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="," tokenIDs="t_52"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_53"></tc:constituent>
+                            <tc:constituent cat="JJ" tokenIDs="t_54"></tc:constituent>
+                            <tc:constituent cat="NNS" tokenIDs="t_55"></tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="CC" tokenIDs="t_56"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_57"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_58"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_59"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="S">
+              <tc:constituent cat="INTJ">
+                <tc:constituent cat="UH" tokenIDs="t_60"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="," tokenIDs="t_61"></tc:constituent>
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="PRP" tokenIDs="t_62"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VVD" tokenIDs="t_63"></tc:constituent>
+                <tc:constituent cat="PP-LOC">
+                  <tc:constituent cat="IN" tokenIDs="t_64"></tc:constituent>
+                  <tc:constituent cat="NP">
+                    <tc:constituent cat="NN" tokenIDs="t_65"></tc:constituent>
+                    <tc:constituent cat="CC" tokenIDs="t_66"></tc:constituent>
+                    <tc:constituent cat="NN" tokenIDs="t_67"></tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+                <tc:constituent cat="," tokenIDs="t_68"></tc:constituent>
+                <tc:constituent cat="SBAR-ADV">
+                  <tc:constituent cat="IN" tokenIDs="t_69"></tc:constituent>
+                  <tc:constituent cat="S">
+                    <tc:constituent cat="NP-SBJ">
+                      <tc:constituent cat="PRP" tokenIDs="t_70"></tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="VP">
+                      <tc:constituent cat="VVD" tokenIDs="t_71"></tc:constituent>
+                      <tc:constituent cat="NP">
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="DT" tokenIDs="t_72"></tc:constituent>
+                          <tc:constituent cat="JJ" tokenIDs="t_73"></tc:constituent>
+                          <tc:constituent cat="NN" tokenIDs="t_74"></tc:constituent>
+                        </tc:constituent>
+                        <tc:constituent cat="PP">
+                          <tc:constituent cat="IN" tokenIDs="t_75"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_76"></tc:constituent>
+                            <tc:constituent cat="JJ" tokenIDs="t_77"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_78"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat=";" tokenIDs="t_79"></tc:constituent>
+            <tc:constituent cat="S">
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="DT" tokenIDs="t_80"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VBZ" tokenIDs="t_81"></tc:constituent>
+                <tc:constituent cat="S-PRD">
+                  <tc:constituent cat="NP-SBJ">
+                    <tc:constituent cat="-NONE-">
+                      <tc:constituent cat="*"></tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                  <tc:constituent cat="VP">
+                    <tc:constituent cat="TO" tokenIDs="t_82"></tc:constituent>
+                    <tc:constituent cat="VP">
+                      <tc:constituent cat="VV" tokenIDs="t_83"></tc:constituent>
+                      <tc:constituent cat="," tokenIDs="t_84"></tc:constituent>
+                      <tc:constituent cat="FRAG">
+                        <tc:constituent cat="PP">
+                          <tc:constituent cat="IN" tokenIDs="t_85"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_86"></tc:constituent>
+                            <tc:constituent cat="JJ" tokenIDs="t_87"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_88"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_89"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="S">
+              <tc:constituent cat="SBAR-ADV">
+                <tc:constituent cat="WHADVP-1">
+                  <tc:constituent cat="WRB" tokenIDs="t_90"></tc:constituent>
+                </tc:constituent>
+                <tc:constituent cat="S">
+                  <tc:constituent cat="NP-SBJ">
+                    <tc:constituent cat="PRP" tokenIDs="t_91"></tc:constituent>
+                  </tc:constituent>
+                  <tc:constituent cat="VP">
+                    <tc:constituent cat="VVD" tokenIDs="t_92"></tc:constituent>
+                    <tc:constituent cat="S">
+                      <tc:constituent cat="NP-SBJ">
+                        <tc:constituent cat="-NONE-">
+                          <tc:constituent cat="*-2"></tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="TO" tokenIDs="t_93"></tc:constituent>
+                        <tc:constituent cat="VP">
+                          <tc:constituent cat="VV" tokenIDs="t_94"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="DT" tokenIDs="t_95"></tc:constituent>
+                              <tc:constituent cat="NNS" tokenIDs="t_96"></tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="PP">
+                              <tc:constituent cat="IN" tokenIDs="t_97"></tc:constituent>
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="DT" tokenIDs="t_98"></tc:constituent>
+                                  <tc:constituent cat="NNP" tokenIDs="t_99"></tc:constituent>
+                                  <tc:constituent cat="NNP" tokenIDs="t_100"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="PP">
+                                  <tc:constituent cat="IN" tokenIDs="t_101"></tc:constituent>
+                                  <tc:constituent cat="NP">
+                                    <tc:constituent cat="NNP" tokenIDs="t_102"></tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="ADVP">
+                      <tc:constituent cat="-NONE-">
+                        <tc:constituent cat="*T*-1"></tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="PRP" tokenIDs="t_103"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VBD" tokenIDs="t_104"></tc:constituent>
+                <tc:constituent cat="ADVP">
+                  <tc:constituent cat="IN" tokenIDs="t_105"></tc:constituent>
+                  <tc:constituent cat="RB" tokenIDs="t_106"></tc:constituent>
+                </tc:constituent>
+                <tc:constituent cat="VP">
+                  <tc:constituent cat="VVN" tokenIDs="t_107"></tc:constituent>
+                  <tc:constituent cat="NP">
+                    <tc:constituent cat="-NONE-">
+                      <tc:constituent cat="*-3"></tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                  <tc:constituent cat="PP-LGS">
+                    <tc:constituent cat="IN" tokenIDs="t_108"></tc:constituent>
+                    <tc:constituent cat="NP">
+                      <tc:constituent cat="NP">
+                        <tc:constituent cat="DT" tokenIDs="t_109"></tc:constituent>
+                        <tc:constituent cat="JJ" tokenIDs="t_110"></tc:constituent>
+                        <tc:constituent cat="NNS" tokenIDs="t_111"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="PP">
+                        <tc:constituent cat="IN" tokenIDs="t_112"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="DT" tokenIDs="t_113"></tc:constituent>
+                              <tc:constituent cat="NN" tokenIDs="t_114"></tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="VP">
+                              <tc:constituent cat="VVN" tokenIDs="t_115"></tc:constituent>
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="-NONE-">
+                                  <tc:constituent cat="*"></tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                              <tc:constituent cat="PP">
+                                <tc:constituent cat="TO" tokenIDs="t_116"></tc:constituent>
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="DT" tokenIDs="t_117"></tc:constituent>
+                                  <tc:constituent cat="NN" tokenIDs="t_118"></tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="X">
+                              <tc:constituent cat="SYM" tokenIDs="t_119"></tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="CC" tokenIDs="t_120"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="DT" tokenIDs="t_121"></tc:constituent>
+                              <tc:constituent cat="ADJP">
+                                <tc:constituent cat="RBS" tokenIDs="t_122"></tc:constituent>
+                                <tc:constituent cat="JJ" tokenIDs="t_123"></tc:constituent>
+                                <tc:constituent cat="CC" tokenIDs="t_124"></tc:constituent>
+                                <tc:constituent cat="JJ" tokenIDs="t_125"></tc:constituent>
+                              </tc:constituent>
+                              <tc:constituent cat="NN" tokenIDs="t_126"></tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="SBAR">
+                              <tc:constituent cat="WHNP-4">
+                                <tc:constituent cat="WDT" tokenIDs="t_127"></tc:constituent>
+                              </tc:constituent>
+                              <tc:constituent cat="S">
+                                <tc:constituent cat="NP-SBJ">
+                                  <tc:constituent cat="-NONE-">
+                                    <tc:constituent cat="*T*-4"></tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="ADVP">
+                                  <tc:constituent cat="RB" tokenIDs="t_128"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="VP">
+                                  <tc:constituent cat="VVD" tokenIDs="t_129"></tc:constituent>
+                                  <tc:constituent cat="NP">
+                                    <tc:constituent cat="DT" tokenIDs="t_130"></tc:constituent>
+                                    <tc:constituent cat="NNP" tokenIDs="t_131"></tc:constituent>
+                                    <tc:constituent cat="JJ" tokenIDs="t_132"></tc:constituent>
+                                    <tc:constituent cat="NNS" tokenIDs="t_133"></tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat=";" tokenIDs="t_134"></tc:constituent>
+            <tc:constituent cat="CC" tokenIDs="t_135"></tc:constituent>
+            <tc:constituent cat="S">
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="PRP" tokenIDs="t_136"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="ADVP">
+                <tc:constituent cat="RB" tokenIDs="t_137"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VVD" tokenIDs="t_138"></tc:constituent>
+                <tc:constituent cat="NP">
+                  <tc:constituent cat="DT" tokenIDs="t_139"></tc:constituent>
+                  <tc:constituent cat="NN" tokenIDs="t_140"></tc:constituent>
+                  <tc:constituent cat="SBAR">
+                    <tc:constituent cat="IN" tokenIDs="t_141"></tc:constituent>
+                    <tc:constituent cat="S">
+                      <tc:constituent cat="NP-SBJ">
+                        <tc:constituent cat="DT" tokenIDs="t_142"></tc:constituent>
+                        <tc:constituent cat="NN" tokenIDs="t_143"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="MD" tokenIDs="t_144"></tc:constituent>
+                        <tc:constituent cat="ADVP-MNR">
+                          <tc:constituent cat="RB" tokenIDs="t_145"></tc:constituent>
+                        </tc:constituent>
+                        <tc:constituent cat="VP">
+                          <tc:constituent cat="VB" tokenIDs="t_146"></tc:constituent>
+                          <tc:constituent cat="VP">
+                            <tc:constituent cat="VVN" tokenIDs="t_147"></tc:constituent>
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="-NONE-">
+                                <tc:constituent cat="*-5"></tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="PP-LGS">
+                              <tc:constituent cat="IN" tokenIDs="t_148"></tc:constituent>
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="DT" tokenIDs="t_149"></tc:constituent>
+                                  <tc:constituent cat="NN" tokenIDs="t_150"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="PP-LOC">
+                                  <tc:constituent cat="IN" tokenIDs="t_151"></tc:constituent>
+                                  <tc:constituent cat="NP">
+                                    <tc:constituent cat="NN" tokenIDs="t_152"></tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_153"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="S">
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="DT" tokenIDs="t_154"></tc:constituent>
+                <tc:constituent cat="NNS" tokenIDs="t_155"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VDP" tokenIDs="t_156"></tc:constituent>
+                <tc:constituent cat="RB" tokenIDs="t_157"></tc:constituent>
+                <tc:constituent cat="VP">
+                  <tc:constituent cat="VV" tokenIDs="t_158"></tc:constituent>
+                  <tc:constituent cat="NP">
+                    <tc:constituent cat="QP">
+                      <tc:constituent cat="JJR" tokenIDs="t_159"></tc:constituent>
+                      <tc:constituent cat="IN" tokenIDs="t_160"></tc:constituent>
+                      <tc:constituent cat="CD" tokenIDs="t_161"></tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="NNS" tokenIDs="t_162"></tc:constituent>
+                  </tc:constituent>
+                  <tc:constituent cat="ADVP">
+                    <tc:constituent cat="RB" tokenIDs="t_163"></tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat=";" tokenIDs="t_164"></tc:constituent>
+            <tc:constituent cat="CC" tokenIDs="t_165"></tc:constituent>
+            <tc:constituent cat="S">
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="NP">
+                  <tc:constituent cat="PRP" tokenIDs="t_166"></tc:constituent>
+                </tc:constituent>
+                <tc:constituent cat="S">
+                  <tc:constituent cat="-NONE-">
+                    <tc:constituent cat="*EXP*-1"></tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="MD" tokenIDs="t_167"></tc:constituent>
+                <tc:constituent cat="RB" tokenIDs="t_168"></tc:constituent>
+                <tc:constituent cat="VP">
+                  <tc:constituent cat="VB" tokenIDs="t_169"></tc:constituent>
+                  <tc:constituent cat="ADJP-PRD">
+                    <tc:constituent cat="JJ" tokenIDs="t_170"></tc:constituent>
+                  </tc:constituent>
+                  <tc:constituent cat="S">
+                    <tc:constituent cat="NP-SBJ">
+                      <tc:constituent cat="-NONE-">
+                        <tc:constituent cat="*"></tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="VP">
+                      <tc:constituent cat="TO" tokenIDs="t_171"></tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="VV" tokenIDs="t_172"></tc:constituent>
+                        <tc:constituent cat="PP-TMP">
+                          <tc:constituent cat="IN" tokenIDs="t_173"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_174"></tc:constituent>
+                            <tc:constituent cat="JJ" tokenIDs="t_175"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_176"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                        <tc:constituent cat="," tokenIDs="t_177"></tc:constituent>
+                        <tc:constituent cat="PP-LOC">
+                          <tc:constituent cat="IN" tokenIDs="t_178"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="DT" tokenIDs="t_179"></tc:constituent>
+                              <tc:constituent cat="NN" tokenIDs="t_180"></tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="PP">
+                              <tc:constituent cat="IN" tokenIDs="t_181"></tc:constituent>
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="DT" tokenIDs="t_182"></tc:constituent>
+                                  <tc:constituent cat="NN" tokenIDs="t_183"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="," tokenIDs="t_184"></tc:constituent>
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="NP">
+                                    <tc:constituent cat="JJ" tokenIDs="t_185"></tc:constituent>
+                                    <tc:constituent cat="NNS" tokenIDs="t_186"></tc:constituent>
+                                  </tc:constituent>
+                                  <tc:constituent cat="PP">
+                                    <tc:constituent cat="IN" tokenIDs="t_187"></tc:constituent>
+                                    <tc:constituent cat="NP">
+                                      <tc:constituent cat="DT" tokenIDs="t_188"></tc:constituent>
+                                      <tc:constituent cat="JJS" tokenIDs="t_189"></tc:constituent>
+                                      <tc:constituent cat="NN" tokenIDs="t_190"></tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="," tokenIDs="t_191"></tc:constituent>
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="NNS" tokenIDs="t_192"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="SBAR">
+                                  <tc:constituent cat="WHPP">
+                                    <tc:constituent cat="IN" tokenIDs="t_193"></tc:constituent>
+                                    <tc:constituent cat="WHNP">
+                                      <tc:constituent cat="WP\$" tokenIDs="t_194"></tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                  <tc:constituent cat="S">
+                                    <tc:constituent cat="NP-SBJ">
+                                      <tc:constituent cat="NN" tokenIDs="t_195"></tc:constituent>
+                                      <tc:constituent cat="NN" tokenIDs="t_196"></tc:constituent>
+                                    </tc:constituent>
+                                    <tc:constituent cat="VP">
+                                      <tc:constituent cat="MD" tokenIDs="t_197"></tc:constituent>
+                                      <tc:constituent cat="ADVP">
+                                        <tc:constituent cat="RB" tokenIDs="t_198"></tc:constituent>
+                                      </tc:constituent>
+                                      <tc:constituent cat="VP">
+                                        <tc:constituent cat="VV" tokenIDs="t_199"></tc:constituent>
+                                        <tc:constituent cat="PP">
+                                          <tc:constituent cat="-NONE-">
+                                            <tc:constituent cat="*T*-2"></tc:constituent>
+                                          </tc:constituent>
+                                        </tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="," tokenIDs="t_200"></tc:constituent>
+                                <tc:constituent cat="SBAR">
+                                  <tc:constituent cat="WHNP-3">
+                                    <tc:constituent cat="WP" tokenIDs="t_201"></tc:constituent>
+                                  </tc:constituent>
+                                  <tc:constituent cat="S">
+                                    <tc:constituent cat="NP-SBJ">
+                                      <tc:constituent cat="-NONE-">
+                                        <tc:constituent cat="*T*-3"></tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                    <tc:constituent cat="VP">
+                                      <tc:constituent cat="MD" tokenIDs="t_202"></tc:constituent>
+                                      <tc:constituent cat="VP">
+                                        <tc:constituent cat="VV" tokenIDs="t_203"></tc:constituent>
+                                        <tc:constituent cat="UCP">
+                                          <tc:constituent cat="SBAR-MNR">
+                                            <tc:constituent cat="IN" tokenIDs="t_204"></tc:constituent>
+                                            <tc:constituent cat="IN" tokenIDs="t_205"></tc:constituent>
+                                            <tc:constituent cat="S">
+                                              <tc:constituent cat="NP-SBJ">
+                                                <tc:constituent cat="PRP" tokenIDs="t_206"></tc:constituent>
+                                              </tc:constituent>
+                                              <tc:constituent cat="VP">
+                                                <tc:constituent cat="VVD" tokenIDs="t_207"></tc:constituent>
+                                                <tc:constituent cat="NP-TMP">
+                                                  <tc:constituent cat="NN" tokenIDs="t_208"></tc:constituent>
+                                                </tc:constituent>
+                                              </tc:constituent>
+                                            </tc:constituent>
+                                          </tc:constituent>
+                                          <tc:constituent cat="NP-ADV">
+                                            <tc:constituent cat="NP">
+                                              <tc:constituent cat="DT" tokenIDs="t_209"></tc:constituent>
+                                              <tc:constituent cat="JJ" tokenIDs="t_210"></tc:constituent>
+                                            </tc:constituent>
+                                            <tc:constituent cat="CC" tokenIDs="t_211"></tc:constituent>
+                                            <tc:constituent cat="NP">
+                                              <tc:constituent cat="JJ" tokenIDs="t_212"></tc:constituent>
+                                              <tc:constituent cat="NNS" tokenIDs="t_213"></tc:constituent>
+                                            </tc:constituent>
+                                          </tc:constituent>
+                                        </tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="SBAR">
+                                  <tc:constituent cat="WHNP-4">
+                                    <tc:constituent cat="WDT" tokenIDs="t_214"></tc:constituent>
+                                  </tc:constituent>
+                                  <tc:constituent cat="S">
+                                    <tc:constituent cat="NP-SBJ">
+                                      <tc:constituent cat="-NONE-">
+                                        <tc:constituent cat="*T*-4"></tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                    <tc:constituent cat="VP">
+                                      <tc:constituent cat="VVD" tokenIDs="t_215"></tc:constituent>
+                                      <tc:constituent cat="NP">
+                                        <tc:constituent cat="NP">
+                                          <tc:constituent cat="DT" tokenIDs="t_216"></tc:constituent>
+                                          <tc:constituent cat="NN" tokenIDs="t_217"></tc:constituent>
+                                        </tc:constituent>
+                                        <tc:constituent cat="PP">
+                                          <tc:constituent cat="IN" tokenIDs="t_218"></tc:constituent>
+                                          <tc:constituent cat="NP">
+                                            <tc:constituent cat="NP">
+                                              <tc:constituent cat="NNP" tokenIDs="t_219"></tc:constituent>
+                                              <tc:constituent cat="NNP" tokenIDs="t_220"></tc:constituent>
+                                            </tc:constituent>
+                                            <tc:constituent cat="," tokenIDs="t_221"></tc:constituent>
+                                            <tc:constituent cat="NP">
+                                              <tc:constituent cat="NP">
+                                                <tc:constituent cat="NP">
+                                                  <tc:constituent cat="DT" tokenIDs="t_222"></tc:constituent>
+                                                  <tc:constituent cat="NN" tokenIDs="t_223"></tc:constituent>
+                                                </tc:constituent>
+                                                <tc:constituent cat="PP">
+                                                  <tc:constituent cat="IN" tokenIDs="t_224"></tc:constituent>
+                                                  <tc:constituent cat="NP">
+                                                    <tc:constituent cat="DT" tokenIDs="t_225"></tc:constituent>
+                                                    <tc:constituent cat="NNP" tokenIDs="t_226"></tc:constituent>
+                                                    <tc:constituent cat="NNP" tokenIDs="t_227"></tc:constituent>
+                                                    <tc:constituent cat="NNP" tokenIDs="t_228"></tc:constituent>
+                                                  </tc:constituent>
+                                                </tc:constituent>
+                                              </tc:constituent>
+                                              <tc:constituent cat="CC" tokenIDs="t_229"></tc:constituent>
+                                              <tc:constituent cat="NP">
+                                                <tc:constituent cat="NP">
+                                                  <tc:constituent cat="DT" tokenIDs="t_230"></tc:constituent>
+                                                  <tc:constituent cat="NN" tokenIDs="t_231"></tc:constituent>
+                                                </tc:constituent>
+                                                <tc:constituent cat="PP">
+                                                  <tc:constituent cat="IN" tokenIDs="t_232"></tc:constituent>
+                                                  <tc:constituent cat="NP">
+                                                    <tc:constituent cat="NP">
+                                                      <tc:constituent cat="PRP\$" tokenIDs="t_233"></tc:constituent>
+                                                      <tc:constituent cat="NN" tokenIDs="t_234"></tc:constituent>
+                                                      <tc:constituent cat="NN" tokenIDs="t_235"></tc:constituent>
+                                                    </tc:constituent>
+                                                    <tc:constituent cat="," tokenIDs="t_236"></tc:constituent>
+                                                    <tc:constituent cat="NP">
+                                                      <tc:constituent cat="NNP" tokenIDs="t_237"></tc:constituent>
+                                                      <tc:constituent cat="NNP" tokenIDs="t_238"></tc:constituent>
+                                                    </tc:constituent>
+                                                    <tc:constituent cat="," tokenIDs="t_239"></tc:constituent>
+                                                    <tc:constituent cat="SBAR">
+                                                      <tc:constituent cat="WHNP">
+                                                        <tc:constituent cat="WP\$" tokenIDs="t_240"></tc:constituent>
+                                                        <tc:constituent cat="NN" tokenIDs="t_241"></tc:constituent>
+                                                      </tc:constituent>
+                                                      <tc:constituent cat="S">
+                                                        <tc:constituent cat="NP-SBJ">
+                                                          <tc:constituent cat="-NONE-">
+                                                            <tc:constituent cat="*T*-5"></tc:constituent>
+                                                          </tc:constituent>
+                                                        </tc:constituent>
+                                                        <tc:constituent cat="VP">
+                                                          <tc:constituent cat="VBD" tokenIDs="t_242"></tc:constituent>
+                                                          <tc:constituent cat="VP">
+                                                            <tc:constituent cat="VVN" tokenIDs="t_243"></tc:constituent>
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="-NONE-">
+                                                            <tc:constituent cat="*-6"></tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            <tc:constituent cat="PP-LOC">
+                                                            <tc:constituent cat="IN" tokenIDs="t_244"></tc:constituent>
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="DT" tokenIDs="t_245"></tc:constituent>
+                                                            <tc:constituent cat="NN" tokenIDs="t_246"></tc:constituent>
+                                                            </tc:constituent>
+                                                            <tc:constituent cat="PP">
+                                                            <tc:constituent cat="IN" tokenIDs="t_247"></tc:constituent>
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="DT" tokenIDs="t_248"></tc:constituent>
+                                                            <tc:constituent cat="NN" tokenIDs="t_249"></tc:constituent>
+                                                            </tc:constituent>
+                                                            <tc:constituent cat="SBAR">
+                                                            <tc:constituent cat="WHNP-7">
+                                                            <tc:constituent cat="WDT" tokenIDs="t_250"></tc:constituent>
+                                                            </tc:constituent>
+                                                            <tc:constituent cat="S">
+                                                            <tc:constituent cat="NP-SBJ">
+                                                            <tc:constituent cat="-NONE-">
+                                                            <tc:constituent cat="*T*-7"></tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            <tc:constituent cat="VP">
+                                                            <tc:constituent cat="VVZ" tokenIDs="t_251"></tc:constituent>
+                                                            <tc:constituent cat="PP-LOC">
+                                                            <tc:constituent cat="IN" tokenIDs="t_252"></tc:constituent>
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="DT" tokenIDs="t_253"></tc:constituent>
+                                                            <tc:constituent cat="JJR" tokenIDs="t_254"></tc:constituent>
+                                                            <tc:constituent cat="NNS" tokenIDs="t_255"></tc:constituent>
+                                                            </tc:constituent>
+                                                            <tc:constituent cat="PP">
+                                                            <tc:constituent cat="IN" tokenIDs="t_256"></tc:constituent>
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="DT" tokenIDs="t_257"></tc:constituent>
+                                                            <tc:constituent cat="NNP" tokenIDs="t_258"></tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            <tc:constituent cat="PP-LOC">
+                                                            <tc:constituent cat="IN" tokenIDs="t_259"></tc:constituent>
+                                                            <tc:constituent cat="NP">
+                                                            <tc:constituent cat="DT" tokenIDs="t_260"></tc:constituent>
+                                                            <tc:constituent cat="NNP" tokenIDs="t_261"></tc:constituent>
+                                                            <tc:constituent cat="NN" tokenIDs="t_262"></tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                            </tc:constituent>
+                                                          </tc:constituent>
+                                                        </tc:constituent>
+                                                      </tc:constituent>
+                                                    </tc:constituent>
+                                                  </tc:constituent>
+                                                </tc:constituent>
+                                              </tc:constituent>
+                                            </tc:constituent>
+                                          </tc:constituent>
+                                        </tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_263"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="CC" tokenIDs="t_264"></tc:constituent>
+            <tc:constituent cat="NP-SBJ">
+              <tc:constituent cat="NP">
+                <tc:constituent cat="NN" tokenIDs="t_265"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="PP">
+                <tc:constituent cat="IN" tokenIDs="t_266"></tc:constituent>
+                <tc:constituent cat="NP">
+                  <tc:constituent cat="NP">
+                    <tc:constituent cat="DT" tokenIDs="t_267"></tc:constituent>
+                  </tc:constituent>
+                  <tc:constituent cat="SBAR">
+                    <tc:constituent cat="WHNP-1">
+                      <tc:constituent cat="-NONE-">
+                        <tc:constituent cat="0"></tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="S">
+                      <tc:constituent cat="NP-SBJ">
+                        <tc:constituent cat="NNS" tokenIDs="t_268"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="VHD" tokenIDs="t_269"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="-NONE-">
+                            <tc:constituent cat="*T*-1"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                        <tc:constituent cat="PP-TMP">
+                          <tc:constituent cat="IN" tokenIDs="t_270"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="DT" tokenIDs="t_271"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_272"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="VP">
+              <tc:constituent cat="VVD" tokenIDs="t_273"></tc:constituent>
+              <tc:constituent cat="SBAR">
+                <tc:constituent cat="IN" tokenIDs="t_274"></tc:constituent>
+                <tc:constituent cat="S">
+                  <tc:constituent cat="NP-SBJ">
+                    <tc:constituent cat="EX" tokenIDs="t_275"></tc:constituent>
+                  </tc:constituent>
+                  <tc:constituent cat="VP">
+                    <tc:constituent cat="VBD" tokenIDs="t_276"></tc:constituent>
+                    <tc:constituent cat="NP-PRD">
+                      <tc:constituent cat="NP">
+                        <tc:constituent cat="DT" tokenIDs="t_277"></tc:constituent>
+                        <tc:constituent cat="NN" tokenIDs="t_278"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="PP">
+                        <tc:constituent cat="IN" tokenIDs="t_279"></tc:constituent>
+                        <tc:constituent cat="S-NOM">
+                          <tc:constituent cat="NP-SBJ">
+                            <tc:constituent cat="-NONE-">
+                              <tc:constituent cat="*"></tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="VP">
+                            <tc:constituent cat="VVG" tokenIDs="t_280"></tc:constituent>
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="DT" tokenIDs="t_281"></tc:constituent>
+                                <tc:constituent cat="ADJP">
+                                  <tc:constituent cat="JJR" tokenIDs="t_282"></tc:constituent>
+                                  <tc:constituent cat="CC" tokenIDs="t_283"></tc:constituent>
+                                  <tc:constituent cat="JJR" tokenIDs="t_284"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="JJ" tokenIDs="t_285"></tc:constituent>
+                                <tc:constituent cat="NN" tokenIDs="t_286"></tc:constituent>
+                              </tc:constituent>
+                              <tc:constituent cat="PP">
+                                <tc:constituent cat="IN" tokenIDs="t_287"></tc:constituent>
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="DT" tokenIDs="t_288"></tc:constituent>
+                                  <tc:constituent cat="NNP" tokenIDs="t_289"></tc:constituent>
+                                  <tc:constituent cat="NN" tokenIDs="t_290"></tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="PP">
+                              <tc:constituent cat="IN" tokenIDs="t_291"></tc:constituent>
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="DT" tokenIDs="t_292"></tc:constituent>
+                                <tc:constituent cat="JJ" tokenIDs="t_293"></tc:constituent>
+                                <tc:constituent cat="NN" tokenIDs="t_294"></tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_295"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="S">
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="DT" tokenIDs="t_296"></tc:constituent>
+                <tc:constituent cat="NN" tokenIDs="t_297"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VBD" tokenIDs="t_298"></tc:constituent>
+                <tc:constituent cat="ADJP-PRD">
+                  <tc:constituent cat="JJ" tokenIDs="t_299"></tc:constituent>
+                  <tc:constituent cat="S">
+                    <tc:constituent cat="NP-SBJ">
+                      <tc:constituent cat="-NONE-">
+                        <tc:constituent cat="*-1"></tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="VP">
+                      <tc:constituent cat="TO" tokenIDs="t_300"></tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="VV" tokenIDs="t_301"></tc:constituent>
+                        <tc:constituent cat="NP">
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="PRP\$" tokenIDs="t_302"></tc:constituent>
+                            <tc:constituent cat="NN" tokenIDs="t_303"></tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="," tokenIDs="t_304"></tc:constituent>
+                          <tc:constituent cat="VP">
+                            <tc:constituent cat="VVN" tokenIDs="t_305"></tc:constituent>
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="-NONE-">
+                                <tc:constituent cat="*"></tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="PP-LGS">
+                              <tc:constituent cat="IN" tokenIDs="t_306"></tc:constituent>
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="DT" tokenIDs="t_307"></tc:constituent>
+                                  <tc:constituent cat="NN" tokenIDs="t_308"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="SBAR">
+                                  <tc:constituent cat="WHNP-2">
+                                    <tc:constituent cat="WDT" tokenIDs="t_309"></tc:constituent>
+                                  </tc:constituent>
+                                  <tc:constituent cat="S">
+                                    <tc:constituent cat="PP-TMP">
+                                      <tc:constituent cat="IN" tokenIDs="t_310"></tc:constituent>
+                                      <tc:constituent cat="NP">
+                                        <tc:constituent cat="DT" tokenIDs="t_311"></tc:constituent>
+                                        <tc:constituent cat="NN" tokenIDs="t_312"></tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                    <tc:constituent cat="NP-SBJ">
+                                      <tc:constituent cat="-NONE-">
+                                        <tc:constituent cat="*T*-2"></tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                    <tc:constituent cat="VP">
+                                      <tc:constituent cat="VBD" tokenIDs="t_313"></tc:constituent>
+                                      <tc:constituent cat="VP">
+                                        <tc:constituent cat="VVN" tokenIDs="t_314"></tc:constituent>
+                                        <tc:constituent cat="NP">
+                                          <tc:constituent cat="-NONE-">
+                                            <tc:constituent cat="*-3"></tc:constituent>
+                                          </tc:constituent>
+                                        </tc:constituent>
+                                        <tc:constituent cat="PP-LGS">
+                                          <tc:constituent cat="IN" tokenIDs="t_315"></tc:constituent>
+                                          <tc:constituent cat="NP">
+                                            <tc:constituent cat="NP">
+                                              <tc:constituent cat="NNS" tokenIDs="t_316"></tc:constituent>
+                                            </tc:constituent>
+                                            <tc:constituent cat="SBAR">
+                                              <tc:constituent cat="WHNP-4">
+                                                <tc:constituent cat="WDT" tokenIDs="t_317"></tc:constituent>
+                                              </tc:constituent>
+                                              <tc:constituent cat="S">
+                                                <tc:constituent cat="NP-SBJ-5">
+                                                  <tc:constituent cat="-NONE-">
+                                                    <tc:constituent cat="*T*-4"></tc:constituent>
+                                                  </tc:constituent>
+                                                </tc:constituent>
+                                                <tc:constituent cat="," tokenIDs="t_318"></tc:constituent>
+                                                <tc:constituent cat="PP-TMP">
+                                                  <tc:constituent cat="IN" tokenIDs="t_319"></tc:constituent>
+                                                  <tc:constituent cat="NP">
+                                                    <tc:constituent cat="JJ" tokenIDs="t_320"></tc:constituent>
+                                                    <tc:constituent cat="NN" tokenIDs="t_321"></tc:constituent>
+                                                  </tc:constituent>
+                                                </tc:constituent>
+                                                <tc:constituent cat="," tokenIDs="t_322"></tc:constituent>
+                                                <tc:constituent cat="VP">
+                                                  <tc:constituent cat="MD" tokenIDs="t_323"></tc:constituent>
+                                                  <tc:constituent cat="VP">
+                                                    <tc:constituent cat="VB" tokenIDs="t_324"></tc:constituent>
+                                                    <tc:constituent cat="VP">
+                                                      <tc:constituent cat="VVN" tokenIDs="t_325"></tc:constituent>
+                                                      <tc:constituent cat="PP">
+                                                        <tc:constituent cat="IN" tokenIDs="t_326"></tc:constituent>
+                                                        <tc:constituent cat="NP">
+                                                          <tc:constituent cat="-NONE-">
+                                                            <tc:constituent cat="*-5"></tc:constituent>
+                                                          </tc:constituent>
+                                                        </tc:constituent>
+                                                      </tc:constituent>
+                                                      <tc:constituent cat="PP">
+                                                        <tc:constituent cat="IN" tokenIDs="t_327"></tc:constituent>
+                                                        <tc:constituent cat="NP">
+                                                          <tc:constituent cat="NN" tokenIDs="t_328"></tc:constituent>
+                                                        </tc:constituent>
+                                                      </tc:constituent>
+                                                    </tc:constituent>
+                                                  </tc:constituent>
+                                                </tc:constituent>
+                                              </tc:constituent>
+                                            </tc:constituent>
+                                          </tc:constituent>
+                                        </tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat=";" tokenIDs="t_329"></tc:constituent>
+            <tc:constituent cat="S">
+              <tc:constituent cat="CC" tokenIDs="t_330"></tc:constituent>
+              <tc:constituent cat="ADVP">
+                <tc:constituent cat="RBR" tokenIDs="t_331"></tc:constituent>
+                <tc:constituent cat="IN" tokenIDs="t_332"></tc:constituent>
+                <tc:constituent cat="RB" tokenIDs="t_333"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="NP-SBJ">
+                <tc:constituent cat="PRP" tokenIDs="t_334"></tc:constituent>
+              </tc:constituent>
+              <tc:constituent cat="VP">
+                <tc:constituent cat="VBD" tokenIDs="t_335"></tc:constituent>
+                <tc:constituent cat="PP-LOC">
+                  <tc:constituent cat="IN" tokenIDs="t_336"></tc:constituent>
+                  <tc:constituent cat="NP">
+                    <tc:constituent cat="NP">
+                      <tc:constituent cat="DT" tokenIDs="t_337"></tc:constituent>
+                      <tc:constituent cat="NN" tokenIDs="t_338"></tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="PP">
+                      <tc:constituent cat="IN" tokenIDs="t_339"></tc:constituent>
+                      <tc:constituent cat="S-NOM">
+                        <tc:constituent cat="NP-SBJ">
+                          <tc:constituent cat="-NONE-">
+                            <tc:constituent cat="*-6"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                        <tc:constituent cat="VP">
+                          <tc:constituent cat="VVG" tokenIDs="t_340"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="DT" tokenIDs="t_341"></tc:constituent>
+                              <tc:constituent cat="NN" tokenIDs="t_342"></tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="SBAR">
+                              <tc:constituent cat="WHPP">
+                                <tc:constituent cat="IN" tokenIDs="t_343"></tc:constituent>
+                                <tc:constituent cat="WHNP">
+                                  <tc:constituent cat="WDT" tokenIDs="t_344"></tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                              <tc:constituent cat="S">
+                                <tc:constituent cat="NP-SBJ">
+                                  <tc:constituent cat="PRP" tokenIDs="t_345"></tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="VP">
+                                  <tc:constituent cat="VBD" tokenIDs="t_346"></tc:constituent>
+                                  <tc:constituent cat="VP">
+                                    <tc:constituent cat="VVG" tokenIDs="t_347"></tc:constituent>
+                                    <tc:constituent cat="NP">
+                                      <tc:constituent cat="PRP" tokenIDs="t_348"></tc:constituent>
+                                    </tc:constituent>
+                                    <tc:constituent cat="PP">
+                                      <tc:constituent cat="IN" tokenIDs="t_349"></tc:constituent>
+                                      <tc:constituent cat="NP">
+                                        <tc:constituent cat="NP">
+                                          <tc:constituent cat="DT" tokenIDs="t_350"></tc:constituent>
+                                          <tc:constituent cat="JJ" tokenIDs="t_351"></tc:constituent>
+                                          <tc:constituent cat="NN" tokenIDs="t_352"></tc:constituent>
+                                        </tc:constituent>
+                                        <tc:constituent cat="PP">
+                                          <tc:constituent cat="IN" tokenIDs="t_353"></tc:constituent>
+                                          <tc:constituent cat="NP">
+                                            <tc:constituent cat="DT" tokenIDs="t_354"></tc:constituent>
+                                            <tc:constituent cat="JJ" tokenIDs="t_355"></tc:constituent>
+                                            <tc:constituent cat="NN" tokenIDs="t_356"></tc:constituent>
+                                          </tc:constituent>
+                                        </tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_357"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+      <tc:parse>
+        <tc:constituent cat="TOP">
+          <tc:constituent cat="S">
+            <tc:constituent cat="PP">
+              <tc:constituent cat="IN" tokenIDs="t_358"></tc:constituent>
+              <tc:constituent cat="ADJP">
+                <tc:constituent cat="JJ" tokenIDs="t_359"></tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="," tokenIDs="t_360"></tc:constituent>
+            <tc:constituent cat="NP-SBJ">
+              <tc:constituent cat="PRP" tokenIDs="t_361"></tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="VP">
+              <tc:constituent cat="VVD" tokenIDs="t_362"></tc:constituent>
+              <tc:constituent cat="NP">
+                <tc:constituent cat="DT" tokenIDs="t_363"></tc:constituent>
+                <tc:constituent cat="NN" tokenIDs="t_364"></tc:constituent>
+                <tc:constituent cat="SBAR">
+                  <tc:constituent cat="IN" tokenIDs="t_365"></tc:constituent>
+                  <tc:constituent cat="S">
+                    <tc:constituent cat="S">
+                      <tc:constituent cat="NP-SBJ">
+                        <tc:constituent cat="PRP\$" tokenIDs="t_366"></tc:constituent>
+                        <tc:constituent cat="NNS" tokenIDs="t_367"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="VHD" tokenIDs="t_368"></tc:constituent>
+                        <tc:constituent cat="RB" tokenIDs="t_369"></tc:constituent>
+                        <tc:constituent cat="VP">
+                          <tc:constituent cat="VVN" tokenIDs="t_370"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="PRP" tokenIDs="t_371"></tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                    <tc:constituent cat="," tokenIDs="t_372"></tc:constituent>
+                    <tc:constituent cat="CC" tokenIDs="t_373"></tc:constituent>
+                    <tc:constituent cat="S">
+                      <tc:constituent cat="NP-SBJ">
+                        <tc:constituent cat="PRP" tokenIDs="t_374"></tc:constituent>
+                      </tc:constituent>
+                      <tc:constituent cat="VP">
+                        <tc:constituent cat="VBD" tokenIDs="t_375"></tc:constituent>
+                        <tc:constituent cat="VP">
+                          <tc:constituent cat="VVN" tokenIDs="t_376"></tc:constituent>
+                          <tc:constituent cat="NP">
+                            <tc:constituent cat="-NONE-">
+                              <tc:constituent cat="*-1"></tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="PP-TMP">
+                            <tc:constituent cat="IN" tokenIDs="t_377"></tc:constituent>
+                            <tc:constituent cat="NP">
+                              <tc:constituent cat="NP">
+                                <tc:constituent cat="PDT" tokenIDs="t_378"></tc:constituent>
+                                <tc:constituent cat="PRP\$" tokenIDs="t_379"></tc:constituent>
+                                <tc:constituent cat="NNS" tokenIDs="t_380"></tc:constituent>
+                              </tc:constituent>
+                              <tc:constituent cat="PP-TMP">
+                                <tc:constituent cat="IN" tokenIDs="t_381"></tc:constituent>
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="DT" tokenIDs="t_382"></tc:constituent>
+                                  <tc:constituent cat="NN" tokenIDs="t_383"></tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                          <tc:constituent cat="SBAR-ADV">
+                            <tc:constituent cat="WHADVP-2">
+                              <tc:constituent cat="WRB" tokenIDs="t_384"></tc:constituent>
+                            </tc:constituent>
+                            <tc:constituent cat="S">
+                              <tc:constituent cat="NP-SBJ">
+                                <tc:constituent cat="PRP" tokenIDs="t_385"></tc:constituent>
+                              </tc:constituent>
+                              <tc:constituent cat="VP">
+                                <tc:constituent cat="VVD" tokenIDs="t_386"></tc:constituent>
+                                <tc:constituent cat="NP">
+                                  <tc:constituent cat="NP">
+                                    <tc:constituent cat="DT" tokenIDs="t_387"></tc:constituent>
+                                    <tc:constituent cat="NN" tokenIDs="t_388"></tc:constituent>
+                                  </tc:constituent>
+                                  <tc:constituent cat="SBAR">
+                                    <tc:constituent cat="IN" tokenIDs="t_389"></tc:constituent>
+                                    <tc:constituent cat="S">
+                                      <tc:constituent cat="NP-SBJ">
+                                        <tc:constituent cat="DT" tokenIDs="t_390"></tc:constituent>
+                                        <tc:constituent cat="NNP" tokenIDs="t_391"></tc:constituent>
+                                        <tc:constituent cat="NN" tokenIDs="t_392"></tc:constituent>
+                                      </tc:constituent>
+                                      <tc:constituent cat="VP">
+                                        <tc:constituent cat="VBD" tokenIDs="t_393"></tc:constituent>
+                                        <tc:constituent cat="ADJP-PRD">
+                                          <tc:constituent cat="ADJP">
+                                            <tc:constituent cat="JJR" tokenIDs="t_394"></tc:constituent>
+                                          </tc:constituent>
+                                          <tc:constituent cat="PP">
+                                            <tc:constituent cat="IN" tokenIDs="t_395"></tc:constituent>
+                                            <tc:constituent cat="NP">
+                                              <tc:constituent cat="DT" tokenIDs="t_396"></tc:constituent>
+                                              <tc:constituent cat="JJ" tokenIDs="t_397"></tc:constituent>
+                                              <tc:constituent cat="NN" tokenIDs="t_398"></tc:constituent>
+                                            </tc:constituent>
+                                          </tc:constituent>
+                                        </tc:constituent>
+                                      </tc:constituent>
+                                    </tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                                <tc:constituent cat="ADVP">
+                                  <tc:constituent cat="-NONE-">
+                                    <tc:constituent cat="*T*-2"></tc:constituent>
+                                  </tc:constituent>
+                                </tc:constituent>
+                              </tc:constituent>
+                            </tc:constituent>
+                          </tc:constituent>
+                        </tc:constituent>
+                      </tc:constituent>
+                    </tc:constituent>
+                  </tc:constituent>
+                </tc:constituent>
+              </tc:constituent>
+            </tc:constituent>
+            <tc:constituent cat="." tokenIDs="t_399"></tc:constituent>
+          </tc:constituent>
+        </tc:constituent>
+      </tc:parse>
+    </tc:parsing>
+  </tc:TextCorpus>
+</wl:D-Spin>

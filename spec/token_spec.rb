@@ -17,17 +17,42 @@
 # License along with tcf2nif. If not, see
 # <http://www.gnu.org/licenses/>.
 
-require 'nokogiri'
-require "tcf2nif/version"
-require "tcf2nif/token"
-require "tcf2nif/tcf_document"
-require "tcf2nif/transformer"
+require 'spec_helper'
 
-module Tcf2Nif
-  # Your code goes here...
-  
-  def self.root
-    File.expand_path('../..',__FILE__)
+describe Tcf2Nif::Token do
+
+  context 'inside a TCF document' do
+
+    before :each do
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'tcftest.xml'), 'r')
+      @tcf = Tcf2Nif::TcfDocument.new(@testfile)
+      @token = @tcf.tokens.first
+    end
+
+    it 'has the correct class' do
+     expect(@token).to be_a Tcf2Nif::Token
+    end
+
+    it 'has access to a word form as a string' do
+      expect(@token.form).to be_a String
+    end
+
+    context 'lemmata' do
+
+      it 'knows whether it has been assigned a lemma or not' do
+        expect(@token).to respond_to(:lemma?)
+      end
+
+    end
+
+    context 'pos' do
+
+      it 'knows whether it has been assigned a pos tag or not' do
+        expect(@token).to respond_to(:pos?)
+      end
+
+    end
+
   end
-    
+
 end

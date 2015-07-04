@@ -17,17 +17,12 @@
 # License along with tcf2nif. If not, see
 # <http://www.gnu.org/licenses/>.
 
-require 'nokogiri'
-require "tcf2nif/version"
-require "tcf2nif/token"
-require "tcf2nif/tcf_document"
-require "tcf2nif/transformer"
-
 module Tcf2Nif
-  # Your code goes here...
   
-  def self.root
-    File.expand_path('../..',__FILE__)
-  end
+  class Transformer
     
+    
+    
+  end
+  
 end

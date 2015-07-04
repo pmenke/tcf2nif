@@ -1,8 +1,10 @@
-# Tcf2nif
+# tcf2nif
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tcf2nif`. To experiment with that code, run `bin/console` for an interactive prompt.
+`tcf2nif` is a NLP data converter from the TCF format (used by WebLicht) to the RDF-based NIF format. At the moment, it has a limited functionality. 
 
-TODO: Delete this and the text above, and describe your gem
+## License
+
+tcf2nif is released under the GNU Lesser General Public License (version 3). See `README.txt` for details.
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Usage instructions will follow.
 
 ## Development
 

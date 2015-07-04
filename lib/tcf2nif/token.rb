@@ -17,17 +17,37 @@
 # License along with tcf2nif. If not, see
 # <http://www.gnu.org/licenses/>.
 
-require 'nokogiri'
-require "tcf2nif/version"
-require "tcf2nif/token"
-require "tcf2nif/tcf_document"
-require "tcf2nif/transformer"
-
 module Tcf2Nif
-  # Your code goes here...
-  
-  def self.root
-    File.expand_path('../..',__FILE__)
+
+  class Token
+
+    def initialize(tcf_document, xml_element)
+      @tcf_document = tcf_document
+      @xml_element = xml_element
+    end
+
+    def form
+      @form ||= @xml_element.text
+    end
+
+    def pos
+      nil
+      # TODO implement Token::pos reader
+    end
+
+    def lemma
+      nil
+      # TODO implement Token::lemma reader
+    end
+
+    def pos?
+      not pos.nil?
+    end
+
+    def lemma?
+      not lemma.nil?
+    end
+
   end
-    
+
 end
