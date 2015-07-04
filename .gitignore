@@ -9,3 +9,4 @@
 /tmp/
 .idea
 spec/out
+spec/coverage

@@ -17,6 +17,11 @@
 # License along with tcf2nif. If not, see
 # <http://www.gnu.org/licenses/>.
 
+require 'simplecov'
+SimpleCov.start do
+  coverage_dir('spec/coverage')
+end
+
 require 'rubygems'
 require 'spork'
 #uncomment the following line to use spork with the debugger
