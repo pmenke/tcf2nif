@@ -1,5 +1,5 @@
 before_script: 
-  - gem install bundler
+  #- gem install bundler
   - bundle install 
   - bundle exec rake db:create
 
