@@ -48,7 +48,7 @@ describe Tcf2Nif::Transformer do
         expect(@trans.transform).to be_a RDF::Graph
       end
 
-      it 'shows the RDF' do
+      it 'shows the RDF', slow: true do
         puts @tcf_doc.text.size
         graph = @trans.transform
         puts " transformation done"
@@ -58,8 +58,8 @@ describe Tcf2Nif::Transformer do
             xsd: RDF::XSD,
             penn: Tcf2Nif::PENN
         }
-        File.open(File.join(Tcf2Nif::root, 'spec', 'out', 'tcftest.ttl'), 'w') do |f|
-          f << graph.dump(:ttl, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes)
+        File.open(File.join(Tcf2Nif::root, 'spec', 'out', 'tcftest.nt'), 'w') do |f|
+          f << graph.dump(:nt, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes)
         end
         puts " export done"
       end

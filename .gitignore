@@ -9,5 +9,6 @@
 /tmp/
 .idea
 spec/out/*.ttl
+spec/out/*.nt
 spec/out/tcf2nif
 spec/coverage

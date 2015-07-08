@@ -1,6 +1,8 @@
-before_script: 
+before_script:
+  - echo off 
   - source /etc/profile.d/rvm.sh
   - rvm use 2.2@mine
+  - echo on
   #- gem install bundler
   - bundle install 
   #- bundle exec rake db:create
@@ -8,8 +10,7 @@ before_script:
 rspec: 
   script: "rake spec"
   tags: 
-    - ruby
-    - postgres
+    - ~slow
   only: 
     - branches
 
