@@ -3,7 +3,7 @@ before_script:
   - rvm use 2.2@mine
   #- gem install bundler
   - bundle install 
-  - bundle exec rake db:create
+  #- bundle exec rake db:create
 
 rspec: 
   script: "rake spec"
