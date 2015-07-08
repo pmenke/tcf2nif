@@ -62,7 +62,8 @@ module Tcf2Nif
         graph << [ token_uri, NIF.beginIndex, RDF::Literal.new(token.begin_index, datatype: RDF::XSD.nonNegativeInteger) ]
         graph << [ token_uri, NIF.endIndex, RDF::Literal.new(token.end_index, datatype: RDF::XSD.nonNegativeInteger) ]
         graph << [ token_uri, NIF.anchorOf, RDF::Literal.new(token.form, datatype: RDF::XSD.string) ]
-        if token.pos?
+        if token.pos? && token.pos =~ /\w+/
+          # TODO Tokens must be checked whether they contain strange characters!
           graph << [ token_uri, NIF.oliaLink, Tcf2Nif::PENN[token.pos] ]
         end
         if token.lemma?

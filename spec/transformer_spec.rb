@@ -59,7 +59,7 @@ describe Tcf2Nif::Transformer do
             penn: Tcf2Nif::PENN
         }
         File.open(File.join(Tcf2Nif::root, 'spec', 'out', 'tcftest.nt'), 'w') do |f|
-          f << graph.dump(:nt, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes)
+          f << graph.dump(:ntriples) #, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes)
         end
         puts " export done"
       end
