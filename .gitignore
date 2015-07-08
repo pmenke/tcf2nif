@@ -8,5 +8,6 @@
 /spec/reports/
 /tmp/
 .idea
-spec/out
+spec/out/*.ttl
+spec/out/tcf2nif
 spec/coverage
