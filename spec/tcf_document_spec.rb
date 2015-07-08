@@ -35,11 +35,12 @@ describe Tcf2Nif::TcfDocument do
     it 'has access to the primary text' do
       expect(@tcf.text).not_to be nil
       expect(@tcf.text.size).to be > 0
-      puts 'text size: ' + @tcf.text.size.to_s
+      #puts 'text size: ' + @tcf.text.size.to_s
+      puts " text from the outside: %s" % @tcf.text.slice(0,128)
     end
 
     it 'presents the primary text as a string' do
-      puts 'text: ' + @tcf.text.class.name
+      #puts 'text: ' + @tcf.text.class.name
       expect(@tcf.text).to be_a String
     end
     

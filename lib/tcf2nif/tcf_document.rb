@@ -32,6 +32,11 @@ module Tcf2Nif
       unless @tokens.all?{|t| t.boundaries? }
         calculate_character_offsets
       end
+
+      # TODO process pos and lemma information
+      process_pos
+      process_lemma
+
     end
 
     def token_map
@@ -53,7 +58,12 @@ module Tcf2Nif
     end
 
     def text
-      @text ||= @doc.xpath('//tc:text', 'tc' => 'http://www.dspin.de/data/textcorpus').text
+      #puts "texts:      %i" % @doc.xpath('.//tc:text/text()', 'wl' => 'http://www.dspin.de/data', 'tc' => 'http://www.dspin.de/data/textcorpus').size
+      #puts "text type:  %s" % @doc.xpath('.//tc:text/text()', 'wl' => 'http://www.dspin.de/data', 'tc' => 'http://www.dspin.de/data/textcorpus').class.name
+      #puts "first type: %s" % @doc.xpath('.//tc:text/text()', 'wl' => 'http://www.dspin.de/data', 'tc' => 'http://www.dspin.de/data/textcorpus').first.class.name
+      #puts "first cont: %s" % @doc.xpath('.//tc:text/text()', 'wl' => 'http://www.dspin.de/data', 'tc' => 'http://www.dspin.de/data/textcorpus').first.to_s.slice(0,128)
+
+      @text ||= @doc.xpath('.//tc:text/text()', 'wl' => 'http://www.dspin.de/data', 'tc' => 'http://www.dspin.de/data/textcorpus').first.to_s
     end
 
     def tokens
@@ -61,6 +71,7 @@ module Tcf2Nif
     end
 
     def xml_sentences
+      # /wl:D-Spin/tc:TextCorpus[1]/tc:text[1]
       @xml_sentences ||= @doc.xpath('//tc:sentences/tc:sentence', 'tc' => 'http://www.dspin.de/data/textcorpus')
     end
     
@@ -99,6 +110,30 @@ module Tcf2Nif
       xml_tokens.each do |xml_token|
         token = new_token(@doc, xml_token)
         store_token(token, xml_token)
+      end
+    end
+
+    def process_pos
+      xml_tags = @doc.xpath('//tc:POStags/tc:tag', 'tc' => 'http://www.dspin.de/data/textcorpus')
+      xml_tags.each do |tag|
+        val = tag.text
+        ref = tag['tokenIDs']
+        ref_obj = @id_map[ref]
+        if val && ref_obj
+          ref_obj.pos = val
+        end
+      end
+    end
+
+    def process_lemma
+      xml_lemmas = @doc.xpath('//tc:lemmas/tc:lemma', 'tc' => 'http://www.dspin.de/data/textcorpus')
+      xml_lemmas.each do |lemma|
+        val = lemma.text
+        ref = lemma['tokenIDs']
+        ref_obj = @id_map[ref]
+        if val && ref_obj
+          ref_obj.lemma = val
+        end
       end
     end
     

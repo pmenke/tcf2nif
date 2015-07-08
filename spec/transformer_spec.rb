@@ -29,16 +29,42 @@ describe Tcf2Nif::Transformer do
     
     before :each do 
       @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'tcftest.xml'), 'r')
-      @doc = Nokogiri::XML(@testfile)
+      #@xml_doc = Nokogiri::XML(@testfile)
+      @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
+      @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
     end
-    
-    it 'has access to the primary text' do
-      expect(@doc).not_to be nil
-      res = @doc.xpath('//tc:sentences/tc:sentence', 'tc' => 'http://www.dspin.de/data/textcorpus')
-      puts res.size
-      expect(res.size).to be > 0 
+
+    it 'checks RDF' do
+      #puts RDF::Vocabulary.class.name
+      #puts RDF::Vocabulary.instance_methods
     end
-    
+    context '::transform' do
+
+      it 'can be run' do
+        expect{@trans.transform}.not_to raise_error
+      end
+
+      it 'returns the correct object' do
+        expect(@trans.transform).to be_a RDF::Graph
+      end
+
+      it 'shows the RDF' do
+        puts @tcf_doc.text.size
+        graph = @trans.transform
+        puts " transformation done"
+        prefixes = {
+            nif: Tcf2Nif::NIF,
+            rdfs: RDF::RDFS,
+            xsd: RDF::XSD,
+            penn: Tcf2Nif::PENN
+        }
+        File.open(File.join(Tcf2Nif::root, 'spec', 'out', 'tcftest.ttl'), 'w') do |f|
+          f << graph.dump(:ttl, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes)
+        end
+        puts " export done"
+      end
+    end
+
   end
 
 end

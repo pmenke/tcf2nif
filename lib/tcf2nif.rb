@@ -18,6 +18,8 @@
 # <http://www.gnu.org/licenses/>.
 
 require 'nokogiri'
+require 'rdf'
+require 'rdf/turtle'
 require "tcf2nif/version"
 require "tcf2nif/bounded_element"
 require "tcf2nif/token"
@@ -25,6 +27,10 @@ require "tcf2nif/tcf_document"
 require "tcf2nif/transformer"
 
 module Tcf2Nif
+
+  NIF  = RDF::Vocabulary.new("http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#")
+  PENN = RDF::Vocabulary.new("http://purl.org/olia/penn.owl#")
+  # TODO test NIF vocab
 
   def self.root
     File.expand_path('../..',__FILE__)
