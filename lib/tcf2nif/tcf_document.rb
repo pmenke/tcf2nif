@@ -25,8 +25,11 @@ module Tcf2Nif
       @doc = Nokogiri::XML(io)
       # TODO add a method that reads the XML into Ruby structures
       @tokens = Array.new
+      @named_entities = Array.new
+      @geo_annotations = Array.new
       @id_map = Hash.new
       @token_map = Hash.new
+      @dependency_map = Hash.new()
 
       process_tokens
       unless @tokens.all?{|t| t.boundaries? }
@@ -36,6 +39,10 @@ module Tcf2Nif
       # TODO process pos and lemma information
       process_pos
       process_lemma
+
+      process_named_entities
+      process_geo_annotations
+      process_dependencies
 
     end
 
@@ -70,6 +77,23 @@ module Tcf2Nif
       @tokens
     end
 
+    def named_entities
+      @named_entities
+    end
+
+    def geo_annotations
+      @geo_annotations
+    end
+
+    def dependency_map
+      @dependency_map
+    end
+
+    def store_named_entity(named_entity_object)
+      @named_entities << named_entity_object
+    end
+
+
     def xml_sentences
       # /wl:D-Spin/tc:TextCorpus[1]/tc:text[1]
       @xml_sentences ||= @doc.xpath('//tc:sentences/tc:sentence', 'tc' => 'http://www.dspin.de/data/textcorpus')
@@ -77,6 +101,18 @@ module Tcf2Nif
     
     def xml_tokens
       @xml_tokens ||= @doc.xpath('//tc:tokens/tc:token', 'tc' => 'http://www.dspin.de/data/textcorpus')
+    end
+
+    def xml_named_entities
+      @xml_named_entities ||= @doc.xpath('//tc:namedEntities/tc:entity', 'tc' => 'http://www.dspin.de/data/textcorpus')
+    end
+
+    def xml_geo_annotations
+      @xml_geo_annotations ||= @doc.xpath('//tc:geo/tc:gpoint', 'tc' => 'http://www.dspin.de/data/textcorpus')
+    end
+
+    def xml_dependencies
+      @xml_dependencies ||= @doc.xpath('//tc:depparsing/tc:parse/tc:dependency', 'tc' => 'http://www.dspin.de/data/textcorpus')
     end
 
     # TODO add deep support for sentences and related tokens
@@ -134,6 +170,56 @@ module Tcf2Nif
         if val && ref_obj
           ref_obj.lemma = val
         end
+      end
+    end
+
+    def process_named_entities
+      xml_named_entities.each do |ent|
+        nato = Tcf2Nif::NamedEntityAnnotation.new(@doc)
+        nato.category = ent['class']
+        token_refs = ent['tokenIDs'].split(/\s+/)
+        tokens = token_refs.collect{|r| token_for_id(r)}
+        tokens.each do |t|
+          nato << t
+        end
+        @named_entities << nato
+        #puts ent['class']
+        #puts tokens.collect{|t| t.form}.join(' ')
+      end
+    end
+
+    def process_geo_annotations
+      xml_geo_annotations.each do |anno|
+        geo = Tcf2Nif::GeoAnnotation.new(@doc)
+        geo.lat = anno['lat'].to_f
+        geo.lon = anno['lon'].to_f
+        geo.alt = anno['alt'].to_f
+        geo.continent = anno['continent']
+        token_refs = anno['tokenIDs'].split(/\s+/)
+        tokens = token_refs.collect{|r| token_for_id(r)}
+        tokens.each do |t|
+          geo << t
+        end
+        @geo_annotations << geo
+      end
+    end
+
+    def process_dependencies
+      xml_dependencies.each do |dep|
+        # <tc:dependency depIDs="t_4" func="ROOT"/>
+        # <tc:dependency govIDs="t_4" depIDs="t_2" func="aux"/>
+
+        depToken = token_for_id(dep['depIDs'])
+
+        if dep.has_attribute?('govIDs')
+          # non-root tag. func is also defined.
+          govToken = token_for_id(dep['govIDs'])
+          @dependency_map[[depToken,govToken]] = dep['func']
+        else
+          # root tag.
+
+        end
+
       end
     end
     

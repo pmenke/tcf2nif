@@ -17,29 +17,10 @@
 # License along with tcf2nif. If not, see
 # <http://www.gnu.org/licenses/>.
 
-require 'nokogiri'
-require 'rdf'
-require 'rdf/turtle'
-require "tcf2nif/version"
-require "tcf2nif/bounded_element"
-require "tcf2nif/annotation"
-require "tcf2nif/token"
-require "tcf2nif/named_entity_annotation"
-require "tcf2nif/geo_annotation"
-require "tcf2nif/tcf_document"
-require "tcf2nif/transformer"
-
 module Tcf2Nif
+  class GeoAnnotation < Tcf2Nif::Annotation
 
-  NIF  = RDF::Vocabulary.new("http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#")
-  PENN = RDF::Vocabulary.new("http://purl.org/olia/penn.owl#")
-  NERD = RDF::Vocabulary.new("http://nerd.eurecom.fr/ontology#")
-  GEO  = RDF::Vocabulary.new("http://www.w3.org/2003/01/geo/wgs84_pos#")
+    attr_accessor :lat, :lon, :alt, :continent
 
-  # TODO test NIF vocab
-
-  def self.root
-    File.expand_path('../..',__FILE__)
   end
-    
 end

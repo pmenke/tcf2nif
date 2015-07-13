@@ -28,19 +28,18 @@ describe Tcf2Nif::TcfDocument do
   context 'with a valid, loaded TCF document' do
     
     before :each do 
-      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'tcftest.xml'), 'r')
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'phantom.xml'), 'r')
       @tcf = Tcf2Nif::TcfDocument.new(@testfile)
     end
     
     it 'has access to the primary text' do
+      puts @testfile
+      puts @tcf
       expect(@tcf.text).not_to be nil
       expect(@tcf.text.size).to be > 0
-      #puts 'text size: ' + @tcf.text.size.to_s
-      puts " text from the outside: %s" % @tcf.text.slice(0,128)
     end
 
     it 'presents the primary text as a string' do
-      #puts 'text: ' + @tcf.text.class.name
       expect(@tcf.text).to be_a String
     end
     
@@ -54,10 +53,23 @@ describe Tcf2Nif::TcfDocument do
       expect(@tcf.xml_sentences.size).to be > 0
     end
 
+    it 'has access to raw XML named entities' do
+      expect(@tcf.xml_named_entities).not_to be nil
+      expect(@tcf.xml_named_entities.size).to be > 0
+    end
+
+
     it 'obtains Ruby token representations from XML' do
       expect(@tcf.send(:process_tokens)).not_to be nil
     end
 
+    it 'obtains Ruby named entity representations from XML', lily: true do
+      expect(@tcf.named_entities).not_to be_empty
+
+      @tcf.named_entities.each do |n|
+        puts '%40s : %20s' % [n.tokens.collect{|t| t.form}.join(' '), n.category]
+      end
+    end
 
     context 'mapping between xml ids and token objects' do
 

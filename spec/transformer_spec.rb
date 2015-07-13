@@ -25,10 +25,77 @@ describe Tcf2Nif::Transformer do
     expect(Tcf2Nif::Transformer).to be_a Class
   end
 
+  context 'Phantom of the Opera' do
+    
+    it 'converts', sample: true, phantom: true do
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'phantom.xml'), 'r')
+      #@xml_doc = Nokogiri::XML(@testfile)
+      @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
+      @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
+      graph = @trans.transform
+      puts graph.size
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'phantom.n3'), :format => :ntriples) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
+      prefixes = {
+          nif: Tcf2Nif::NIF,
+          rdfs: RDF::RDFS,
+          xsd: RDF::XSD,
+          penn: Tcf2Nif::PENN,
+          geo: Tcf2Nif::GEO
+      }
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'phantom.ttl'), format: :ttl, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
+    end
+    
+  end
+  
+  context 'Turn of the Screw' do
+    
+    it 'converts', sample: true, screw: true do
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'screw.xml'), 'r')
+      #@xml_doc = Nokogiri::XML(@testfile)
+      @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
+      @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
+      graph = @trans.transform
+      puts graph.size
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'screw.n3'), :format => :ntriples) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
+    end
+    
+  end
+  
+  context 'Les Misérables' do
+    
+    it 'converts', sample: true, miserables: true do
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'miserables.xml'), 'r')
+      #@xml_doc = Nokogiri::XML(@testfile)
+      @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
+      @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
+      graph = @trans.transform
+      puts graph.size
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'miserables.n3'), :format => :ntriples) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
+    end
+    
+  end
+  
+  
   context 'with a valid TCF document' do
     
     before :each do 
-      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'tcftest.xml'), 'r')
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'phantom.xml'), 'r')
       #@xml_doc = Nokogiri::XML(@testfile)
       @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
       @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
@@ -48,21 +115,22 @@ describe Tcf2Nif::Transformer do
         expect(@trans.transform).to be_a RDF::Graph
       end
 
-      it 'shows the RDF', slow: true do
-        puts @tcf_doc.text.size
-        graph = @trans.transform
-        puts " transformation done"
-        prefixes = {
-            nif: Tcf2Nif::NIF,
-            rdfs: RDF::RDFS,
-            xsd: RDF::XSD,
-            penn: Tcf2Nif::PENN
-        }
-        File.open(File.join(Tcf2Nif::root, 'spec', 'out', 'tcftest.nt'), 'w') do |f|
-          f << graph.dump(:ntriples) #, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes)
-        end
-        puts " export done"
-      end
+      # it 'shows the RDF', slow: true do
+      #   puts @tcf_doc.text.size
+      #   graph = @trans.transform
+      #   puts " transformation done"
+      #   puts graph.size
+      #   # prefixes = {
+      #   #     nif: Tcf2Nif::NIF,
+      #   #     rdfs: RDF::RDFS,
+      #   #     xsd: RDF::XSD,
+      #   #     penn: Tcf2Nif::PENN
+      #   # }
+      #   # File.open(File.join(Tcf2Nif::root, 'spec', 'out', 'tcftest.nt'), 'w') do |f|
+      #   #   f << graph.dump(:ntriples) #, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes)
+      #   # end
+      #   puts " export done"
+      # end
     end
 
   end

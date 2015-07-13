@@ -31,6 +31,10 @@ module Tcf2Nif
       RDF::URI("#{base}#char=#{from},#{to}")
     end
 
+    def twopart_uri(base, suffix)
+      RDF::URI("#{base}##{suffix}")
+    end
+
     def transform(mode = :plain)
       return transform_plain if mode == :plain
     end
@@ -38,13 +42,13 @@ module Tcf2Nif
     def transform_plain
       graph = RDF::Graph.new
 
-      # TODO obtain an URI basis from the opts.
+      # obtain an URI basis from the opts.
       uri_base = 'http://example.org/tcf2nif/example.txt'
 
-      # TODO create a document URI for the document.
+      # create a document URI for the document.
       context_uri = char_uri(uri_base, 0, '')
 
-      # TODO generate representation of the whole primary text
+      # this generates a representation of the whole primary text
       graph << [ context_uri, RDF.type, NIF.String ]
       graph << [ context_uri, RDF.type, NIF.Context ]
       graph << [ context_uri, RDF.type, NIF.RFC5147String ]
@@ -52,7 +56,7 @@ module Tcf2Nif
       graph << [ context_uri, NIF.beginIndex, RDF::Literal.new(0, datatype: RDF::XSD.nonNegativeInteger) ]
       graph << [ context_uri, NIF.endIndex,   RDF::Literal.new(@tcf_doc.text.length, datatype: RDF::XSD.nonNegativeInteger) ]
 
-      # TODO generate representation of the single tokens
+      # This generates a representation of the single tokens
       @tcf_doc.tokens.each do |token|
         token_uri = char_uri(uri_base, token.begin_index, token.end_index)
         graph << [ token_uri, NIF.referenceContext, context_uri ]
@@ -62,15 +66,73 @@ module Tcf2Nif
         graph << [ token_uri, NIF.beginIndex, RDF::Literal.new(token.begin_index, datatype: RDF::XSD.nonNegativeInteger) ]
         graph << [ token_uri, NIF.endIndex, RDF::Literal.new(token.end_index, datatype: RDF::XSD.nonNegativeInteger) ]
         graph << [ token_uri, NIF.anchorOf, RDF::Literal.new(token.form, datatype: RDF::XSD.string) ]
+
+        # adds data about POS if this data is present
         if token.pos? && token.pos =~ /\w+/
           # TODO Tokens must be checked whether they contain strange characters!
-          graph << [ token_uri, NIF.oliaLink, Tcf2Nif::PENN[token.pos] ]
+          graph << Transformer.nif_pos(token_uri, token.pos)
         end
+        # Adds data about lemma if this data is present
         if token.lemma?
-          graph << [ token_uri, NIF.lemma, RDF::Literal.new(token.lemma, datatype: RDF::XSD.string) ]
+          graph << Transformer.nif_lemma(token_uri, token.lemma) #[ token_uri, NIF.lemma, RDF::Literal.new(token.lemma, datatype: RDF::XSD.string) ]
         end
       end
+
+      # TODO add information about named entities
+      # named entities
+      # get all named entities from the corpus.
+      # are they in there, anyway?
+      @tcf_doc.named_entities.each do |ne|
+        # generate a string for reference if more than one token is used.
+        # else, use just the URI for that given token.
+        current_uri = char_uri(uri_base, ne.tokens.first.begin_index, ne.tokens.first.end_index)
+        if ne.tokens.size > 1
+          # create a new string thing
+          min_ind = ne.tokens.min{|t| t.begin_index}.begin_index
+          max_ind = ne.tokens.max{|t| t.end_index}.end_index
+          current_uri = char_uri(uri_base, min_ind, max_ind)
+          graph << [current_uri, RDF.type, NIF.String]
+        end
+        # puts '(%3i) %20s . %40s : %20s' % [ne.tokens.size, current_uri, ne.tokens.collect{|t| t.form}.join(' '), ne.category]
+        graph << [current_uri, NIF.taNerdCoreClassRef, NERD[ne.category.capitalize] ]
+      end
+
+      # TODO add information about geolocations
+      @tcf_doc.geo_annotations.each_with_index do |geo,i|
+        min_ind = geo.tokens.min{|t| t.begin_index}.begin_index
+        max_ind = geo.tokens.max{|t| t.end_index}.end_index
+        current_uri = char_uri(uri_base, min_ind, max_ind)
+        graph << [current_uri, RDF.type, NIF.String]
+        anno_uri = twopart_uri(uri_base, "geo#{i}")
+
+        graph << [current_uri, NIF::annotation, anno_uri]
+        graph << [anno_uri, Tcf2Nif::GEO.lat,  geo.lat]
+        graph << [anno_uri, Tcf2Nif::GEO.long, geo.lon]
+        graph << [anno_uri, Tcf2Nif::GEO.alt,  geo.alt]
+        graph << [anno_uri, RDF::URI('http://example.org/tcf2nif/continent'), geo.continent]
+      end
+
+      # TODO add information about dependency trees
+
+      @tcf_doc.dependency_map.each do |key, value|
+        dep = key.first
+        gov = key.last
+
+        graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
+        graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependencyRelationType, RDF::Literal.new(value)]
+
+      end
+      # how to model these?
+
       graph
+    end
+
+    def self.nif_pos(subject, pos, tagset=Tcf2Nif::PENN)
+      [subject, NIF.oliaLink, tagset[pos]]
+    end
+
+    def self.nif_lemma(subject, lemma)
+      [subject, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]
     end
     
   end

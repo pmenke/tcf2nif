@@ -23,21 +23,21 @@ SimpleCov.start do
 end
 
 require 'rubygems'
-require 'spork'
+#require 'spork'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
-Spork.prefork do
+#Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
 
-end
+#end
 
-Spork.each_run do
+#Spork.each_run do
   # This code will be run each time you run your specs.
 
-end
+#end
 
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
@@ -69,7 +69,24 @@ end
 # free to delete them.
 
 
+puts "rspec pid: #{Process.pid}"
 
+trap 'USR1' do
+  threads = Thread.list
+
+  puts
+  puts "=" * 80
+  puts "Received USR1 signal; printing all #{threads.count} thread backtraces."
+
+  threads.each do |thr|
+    description = thr == Thread.main ? "Main thread" : thr.inspect
+    puts
+    puts "#{description} backtrace: "
+    puts thr.backtrace.join("\n")
+  end
+
+  puts "=" * 80
+end
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'tcf2nif'

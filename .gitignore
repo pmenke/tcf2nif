@@ -12,3 +12,6 @@ spec/out/*.ttl
 spec/out/*.nt
 spec/out/tcf2nif
 spec/coverage
+spec/out/miserables.n3
+spec/out/phantom.n3
+spec/out/screw.n3

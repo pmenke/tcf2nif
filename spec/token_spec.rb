@@ -24,7 +24,7 @@ describe Tcf2Nif::Token do
   context 'inside a TCF document' do
 
     before :each do
-      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'tcftest.xml'), 'r')
+      @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'screw.xml'), 'r')
       @tcf = Tcf2Nif::TcfDocument.new(@testfile)
       @token = @tcf.tokens.first
     end
