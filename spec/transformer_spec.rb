@@ -44,7 +44,8 @@ describe Tcf2Nif::Transformer do
           rdfs: RDF::RDFS,
           xsd: RDF::XSD,
           penn: Tcf2Nif::PENN,
-          geo: Tcf2Nif::GEO
+          geo: Tcf2Nif::GEO,
+          nerd: Tcf2Nif::NERD
       }
       RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'phantom.ttl'), format: :ttl, base_uri: 'http://example.org/tcf2nif/', prefixes: prefixes) do |writer|
         writer << RDF::Repository.new do |repo|
