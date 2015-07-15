@@ -35,8 +35,16 @@ module Tcf2Nif
   PENN = RDF::Vocabulary.new("http://purl.org/olia/penn.owl#")
   NERD = RDF::Vocabulary.new("http://nerd.eurecom.fr/ontology#")
   GEO  = RDF::Vocabulary.new("http://www.w3.org/2003/01/geo/wgs84_pos#")
+  PROV = RDF::Vocabulary.new("http://www.w3.org/ns/prov#")
 
-  # TODO test NIF vocab
+  STANDARD_PREFIXES = {
+          nif: Tcf2Nif::NIF,
+          rdfs: RDF::RDFS,
+          xsd: RDF::XSD,
+          penn: Tcf2Nif::PENN,
+          geo: Tcf2Nif::GEO,
+          nerd: Tcf2Nif::NERD
+      }
 
   def self.root
     File.expand_path('../..',__FILE__)
