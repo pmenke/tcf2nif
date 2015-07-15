@@ -77,7 +77,7 @@ module Tcf2Nif
       twopart_uri(uri_base, 'DependencyParsingActivity')
     end
 
-    def transform_noprov
+    def transform_noprov(reify=false)
       graph = RDF::Graph.new
 
       # create a document URI for the document.
@@ -92,7 +92,7 @@ module Tcf2Nif
       graph << [ context_uri, NIF.endIndex,   RDF::Literal.new(@tcf_doc.text.length, datatype: RDF::XSD.nonNegativeInteger) ]
 
       # This generates a representation of the single tokens
-      @tcf_doc.tokens.each do |token|
+      @tcf_doc.tokens.each_with_index do |token,i|
         token_uri = char_uri(uri_base, token.begin_index, token.end_index)
         graph << [ token_uri, NIF.referenceContext, context_uri ]
         graph << [ token_uri, RDF.type, NIF.String ]
@@ -105,11 +105,15 @@ module Tcf2Nif
         # adds data about POS if this data is present
         if token.pos? && token.pos =~ /\w+/
           # TODO Tokens must be checked whether they contain strange characters!
-          graph << Transformer.nif_pos(token_uri, token.pos)
+          nif_pos(token, i, reify).each do |trip|
+            graph << trip
+          end
         end
         # Adds data about lemma if this data is present
         if token.lemma?
-          graph << Transformer.nif_lemma(token_uri, token.lemma) #[ token_uri, NIF.lemma, RDF::Literal.new(token.lemma, datatype: RDF::XSD.string) ]
+          nif_lemma(token, i, reify).each do |trip|
+            graph << trip #[ token_uri, NIF.lemma, RDF::Literal.new(token.lemma, datatype: RDF::XSD.string) ]
+          end
         end
       end
 
@@ -167,7 +171,7 @@ module Tcf2Nif
 
     def transform_plain
       #puts "1"
-      graph = transform_noprov
+      graph = transform_noprov(true)
       #puts "2"
       text_uri = char_uri(uri_base, 0, '')
       # add provenance info to some of the triples.
@@ -215,12 +219,32 @@ module Tcf2Nif
       graph
     end
 
-    def self.nif_pos(subject, pos, tagset=Tcf2Nif::PENN)
-      [subject, NIF.oliaLink, tagset[pos]]
+    def nif_pos(token, index, reify=false, tagset=Tcf2Nif::PENN)
+      subject = char_uri(uri_base, token.begin_index, token.end_index)
+      pos = token.pos
+      if reify
+        anno_uri = twopart_uri(uri_base, "Pos#{index}")
+        [
+          [subject, NIF.annotation, anno_uri],
+          [anno_uri, NIF.oliaLink, tagset[pos]]
+        ]
+      else
+        [[subject, NIF.oliaLink, tagset[pos]]]
+      end
     end
 
-    def self.nif_lemma(subject, lemma)
-      [subject, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]
+    def nif_lemma(token, index, reify=false)
+      subject = char_uri(uri_base, token.begin_index, token.end_index)
+      lemma = token.lemma
+      if reify
+        anno_uri = twopart_uri(uri_base, "Lemma#{index}")
+        [
+          [subject, NIF.annotation, anno_uri],
+          [anno_uri, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]
+        ]
+      else
+        [[subject, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]]
+      end
     end
     
   end
