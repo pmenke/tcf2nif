@@ -92,11 +92,6 @@ describe Tcf2Nif::Transformer do
           repo << graph
         end
       end
-      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'plainprov', 'phantom.ttl'), format: :ttl, base_uri: 'http://example.org/tcf2nif/', prefixes: Tcf2Nif::STANDARD_PREFIXES) do |writer|
-        writer << RDF::Repository.new do |repo|
-          repo << graph
-        end
-      end
     end
 
     it 'Turn of the Screw converts', screwplain: true, plainprov: true, sample: true, screw: true do
