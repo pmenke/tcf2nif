@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo "Running parallel converters"
+
+rspec -t phanplain  > ./spec/logs/phanplain.log  2>&1 &
+rspec -t screwplain > ./spec/logs/screwplain.log 2>&1 &
+rspec -t misplain   > ./spec/logs/misplain.log   2>&1 &

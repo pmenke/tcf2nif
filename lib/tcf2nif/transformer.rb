@@ -226,7 +226,9 @@ module Tcf2Nif
         anno_uri = twopart_uri(uri_base, "Pos#{index}")
         [
           [subject, NIF.annotation, anno_uri],
-          [anno_uri, NIF.oliaLink, tagset[pos]]
+          [anno_uri, NIF.oliaLink, tagset[pos]],
+          [anno_uri, NIF.wasGeneratedBy, pos_tagging_activity_uri],
+          [anno_uri, NIF.wasDerivedFrom, subject]
         ]
       else
         [[subject, NIF.oliaLink, tagset[pos]]]
@@ -240,7 +242,9 @@ module Tcf2Nif
         anno_uri = twopart_uri(uri_base, "Lemma#{index}")
         [
           [subject, NIF.annotation, anno_uri],
-          [anno_uri, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]
+          [anno_uri, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)],
+          [anno_uri, NIF.wasGeneratedBy, pos_tagging_activity_uri],
+          [anno_uri, NIF.wasDerivedFrom, subject]
         ]
       else
         [[subject, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]]

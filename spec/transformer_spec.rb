@@ -27,7 +27,7 @@ describe Tcf2Nif::Transformer do
 
   context 'without provenance information' do
 
-    it 'Phantom of the Opera converts', noprov: true, sample: true, phantom: true do
+    it 'Phantom of the Opera converts', phanno: true, noprov: true, sample: true, phantom: true do
       @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'phantom.xml'), 'r')
       #@xml_doc = Nokogiri::XML(@testfile)
       @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
@@ -47,7 +47,7 @@ describe Tcf2Nif::Transformer do
       # end
     end
 
-    it 'Turn of the Screw converts', noprov: true, sample: true, screw: true do
+    it 'Turn of the Screw converts', screwno: true, noprov: true, sample: true, screw: true do
       @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'screw.xml'), 'r')
       #@xml_doc = Nokogiri::XML(@testfile)
       @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
@@ -62,7 +62,7 @@ describe Tcf2Nif::Transformer do
     end
     
 
-    it 'Les Misérables converts', noprov: true, sample: true, miserables: true do
+    it 'Les Misérables converts', misno: true, noprov: true, sample: true, miserables: true do
       @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'miserables.xml'), 'r')
       #@xml_doc = Nokogiri::XML(@testfile)
       @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
@@ -80,32 +80,52 @@ describe Tcf2Nif::Transformer do
 
   context 'with plain provenance information' do
 
-    it 'Phantom of the Opera converts', plainprov: true, sample: true, phantom: true do
+    it 'Phantom of the Opera converts', phanplain: true, plainprov: true, sample: true, phantom: true do
       @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'phantom.xml'), 'r')
       #@xml_doc = Nokogiri::XML(@testfile)
       @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
       @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
       graph = @trans.transform(:plain)
       puts graph.size
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'plainprov', 'phantom.nt'), :format => :ntriples) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'plainprov', 'phantom.ttl'), format: :ttl, base_uri: 'http://example.org/tcf2nif/', prefixes: Tcf2Nif::STANDARD_PREFIXES) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
     end
 
-    it 'Turn of the Screw converts', plainprov: true, sample: true, screw: true do
+    it 'Turn of the Screw converts', screwplain: true, plainprov: true, sample: true, screw: true do
       @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'screw.xml'), 'r')
       #@xml_doc = Nokogiri::XML(@testfile)
       @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
       @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
       graph = @trans.transform(:plain)#
       puts graph.size
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'plainprov', 'screw.nt'), :format => :ntriples) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
     end
 
 
-    it 'Les Misérables converts', plainprov: true, sample: true, miserables: true do
+    it 'Les Misérables converts', misplain: true, plainprov: true, sample: true, miserables: true do
       @testfile = File.open(File.join(Tcf2Nif::root, 'spec', 'assets', 'miserables.xml'), 'r')
       #@xml_doc = Nokogiri::XML(@testfile)
       @tcf_doc = Tcf2Nif::TcfDocument.new(@testfile)
       @trans = Tcf2Nif::Transformer.new(@tcf_doc, {})
       graph = @trans.transform(:plain)
       puts graph.size
+      RDF::Writer.open(File.join(Tcf2Nif::root, 'spec', 'out', 'plainprov', 'miserables.nt'), :format => :ntriples) do |writer|
+        writer << RDF::Repository.new do |repo|
+          repo << graph
+        end
+      end
     end
 
   end

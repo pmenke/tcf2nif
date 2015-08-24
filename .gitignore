@@ -15,3 +15,10 @@ spec/coverage
 spec/out/miserables.n3
 spec/out/phantom.n3
 spec/out/screw.n3
+spec/logs/misplain.log
+spec/logs/phanplain.log
+spec/logs/screwplain.log
+spec/out/plainprov/miserables.nt
+spec/out/plainprov/phantom.nt
+spec/out/plainprov/phantom.ttl
+spec/out/plainprov/screw.nt
