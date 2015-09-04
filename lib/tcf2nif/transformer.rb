@@ -76,6 +76,26 @@ module Tcf2Nif
     def dep_parsing_activity_uri
       twopart_uri(uri_base, 'DependencyParsingActivity')
     end
+    
+    def tokenization_activity_time
+      RDF::Literal.new('2015-07-09T14:01:00', datatype: RDF::XSD.dateTime)
+    end
+
+    def pos_tagging_activity_time
+      RDF::Literal.new('2015-07-09T14:02:00', datatype: RDF::XSD.dateTime)
+    end
+    
+    def ne_tagging_activity_time
+      RDF::Literal.new('2015-07-09T14:03:00', datatype: RDF::XSD.dateTime)
+    end
+    
+    def geo_tagging_activity_time
+      RDF::Literal.new('2015-07-09T14:04:00', datatype: RDF::XSD.dateTime)
+    end
+    
+    def dep_parsing_activity_time
+      RDF::Literal.new('2015-07-09T14:05:00', datatype: RDF::XSD.dateTime)
+    end
 
     def transform_noprov(reify=false)
       graph = RDF::Graph.new
@@ -155,12 +175,30 @@ module Tcf2Nif
 
       # TODO add information about dependency trees
 
-      @tcf_doc.dependency_map.each do |key, value|
+      @tcf_doc.dependency_map.each_with_index do |key, value, i|
         dep = key.first
         gov = key.last
 
-        graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
-        graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependencyRelationType, RDF::Literal.new(value)]
+        if reify
+          # write annotation thingies to the graph.
+          # token -> nif:annotation -> annoUri
+          # annoUri -> nif:dependency, nif:dependencyRelationType -> ...
+          # annoUri -> provenance
+          tok_uri  = char_uri(uri_base, dep.begin_index, dep.end_index)
+          anno_uri = twopart_uri(uri_base, "Dep#{index}")
+          graph << [tok_uri, NIF.annotation, anno_uri]
+          graph << [anno_uri, NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]]
+          graph << [anno_uri, NIF.dependencyRelationType, RDF::Literal.new(value)]
+          # add provenance
+          graph << [anno_uri, PROV.wasGeneratedBy, dep_parsing_activity_uri],
+          graph << [anno_uri, PROV.wasDerivedFrom, tok_uri]
+          graph << [anno_uri, PROV.wasDerivedFrom, char_uri(uri_base, gov.begin_index, gov.end_index)]
+          graph << [anno_uri, PROV.generatedAtTime, dep_parsing_activity_time]
+        else
+          graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
+          graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependencyRelationType, RDF::Literal.new(value)]
+        end
+
 
       end
       # how to model these?
@@ -183,7 +221,7 @@ module Tcf2Nif
         token_uri = char_uri(uri_base, token.begin_index, token.end_index)
         graph << [token_uri, Tcf2Nif::PROV.wasGeneratedBy, tokenization_activity_uri]
         graph << [token_uri, Tcf2Nif::PROV.wasDerivedFrom, text_uri]
-        graph << [token_uri, Tcf2Nif::PROV.generatedAtTime, RDF::Literal.new('2015-07-09T14:00:00', type: RDF::XSD.dateTime)]
+        graph << [token_uri, Tcf2Nif::PROV.generatedAtTime, tokenization_activity_time]
       end
 
       # add info to named entities
@@ -204,7 +242,7 @@ module Tcf2Nif
         #puts " d"
         end
         #puts " e"
-        graph << [anno_uri, Tcf2Nif::PROV.generatedAtTime, RDF::Literal.new('2015-07-09T14:01:00', datatype: RDF::XSD.dateTime)]
+        graph << [anno_uri, Tcf2Nif::PROV.generatedAtTime, ne_tagging_activity_time]
       end
       #puts "5"
 
@@ -214,7 +252,7 @@ module Tcf2Nif
         geo.tokens.each do |tok|
           graph << [anno_uri, Tcf2Nif::PROV.wasDerivedFrom, char_uri(uri_base, tok.begin_index, tok.end_index)]
         end
-        graph << [anno_uri, Tcf2Nif::PROV.generatedAtTime, RDF::Literal.new('2015-07-09T14:02:00', datatype: RDF::XSD.dateTime)]
+        graph << [anno_uri, Tcf2Nif::PROV.generatedAtTime, geo_tagging_activity_time]
       end
       graph
     end
@@ -228,7 +266,8 @@ module Tcf2Nif
           [subject, NIF.annotation, anno_uri],
           [anno_uri, NIF.oliaLink, tagset[pos]],
           [anno_uri, PROV.wasGeneratedBy, pos_tagging_activity_uri],
-          [anno_uri, PROV.wasDerivedFrom, subject]
+          [anno_uri, PROV.wasDerivedFrom, subject],
+          [anno_uri, PROV.generatedAtTime, pos_tagging_activity_time]
         ]
       else
         [[subject, NIF.oliaLink, tagset[pos]]]
@@ -244,12 +283,15 @@ module Tcf2Nif
           [subject, NIF.annotation, anno_uri],
           [anno_uri, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)],
           [anno_uri, PROV.wasGeneratedBy, pos_tagging_activity_uri],
-          [anno_uri, PROV.wasDerivedFrom, subject]
+          [anno_uri, PROV.wasDerivedFrom, subject],
+          [anno_uri, PROV.generatedAtTime, pos_tagging_activity_time]
         ]
       else
         [[subject, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]]
       end
     end
+    
+    def nif_dep()
     
   end
   
