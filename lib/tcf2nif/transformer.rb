@@ -137,6 +137,8 @@ module Tcf2Nif
         end
       end
 
+      return graph if reify
+
       # TODO add information about named entities
       # named entities
       # get all named entities from the corpus.
@@ -190,7 +192,7 @@ module Tcf2Nif
           graph << [anno_uri, NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]]
           graph << [anno_uri, NIF.dependencyRelationType, RDF::Literal.new(value)]
           # add provenance
-          graph << [anno_uri, PROV.wasGeneratedBy, dep_parsing_activity_uri],
+          graph << [anno_uri, PROV.wasGeneratedBy, dep_parsing_activity_uri]
           graph << [anno_uri, PROV.wasDerivedFrom, tok_uri]
           graph << [anno_uri, PROV.wasDerivedFrom, char_uri(uri_base, gov.begin_index, gov.end_index)]
           graph << [anno_uri, PROV.generatedAtTime, dep_parsing_activity_time]
