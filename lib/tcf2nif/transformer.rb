@@ -181,7 +181,7 @@ module Tcf2Nif
       @tcf_doc.dependency_map.each do |key, value|
         dep = key.first
         gov = key.last
-        i++
+        i = i + 1
 
         if reify
           # write annotation thingies to the graph.
@@ -199,8 +199,15 @@ module Tcf2Nif
           graph << [anno_uri, PROV.wasDerivedFrom, char_uri(uri_base, gov.begin_index, gov.end_index)]
           graph << [anno_uri, PROV.generatedAtTime, dep_parsing_activity_time]
         else
-          graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
-          graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependencyRelationType, RDF::Literal.new(value)]
+          # puts char_uri(uri_base, dep.begin_index, dep.end_index)
+          # puts NIF.dependency
+          # puts char_uri(uri_base, gov.begin_index, gov.end_index)
+          # puts char_uri(uri_base, dep.begin_index, dep.end_index)
+          # puts NIF.dependencyRelationType
+          # puts RDF::Literal.new(value)
+
+          #graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
+          #graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependencyRelationType, RDF::Literal.new(value)]
         end
       end
 
