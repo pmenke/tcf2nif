@@ -241,6 +241,7 @@ module Tcf2Nif
           #puts tok.end_index
 
           graph << [anno_uri, Tcf2Nif::PROV.wasDerivedFrom, char_uri(uri_base, tok.begin_index, tok.end_index)]
+          graph << [char_uri(uri_base, tok.begin_index, tok.end_index), NIF.annotation, anno_uri]
         #puts " d"
         end
         #puts " e"
@@ -253,6 +254,7 @@ module Tcf2Nif
         graph << [anno_uri, Tcf2Nif::PROV.wasGeneratedBy, geo_tagging_activity_uri]
         geo.tokens.each do |tok|
           graph << [anno_uri, Tcf2Nif::PROV.wasDerivedFrom, char_uri(uri_base, tok.begin_index, tok.end_index)]
+          graph << [char_uri(uri_base, tok.begin_index, tok.end_index), NIF.annotation, anno_uri]
         end
         graph << [anno_uri, Tcf2Nif::PROV.generatedAtTime, geo_tagging_activity_time]
       end
