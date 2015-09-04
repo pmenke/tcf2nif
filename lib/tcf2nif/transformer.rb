@@ -227,8 +227,8 @@ module Tcf2Nif
         [
           [subject, NIF.annotation, anno_uri],
           [anno_uri, NIF.oliaLink, tagset[pos]],
-          [anno_uri, NIF.wasGeneratedBy, pos_tagging_activity_uri],
-          [anno_uri, NIF.wasDerivedFrom, subject]
+          [anno_uri, PROV.wasGeneratedBy, pos_tagging_activity_uri],
+          [anno_uri, PROV.wasDerivedFrom, subject]
         ]
       else
         [[subject, NIF.oliaLink, tagset[pos]]]
@@ -243,8 +243,8 @@ module Tcf2Nif
         [
           [subject, NIF.annotation, anno_uri],
           [anno_uri, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)],
-          [anno_uri, NIF.wasGeneratedBy, pos_tagging_activity_uri],
-          [anno_uri, NIF.wasDerivedFrom, subject]
+          [anno_uri, PROV.wasGeneratedBy, pos_tagging_activity_uri],
+          [anno_uri, PROV.wasDerivedFrom, subject]
         ]
       else
         [[subject, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]]
