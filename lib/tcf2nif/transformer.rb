@@ -292,8 +292,7 @@ module Tcf2Nif
         [[subject, NIF.lemma, RDF::Literal.new(lemma, datatype: RDF::XSD.string)]]
       end
     end
-    
-    def nif_dep()
+
     
   end
   
