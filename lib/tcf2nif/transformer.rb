@@ -137,6 +137,34 @@ module Tcf2Nif
         end
       end
 
+            i = 0
+      @tcf_doc.dependency_map.each do |key, value|
+        dep = key.first
+        gov = key.last
+        i = i + 1
+        if reify
+          tok_uri  = char_uri(uri_base, dep.begin_index, dep.end_index)
+          anno_uri = twopart_uri(uri_base, "Dep#{i}")
+          graph << [tok_uri, NIF.annotation, anno_uri]
+          graph << [anno_uri, NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
+          graph << [anno_uri, NIF.dependencyRelationType, RDF::Literal.new(value)]
+          graph << [anno_uri, PROV.wasGeneratedBy, dep_parsing_activity_uri]
+          graph << [anno_uri, PROV.wasDerivedFrom, tok_uri]
+          graph << [anno_uri, PROV.wasDerivedFrom, char_uri(uri_base, gov.begin_index, gov.end_index)]
+          graph << [anno_uri, PROV.generatedAtTime, dep_parsing_activity_time]
+        else
+          # puts char_uri(uri_base, dep.begin_index, dep.end_index)
+          # puts NIF.dependency
+          # puts char_uri(uri_base, gov.begin_index, gov.end_index)
+          # puts char_uri(uri_base, dep.begin_index, dep.end_index)
+          # puts NIF.dependencyRelationType
+          # puts RDF::Literal.new(value)
+
+          graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
+          graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependencyRelationType, RDF::Literal.new(value)]
+        end
+      end
+
       return graph if reify
 
       # TODO add information about named entities
@@ -176,40 +204,6 @@ module Tcf2Nif
       end
 
       # TODO add information about dependency trees
-
-      i = 0
-      @tcf_doc.dependency_map.each do |key, value|
-        dep = key.first
-        gov = key.last
-        i = i + 1
-
-        if reify
-          # write annotation thingies to the graph.
-          # token -> nif:annotation -> annoUri
-          # annoUri -> nif:dependency, nif:dependencyRelationType -> ...
-          # annoUri -> provenance
-          tok_uri  = char_uri(uri_base, dep.begin_index, dep.end_index)
-          anno_uri = twopart_uri(uri_base, "Dep#{i}")
-          graph << [tok_uri, NIF.annotation, anno_uri]
-          graph << [anno_uri, NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
-          graph << [anno_uri, NIF.dependencyRelationType, RDF::Literal.new(value)]
-          # add provenance
-          graph << [anno_uri, PROV.wasGeneratedBy, dep_parsing_activity_uri]
-          graph << [anno_uri, PROV.wasDerivedFrom, tok_uri]
-          graph << [anno_uri, PROV.wasDerivedFrom, char_uri(uri_base, gov.begin_index, gov.end_index)]
-          graph << [anno_uri, PROV.generatedAtTime, dep_parsing_activity_time]
-        else
-          # puts char_uri(uri_base, dep.begin_index, dep.end_index)
-          # puts NIF.dependency
-          # puts char_uri(uri_base, gov.begin_index, gov.end_index)
-          # puts char_uri(uri_base, dep.begin_index, dep.end_index)
-          # puts NIF.dependencyRelationType
-          # puts RDF::Literal.new(value)
-
-          #graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
-          #graph << [char_uri(uri_base, dep.begin_index, dep.end_index), NIF.dependencyRelationType, RDF::Literal.new(value)]
-        end
-      end
 
       graph
 
