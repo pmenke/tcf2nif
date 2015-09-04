@@ -177,9 +177,11 @@ module Tcf2Nif
 
       # TODO add information about dependency trees
 
-      @tcf_doc.dependency_map.each_with_index do |key, value, i|
+      i = 0
+      @tcf_doc.dependency_map.each do |key, value|
         dep = key.first
         gov = key.last
+        i++
 
         if reify
           # write annotation thingies to the graph.
