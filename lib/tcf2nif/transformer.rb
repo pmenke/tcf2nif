@@ -189,7 +189,7 @@ module Tcf2Nif
           tok_uri  = char_uri(uri_base, dep.begin_index, dep.end_index)
           anno_uri = twopart_uri(uri_base, "Dep#{index}")
           graph << [tok_uri, NIF.annotation, anno_uri]
-          graph << [anno_uri, NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]]
+          graph << [anno_uri, NIF.dependency, char_uri(uri_base, gov.begin_index, gov.end_index)]
           graph << [anno_uri, NIF.dependencyRelationType, RDF::Literal.new(value)]
           # add provenance
           graph << [anno_uri, PROV.wasGeneratedBy, dep_parsing_activity_uri]
