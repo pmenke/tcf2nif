@@ -23,3 +23,5 @@ spec/out/plainprov/miserables.nt
 spec/out/plainprov/phantom.nt
 spec/out/plainprov/phantom.ttl
 spec/out/plainprov/screw.nt
+
+/.ipynb_checkpoints/
