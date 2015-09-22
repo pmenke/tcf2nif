@@ -1,5 +1,7 @@
 # tcf2nif
 
+![Gitlab CI Information](http://ci.streusel.org/projects/1/status.png?ref=master)
+
 `tcf2nif` is a NLP data converter from the TCF format (used by WebLicht) to the RDF-based NIF format. At the moment, it has a limited functionality.
 
 ## License
