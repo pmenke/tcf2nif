@@ -5,13 +5,13 @@ require 'tcf2nif/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tcf2nif"
-  spec.version       = Tcf2nif::VERSION
+  spec.version       = Tcf2Nif::VERSION
   spec.authors       = ["Peter Menke"]
   spec.email         = ["pmenke@googlemail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A small NLP data converter from the TCF to the NIF format}
+  spec.description   = %q{tcf2nif converts NLP data from the TCF format (used by WebLicht) to the RDF-based NIF format.}
+  spec.homepage      = "http://github.com/pmenke/tcf2nif"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -29,4 +29,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "spork"
+  spec.add_development_dependency "simplecov"
+
+  spec.add_runtime_dependency 'rdf', '~> 1.1'
+  spec.add_runtime_dependency 'rdf-turtle', '~> 1.1'
+  spec.add_runtime_dependency 'nokogiri', '~> 1.6'
+  
 end

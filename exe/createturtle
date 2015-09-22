@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+cd ../spec/out/plainprov
+rapper ./phantom.nt    -i ntriples -o turtle \
+  -f 'xmlns:ex="http://example.org/tcf2nif/example.txt#"' \
+  -f 'xmlns:xsd="http://www.w3.org/2001/XMLSchema#"' \
+  -f 'xmlns:prov="http://www.w3.org/ns/prov#"' \
+  -f 'xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"' \
+  > ./phantom.ttl
+rapper ./screw.nt      -i ntriples -o turtle \
+  -f 'xmlns:ex="http://example.org/tcf2nif/example.txt#"' \
+  -f 'xmlns:xsd="http://www.w3.org/2001/XMLSchema#"' \
+  -f 'xmlns:prov="http://www.w3.org/ns/prov#"' \
+  -f 'xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"' \
+  > ./screw.ttl
+rapper ./miserables.nt -i ntriples -o turtle \
+  -f 'xmlns:ex="http://example.org/tcf2nif/example.txt#"' \
+  -f 'xmlns:xsd="http://www.w3.org/2001/XMLSchema#"' \
+  -f 'xmlns:prov="http://www.w3.org/ns/prov#"' \
+  -f 'xmlns:nif="http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#"' \
+  > ./miserables.ttl

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://de.clarin.eu/images/weblicht-tutorials/resources/tcf-04/schemas/latest/d-spin_0_4.rnc" type="application/relax-ng-compact-syntax"?>
+<wl:D-Spin xmlns:ed="http://www.dspin.de/data/extdata" xmlns:lx="http://www.dspin.de/data/lexicon"
+  xmlns:wl="http://www.dspin.de/data" xmlns:md="http://www.dspin.de/data/metadata"
+  xmlns:tc="http://www.dspin.de/data/textcorpus" version="0.4">
+  <md:MetaData>
+  </md:MetaData>
+  <tc:TextCorpus lang="en">
+    <tc:text>Mary had a little lamb.</tc:text>
+    <tc:tokens>
+      
+    </tc:tokens>
+  </tc:TextCorpus>
+</wl:D-Spin>
