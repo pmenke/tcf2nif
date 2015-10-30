@@ -11,6 +11,10 @@ tcf2nif is released under the GNU Lesser General Public License (version 3). See
 
 ## Version History
 
+### 0.2.1 - tiny correction for making CI succeed again (30 Oct 2015)
+
+- support for a new test output directory was added, now CI succeeds again
+
 ### 0.2.0 - First working exe scripts (30 Oct 2015)
 
 - Adds first versions of the executable scripts for doc conversions
