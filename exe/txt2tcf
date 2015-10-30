@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
+require 'tcf2nif'
+require 'trollop'
+
+opts = Trollop::options do
+  synopsis 'Creates TCF files via the WebLicht service from a plain text file'
+  usage "Usage: #{__FILE__} sourcefile [OPTIONS]"
+  opt :input_file,  "The file containing the plain text document to be converted", type: :string
+  opt :output_file, "The file name to be used for the output file", type: :string
+  opt :token,       "The WebLicht WaaS API token", type: :string
+  opt :chain,       "The chain description XML document", type: :string
+end
+
+if opts[:input_file] && opts[:output_file] && opts[:chain]
+  if opts.token
+    waas_token = opts.token
+  else
+    waas_token = ENV['WAAS_TOKEN']
+  end
+  service_uri = "https://weblicht.sfs.uni-tuebingen.de/WaaS/api/1.0/chain/process"
+
+  puts "curl -X POST -F chains=@#{opts[:chain]} -F content=@#{opts[:input_file]} -F apikey=#{waas_token} #{service_uri} > #{opts[:output_file]}"
+       `curl -X POST -F chains=@#{opts[:chain]} -F content=@#{opts[:input_file]} -F apikey=#{waas_token} #{service_uri} > #{opts[:output_file]}`
+
+else
+  Trollop::educate
+  exit(1)
+end

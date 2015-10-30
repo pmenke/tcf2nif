@@ -36,6 +36,7 @@ module Tcf2Nif
   NERD = RDF::Vocabulary.new("http://nerd.eurecom.fr/ontology#")
   GEO  = RDF::Vocabulary.new("http://www.w3.org/2003/01/geo/wgs84_pos#")
   PROV = RDF::Vocabulary.new("http://www.w3.org/ns/prov#")
+  MOND = RDF::Vocabulary.new("http://petermenke.de/mond#")
 
   STANDARD_PREFIXES = {
           nif: Tcf2Nif::NIF,
@@ -43,11 +44,12 @@ module Tcf2Nif
           xsd: RDF::XSD,
           penn: Tcf2Nif::PENN,
           geo: Tcf2Nif::GEO,
-          nerd: Tcf2Nif::NERD
+          nerd: Tcf2Nif::NERD,
+          mond: Tcf2Nif::MOND
       }
 
   def self.root
     File.expand_path('../..',__FILE__)
   end
-    
+
 end
