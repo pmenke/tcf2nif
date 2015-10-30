@@ -32,3 +32,6 @@ testchain.xml
 screw.xml
 otherchain.xml
 token.txt
+spec/out/modularized/phantom.n3
+spec/out/modularized/phantom.ttl
+spec/out/modularized/tools.ttl
