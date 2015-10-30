@@ -25,3 +25,10 @@ spec/out/plainprov/phantom.ttl
 spec/out/plainprov/screw.nt
 
 /.ipynb_checkpoints/
+spec/out/*
+jack.*
+newchain.xml
+testchain.xml
+screw.xml
+otherchain.xml
+token.txt

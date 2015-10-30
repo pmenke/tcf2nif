@@ -11,6 +11,13 @@ tcf2nif is released under the GNU Lesser General Public License (version 3). See
 
 ## Version History
 
+### 0.2.0 - First working exe scripts (30 Oct 2015)
+
+- Adds first versions of the executable scripts for doc conversions
+
+    - __txt2tcf__ (converts plain text to TCF, using WebLicht)
+    - __tcf2nif__ (converts TCF/WebLicht documents to NIF)
+
 ### 0.1.0 - Initial prototype (22 Sep 2015)
 
 - This is the proof of concept version with minimal functionality
