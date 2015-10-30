@@ -18,7 +18,7 @@
 # <http://www.gnu.org/licenses/>.
 
 module Tcf2Nif
-  
+
   class Transformer
 
     def initialize(tcf_doc, rdf_opts)
@@ -36,8 +36,9 @@ module Tcf2Nif
     end
 
     def transform(mode = :plain)
-      return transform_plain  if mode == :plain
-      return transform_noprov if mode == :noprov
+      return transform_plain       if mode == :plain
+      return transform_noprov      if mode == :noprov
+      return transform_modularized if mode == :modularized
     end
 
     def uri_base
@@ -76,7 +77,7 @@ module Tcf2Nif
     def dep_parsing_activity_uri
       twopart_uri(uri_base, 'DependencyParsingActivity')
     end
-    
+
     def tokenization_activity_time
       RDF::Literal.new('2015-07-09T14:01:00', datatype: RDF::XSD.dateTime)
     end
@@ -84,15 +85,15 @@ module Tcf2Nif
     def pos_tagging_activity_time
       RDF::Literal.new('2015-07-09T14:02:00', datatype: RDF::XSD.dateTime)
     end
-    
+
     def ne_tagging_activity_time
       RDF::Literal.new('2015-07-09T14:03:00', datatype: RDF::XSD.dateTime)
     end
-    
+
     def geo_tagging_activity_time
       RDF::Literal.new('2015-07-09T14:04:00', datatype: RDF::XSD.dateTime)
     end
-    
+
     def dep_parsing_activity_time
       RDF::Literal.new('2015-07-09T14:05:00', datatype: RDF::XSD.dateTime)
     end
@@ -261,6 +262,56 @@ module Tcf2Nif
       graph
     end
 
+    def transform_modularized()
+      graph = RDF::Graph.new
+
+      # create a document URI for the document.
+      context_uri = char_uri(uri_base, 0, '')
+
+      # generate the modules
+      pri_module_uri = twopart_uri(uri_base, 'PrimaryTextModule')
+      tok_module_uri = twopart_uri(uri_base, 'TokenizationModule')
+      pos_module_uri = twopart_uri(uri_base, 'PosModule')
+      lem_module_uri = twopart_uri(uri_base, 'LemmaModule')
+
+      module_uris = [pri_module_uri, tok_module_uri, pos_module_uri, lem_module_uri]
+
+      module_uris.each do |u|
+        graph << [u, RDF.type, MOND.Module ]
+        graph << [u, MOND.belongsToDocument, uri_base ]
+      end
+
+      graph << [ tok_module_uri, MOND.propagateType, NIF.String ]
+      graph << [ tok_module_uri, MOND.propagateType, NIF.Word ]
+      graph << [ tok_module_uri, MOND.propagateType, NIF.RFC5147String ]
+
+
+      # this generates a representation of the whole primary text
+      # put this into a separate module. Assign the module to the document.
+      graph << [ context_uri, RDF.type, NIF.String ]
+      graph << [ context_uri, RDF.type, NIF.Context ]
+      graph << [ context_uri, RDF.type, NIF.RFC5147String ]
+      graph << [ context_uri, NIF.isString, RDF::Literal.new(@tcf_doc.text, lang: :en) ]
+      graph << [ context_uri, NIF.beginIndex, RDF::Literal.new(0, datatype: RDF::XSD.nonNegativeInteger) ]
+      graph << [ context_uri, NIF.endIndex,   RDF::Literal.new(@tcf_doc.text.length, datatype: RDF::XSD.nonNegativeInteger) ]
+      graph << [ context_uri, MOND.belongsToModule, pri_module_uri ]
+
+      # This generates a representation of the single tokens
+      @tcf_doc.tokens.each_with_index do |token,i|
+        token_uri = char_uri(uri_base, token.begin_index, token.end_index)
+        graph << [ token_uri, NIF.referenceContext, context_uri ]
+        # graph << [ token_uri, RDF.type, NIF.String ]
+        # graph << [ token_uri, RDF.type, NIF.Word ]
+        # graph << [ token_uri, RDF.type, NIF.RFC5147String ]
+        graph << [ token_uri, NIF.beginIndex, RDF::Literal.new(token.begin_index, datatype: RDF::XSD.nonNegativeInteger) ]
+        graph << [ token_uri, NIF.endIndex, RDF::Literal.new(token.end_index, datatype: RDF::XSD.nonNegativeInteger) ]
+        graph << [ token_uri, NIF.anchorOf, RDF::Literal.new(token.form, datatype: RDF::XSD.string) ]
+        graph << [ token_uri, MOND.belongsToModule, tok_module_uri ]
+      end
+
+      graph
+    end
+
     def nif_pos(token, index, reify=false, tagset=Tcf2Nif::PENN)
       subject = char_uri(uri_base, token.begin_index, token.end_index)
       pos = token.pos
@@ -295,7 +346,7 @@ module Tcf2Nif
       end
     end
 
-    
+
   end
-  
+
 end

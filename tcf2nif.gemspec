@@ -35,5 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'rdf', '~> 1.1'
   spec.add_runtime_dependency 'rdf-turtle', '~> 1.1'
   spec.add_runtime_dependency 'nokogiri', '~> 1.6'
-  
+  spec.add_runtime_dependency 'trollop' # , '~> 1.6'
+
 end
